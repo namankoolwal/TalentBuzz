@@ -8,8 +8,8 @@ const Yourtalent = () => {
         target : targetRef
     })
 
-    const opacity = useTransform(scrollYProgress, [0,1] , ["1" , "0"])
-    const translateY = useTransform(scrollYProgress , [0,1] , ["0" , "150%"])
+    const opacity = useTransform(scrollYProgress, [0,1] , [1 , 0])
+    const translateY = useTransform(scrollYProgress , [0,1] , ["30vh" , "50vh"])
   return (
     <div className='bg-[#181818] px-[5.5vw] py-20 my-[120px] min-h-screen w-full'>
         <div className='flex items-end '>
@@ -22,11 +22,14 @@ const Yourtalent = () => {
             </div>
         </div>
 
-        <div className='w-full relative h-[300vh] '>
-            <div className='flex items-center px-5 mt-80 h-[100vh] bg-red-400 sticky top-10'>
+        <div className='w-full relative h-[600vh] mt-40'>
+            <div className='flex items-start px-5 mt-10 h-[220vh] '>
+
+            <div className='h-full w-1/2 flex items-center'>
                 <motion.div ref={targetRef}
-                style={{opacity , translateY}}
-                    className='carddiv w-1/2 flex flex-col gap-5 '
+                
+                style={{ opacity, translateY}}
+                    className='carddiv w-full flex flex-col gap-5 '
                 >
                     <h4 className='text-[3rem]'>Watch Short Videos</h4>
                     <div>
@@ -38,12 +41,15 @@ const Yourtalent = () => {
                         <button className='border border-[#EFAA76] px-5 py-2 rounded-md'>Watch Now</button>
                     </div>
                 </motion.div>
-
-                <div className='imagediv w-1/2  sticky top-10 flex justify-end'>
+                </div>
+                <div className='imagediv w-1/2  sticky top-0 flex justify-end'>
                     
-                        <img src={img1} alt="img1" className='w-1/4 ' />
+                        <img src={img1} alt="img1" className='w-[60%] ' />
                 </div>
             </div>
+
+
+            
         </div>
     </div>
   )

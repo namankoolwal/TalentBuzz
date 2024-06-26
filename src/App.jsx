@@ -6,7 +6,7 @@ import Footer from './components/Footer'
 
 const App = () => {
   return (
-    <div className=' text-white w-full h-full overflow-x-hidden'>
+    <div className=' text-white w-full h-full '>
       <Navbar/>
       <LandingPage/>
       <Footer/>

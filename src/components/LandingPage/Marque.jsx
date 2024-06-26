@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 
 const Marque = () => {
   return (
-    <div className='my-[120px] '>
+    <div className='my-[120px] overflow-x-hidden'>
         <motion.div
             initial={{ x: '-0.5%' }}
           animate={{ x: "-100%" }}
