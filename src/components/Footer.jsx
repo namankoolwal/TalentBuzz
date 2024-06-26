@@ -3,7 +3,7 @@ import footerimg from '../assets/images/footerimg.svg'
 
 const Footer = () => {
   return (
-    <div className='bg-[#0A0A0A] w-full py-7'>
+    <div className='bg-[#0A0A0A] w-full pt-7'>
         <div className='flex flex-col items-center justify-center gap-5'>
             <div className="top flex gap-10 text-[0.825rem] pb-10 px-[5vw]  items-start justify-evenly">
                 <div className='first w-[20%]  flex flex-col'>
@@ -57,8 +57,10 @@ const Footer = () => {
                 </div>
                 
             </div>
-            <div className='bottom w-full px-[3.8vw]'>
-                <img src={footerimg} alt="footerimg" />
+            <div className='bottom w-full px-[3.8vw] text-center'>
+                {/* <img src={footerimg} alt="footerimg" /> */}
+                <span className='text-[210px] text-[#2C2C2C] '>talentbuzzz</span>
+
             </div>
         </div>
     </div>
