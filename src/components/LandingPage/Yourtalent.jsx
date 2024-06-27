@@ -130,3 +130,54 @@ export default Yourtalent;
                     </div>
                 </div> */
 }
+
+
+
+
+
+// 
+
+
+
+
+
+
+{/* <div className="details h-screen flex flex-col justify-center w-[40vw] ml-auto text-white text-3xl font-extrabold">
+          <motion.div
+               ref={targetRef}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ amount: "all" }}
+              transition={{ duration: 0.5, ease: 'easeInOut' }}
+              style={{ translateY: translateY }}
+              className="carddiv w-full flex flex-col gap-5 "
+            >
+              <h4 className="text-[3rem]">Watch Short Videos</h4>
+              <div>
+                <p className="text-[1.5rem] md:text-[0.857rem] md:w-1/2">
+                  Browse and watch artist showcase videos and get the quality
+                  entertainment you wished for.
+                </p>
+              </div>
+              <div className="">
+                <button className="border border-[#EFAA76] px-5 py-2 rounded-md">
+                  Watch Now
+                </button>
+              </div>
+            </motion.div>
+          </div> */}
+
+
+
+          // *******************************
+
+
+
+          {/* ****************************************** */}
+            {/* <div className="photo absolute w-full h-full">
+              <img
+                src="http://static.showit.co/800/137NFxuzSxeyjlons2WEzA/59514/pexels-yan-5793643.jpg"
+                alt="img-2"
+                className="h-full w-full"
+              />
+            </div> */}

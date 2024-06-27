@@ -8,6 +8,7 @@ import TalentShine from './TalentShine'
 import Buzz from './Buzz'
 import Faq from './Faq'
 import Yourtalent from './Yourtalent'
+import YourtalentTwo from './YourtalentTwo'
 
 const LandingPage = () => {
   return (
@@ -17,6 +18,7 @@ const LandingPage = () => {
       <HelpArtists/>
       <WhyChose/>
       <Yourtalent/>
+      {/* <YourtalentTwo/> */}
       <Testimonials/>
       <TalentShine/>
       <Buzz/>
