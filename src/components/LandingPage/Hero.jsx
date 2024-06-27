@@ -6,10 +6,10 @@ import bg from '../../assets/images/Landingpage/hero/bg.png'
 const Hero = () => {
   return (
     <div className='relative px-[5.5vw] my-[120px] z-[10]  '>
-      <div className="hero flex items-start gap-3 justify-between relative z-[10] ">
-        <div className='left w-[50%] flex flex-col gap-[24px]'>
+      <div className="hero flex flex-col-reverse md:flex-row py-5 items-start gap-20 md:gap-3 justify-between relative z-[10] ">
+        <div className='left md:w-[50%] flex flex-col gap-[24px]'>
 
-          <h1 className='font-bold text-[2.5rem] md:text-[4rem] leading-tight'>
+          <h1 className='font-bold text-[3.5rem] md:text-[4rem] leading-tight'>
             <div>Let Your
               <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#7E317A] via-[#DB4469] to-[#EFAA76] '> Talent</span>
             </div>
@@ -18,7 +18,7 @@ const Hero = () => {
           <p className='text-[1.25rem]'>In a world brimming with diversity and uniqueness, every individual possesses a unique set of talents waiting to be discovered.. It's an invitation to uncover and showcase the remarkable abilities that lie within each of us.</p>
           <button className='bg-[#DB4469] text-white w-fit mt-[16px] px-3 py-2 rounded-md flex items-center justify-between gap-3'>Book Now <FaArrowRightLong /></button>
         </div>
-        <div className='right w-[50%] flex flex-col gap-20'>
+        <div className='right md:w-[50%] flex flex-col items-center gap-20'>
           <div>
             <img src={right} alt="hero" className='w-full' />
           </div>

@@ -10,7 +10,7 @@ const Marque = () => {
           transition={{ ease: "linear", repeat: Infinity, duration: 7 }}
          className='flex gap-10 whitespace-nowrap'>
         {["Professional artists" , "Content Creaters" , "Musicians" , "Professional Dancers" , "Actors" , "Influencers" , "Professional artists" , "Content Creaters" , "Musicians" , "Professional Dancers" , "Actors" , "Influencers" ].map((item,index) => (
-                <span key={index} className='text-[#C63054] bg-[#FEFEFF] px-9 py-2 rounded-full'>{item}</span>
+                <span key={index} className='text-[#C63054] text-[1.25rem] md:text-[1rem] bg-[#FEFEFF] px-9 py-2 rounded-full'>{item}</span>
         ))}
         </motion.div>
     </div>
