@@ -4,8 +4,8 @@ import testimonials from '../../assets/images/Landingpage/Testimonials/testimoni
 
 const Testimonials = () => {
   return (
-    <div className='px-[3.5vw] mt-[120px] min-h-screen w-full'>
-        <div className='flex flex-col justify-center items-center gap-10'>
+    <div className='px-[3.5vw] mt-[120px] mb-[120px] md:mb-[0px] md:min-h-screen w-full '>
+        <div className='flex flex-col justify-center items-center gap-10 '>
             <div className='flex flex-col justify-center items-center gap-[1rem]'>
                 <h2 className='font-semibold text-[4rem]'>Testimonials</h2>
                 <p className='text-[1.5rem] w-[60%] text-center'>Where Artistry Meets Innovation: Hear What Our Artists and Creators Have to Say!</p>

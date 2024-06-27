@@ -31,7 +31,7 @@ const Yourtalent = () => {
 
       <div className="w-full relative mt-40 h-full ">
         {/* ************************************************************* */}
-        <div className="flex items-start flex-col-reverse md:flex-row px-5 my-20 h-[120vh] md:h-[220vh] ">
+        <div className="flex items-start flex-col-reverse md:flex-row px-5 my-20 h-[150vh] md:h-[220vh] ">
           <div className="h-full w-full md:w-1/2 flex items-end md:items-center relative ">
             <motion.div
               ref={targetRef}
@@ -44,25 +44,25 @@ const Yourtalent = () => {
             >
               <h4 className="text-[3rem]">Watch Short Videos</h4>
               <div>
-                <p className="text-[0.857rem] w-1/2">
+                <p className="text-[1.5rem] md:text-[0.857rem] md:w-1/2">
                   Browse and watch artist showcase videos and get the quality
                   entertainment you wished for.
                 </p>
               </div>
-              <div>
+              <div className="">
                 <button className="border border-[#EFAA76] px-5 py-2 rounded-md">
                   Watch Now
                 </button>
               </div>
             </motion.div>
           </div>
-          <div className="imagediv w-full md:w-1/2 h-full md:h-fit sticky top-0 flex items-start justify-center md:justify-end ">
-            <img src={img1} alt="img1" className="w-[60%] " />
+          <div className="imagediv w-full md:w-1/2 h-full md:h-fit sticky top-0 flex items-start justify-center md:justify-end  ">
+            <img src={img1} alt="img1" className="w-[82%] md:w-[60%] " />
           </div>
         </div>
 
         {/* ************************************************************* */}
-        <div className="flex items-start flex-col-reverse md:flex-row px-5 my-20 h-[120vh] md:h-[220vh]">
+        <div className="flex items-start flex-col-reverse md:flex-row px-5 my-20 mt-[40vh] md:mt-20  h-[150vh] md:h-[220vh]">
           <div className="h-full w-full md:w-1/2 flex items-end md:items-center  ">
             <motion.div
               ref={targetRef}
@@ -75,7 +75,7 @@ const Yourtalent = () => {
             >
               <h4 className="text-[3rem]">Showcase Portfolio</h4>
               <div>
-                <p className="text-[0.857rem] w-1/2">
+                <p className="text-[1.5rem] md:text-[0.857rem] md:w-1/2">
                   Professional profiles with videos, portfolios, and reviews.
                 </p>
               </div>
@@ -87,7 +87,7 @@ const Yourtalent = () => {
             </motion.div>
           </div>
           <div className="imagediv w-full md:w-1/2 h-full md:h-fit sticky top-0 flex items-start justify-center md:justify-end ">
-            <img src={img2} alt="img1" className="w-[60%]" />
+            <img src={img2} alt="img1" className="w-[82%] md:w-[60%] " />
           </div>
         </div>
       </div>
@@ -97,19 +97,12 @@ const Yourtalent = () => {
 
 export default Yourtalent;
 
+{
+  /* ********************************************************************************* */
+}
 
-
-
-
-
-
-
-
-
-
-{/* ********************************************************************************* */}
-
-                {/* <div className='flex items-start flex-col-reverse md:flex-row px-5 my-20 h-[120vh] md:h-[220vh] bg-red-400'>
+{
+  /* <div className='flex items-start flex-col-reverse md:flex-row px-5 my-20 h-[120vh] md:h-[220vh] bg-red-400'>
 
                     <div className='h-full w-full md:w-1/2 flex items-end md:items-center bg-blue-300'>
                         <motion.div ref={targetRef}
@@ -135,4 +128,5 @@ export default Yourtalent;
 
                         <img src={img2} alt="img2" className='w-[60%] bg-red-200' />
                     </div>
-                </div> */}
+                </div> */
+}
