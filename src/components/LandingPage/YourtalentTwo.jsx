@@ -35,7 +35,7 @@ const YourtalentTwo = () => {
                 pin: ".rightblock",
                 animation: animation,
                 scrub: true,
-                markers: true,
+                // markers: true,
             });
 
             ScrollTrigger.create({
@@ -44,7 +44,7 @@ const YourtalentTwo = () => {
                 end: "bottom bottom",
                 animation: animation2,
                 scrub: true,
-                markers: true,
+                // markers: true,
             });
         });
 
@@ -106,7 +106,7 @@ const YourtalentTwo = () => {
 
                     <span className="border-2 absolute z-10 border-zinc-700 bg-black w-20 h-2 rounded-br-xl rounded-bl-xl">      
                         </span>
-                    {/* <div className="relative w-full h-full  overflow-hidden rounded-3xl ">
+                    <div className="relative w-full h-full  overflow-hidden rounded-3xl ">
                         <div className="photo absolute w-full h-full flex items-start justify-center">
                             <img
                                 src={img1}
@@ -119,7 +119,7 @@ const YourtalentTwo = () => {
                         <div className="photo absolute w-full h-full flex items-start justify-center">
                             <img src={img2} alt="img1" className="w-[100%] h-full rounded-3xl  object-cover scale-[1.35]" />
                         </div>
-                        </div> */}
+                        </div>
 
                         <span className="absolute  -right-[14px] top-14 border-2 border-zinc-800  h-7 rounded-md"></span>
                         <span className="absolute -right-[14px] top-36 border-2 border-zinc-800  h-10 rounded-md"></span>

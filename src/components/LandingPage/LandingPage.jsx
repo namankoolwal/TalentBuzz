@@ -17,8 +17,8 @@ const LandingPage = () => {
       <Marque/>
       <HelpArtists/>
       <WhyChose/>
-      <Yourtalent/>
-      {/* <YourtalentTwo/> */}
+      {/* <Yourtalent/> */}
+      <YourtalentTwo/>
       <Testimonials/>
       <TalentShine/>
       <Buzz/>
