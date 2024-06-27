@@ -9,8 +9,6 @@ import { motion, useScroll, useTransform } from "framer-motion";
 gsap.registerPlugin(ScrollTrigger);
 
 const YourtalentTwo = () => {
-
-
     useEffect(() => {
         let ctx = gsap.context(() => {
             gsap.set(".photo:not(:first-child)", { opacity: 1, y: 1000 });
@@ -29,8 +27,6 @@ const YourtalentTwo = () => {
                 duration: 1,
                 stagger: 1,
             });
-
-
 
             ScrollTrigger.create({
                 trigger: ".gallery",
@@ -71,9 +67,8 @@ const YourtalentTwo = () => {
                 </div>
             </div>
             <div className=" gallery mt-40 flex">
-
-                <div className="left w-1/2 ml-auto bg-red-500">
-                    <div className="details bg-green-400 h-screen flex flex-col justify-center w-full ml-auto text-white gap-5">
+                <div className="left w-1/2 ml-auto ">
+                    <div className="details  h-screen flex flex-col justify-center w-full ml-auto text-white gap-5">
                         <h4 className="text-[3rem]">Watch Short Videos</h4>
                         <div>
                             <p className="text-[1.5rem] md:text-[0.857rem] md:w-1/2">
@@ -105,23 +100,70 @@ const YourtalentTwo = () => {
                     </div>
 
                     {/* *********************************** */}
-
-
                 </div>
-                <div className="rightblock w-1/2  h-screen flex flex-col justify-center items-end bg-green-500">
-                    <div className="relative w-[40vw]  h-[40vw] border-2 border-red-400 overflow-hidden">
+                <div className="rightblock w-1/2  h-screen flex flex-col justify-center items-end pr-10">
+                    <div className="relative w-[20vw]  h-[40vw] flex justify-center border-[4px] border-zinc-700 rounded-3xl outline outline-4 outline-zinc-900 ring-offset-2 ring-4 ring-offset-zinc-700 ring-zinc-800 ">
+
+                    <span className="border-2 absolute z-10 border-zinc-700 bg-black w-20 h-2 rounded-br-xl rounded-bl-xl">      
+                        </span>
+                    {/* <div className="relative w-full h-full  overflow-hidden rounded-3xl ">
                         <div className="photo absolute w-full h-full flex items-start justify-center">
-                            <img src={img1} alt="img1" className="w-[60%] h-full object-cover bg-blue-300" />
+                            <img
+                                src={img1}
+                                alt="img1"
+                                className="w-full h-full rounded-3xl  object-fill scale-[1.35]"
+                            />
                         </div>
-                        {/* ******************************************* */}
+                       
 
                         <div className="photo absolute w-full h-full flex items-start justify-center">
-                            <img src={img2} alt="img1" className="w-[82%] md:w-[60%] " />
+                            <img src={img2} alt="img1" className="w-[100%] h-full rounded-3xl  object-cover scale-[1.35]" />
                         </div>
+                        </div> */}
 
-
-
+                        <span className="absolute  -right-[14px] top-14 border-2 border-zinc-800  h-7 rounded-md"></span>
+                        <span className="absolute -right-[14px] top-36 border-2 border-zinc-800  h-10 rounded-md"></span>
                     </div>
+
+
+
+
+
+
+                    {/* <div
+                        className="relative w-[20vw]  h-[40vw] flex justify-center   border-4 border-black rounded-2xl "
+                        
+                    >
+                        <span className="border border-black bg-black w-20 h-2 rounded-br-xl rounded-bl-xl">      
+                        </span>
+                            
+                        <div className="photo rounded-2xl absolute w-full h-full flex items-start justify-center bg-red-400">
+                                <img
+                                    src={img1}
+                                    alt="img1"
+                                    className="w-[100%] h-full rounded-2xl  object-cover "
+                                />
+                            </div>
+
+                            <div className="photo rounded-2xl absolute w-full h-full flex items-start justify-center">
+                            <img src={img2} alt="img1" className="w-[100%] h-full object-cover " />
+
+                        </div>
+
+
+
+
+                        <span className="absolute -right-2 top-14 border-4 border-black h-7 rounded-md"></span>
+                        <span className="absolute -right-2 top-36 border-4 border-black h-10 rounded-md"></span>
+                        
+                    </div> */}
+
+
+
+
+
+
+
                 </div>
             </div>
         </div>
@@ -129,3 +171,6 @@ const YourtalentTwo = () => {
 };
 
 export default YourtalentTwo;
+
+
+
