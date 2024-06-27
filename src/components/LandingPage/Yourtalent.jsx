@@ -32,7 +32,7 @@ const Yourtalent = () => {
       <div className="w-full relative mt-40 h-full ">
         {/* ************************************************************* */}
         <div className="flex items-start flex-col-reverse md:flex-row px-5 my-20 h-[120vh] md:h-[220vh] ">
-          <div className="h-full w-full md:w-1/2 flex items-end md:items-center ">
+          <div className="h-full w-full md:w-1/2 flex items-end md:items-center relative ">
             <motion.div
               ref={targetRef}
               initial={{ opacity: 0 }}
@@ -56,7 +56,7 @@ const Yourtalent = () => {
               </div>
             </motion.div>
           </div>
-          <div className="imagediv w-full md:w-1/2  sticky top-0 flex justify-center md:justify-end bg-[#181818]">
+          <div className="imagediv w-full md:w-1/2 h-full md:h-fit sticky top-0 flex items-start justify-center md:justify-end ">
             <img src={img1} alt="img1" className="w-[60%] " />
           </div>
         </div>
@@ -86,7 +86,7 @@ const Yourtalent = () => {
               </div>
             </motion.div>
           </div>
-          <div className="imagediv w-full md:w-1/2  sticky top-0 flex justify-center md:justify-end bg-[#181818]">
+          <div className="imagediv w-full md:w-1/2 h-full md:h-fit sticky top-0 flex items-start justify-center md:justify-end ">
             <img src={img2} alt="img1" className="w-[60%]" />
           </div>
         </div>
