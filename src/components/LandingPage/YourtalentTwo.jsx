@@ -124,46 +124,6 @@ const YourtalentTwo = () => {
                         <span className="absolute  -right-[14px] top-14 border-2 border-zinc-800  h-7 rounded-md"></span>
                         <span className="absolute -right-[14px] top-36 border-2 border-zinc-800  h-10 rounded-md"></span>
                     </div>
-
-
-
-
-
-
-                    {/* <div
-                        className="relative w-[20vw]  h-[40vw] flex justify-center   border-4 border-black rounded-2xl "
-                        
-                    >
-                        <span className="border border-black bg-black w-20 h-2 rounded-br-xl rounded-bl-xl">      
-                        </span>
-                            
-                        <div className="photo rounded-2xl absolute w-full h-full flex items-start justify-center bg-red-400">
-                                <img
-                                    src={img1}
-                                    alt="img1"
-                                    className="w-[100%] h-full rounded-2xl  object-cover "
-                                />
-                            </div>
-
-                            <div className="photo rounded-2xl absolute w-full h-full flex items-start justify-center">
-                            <img src={img2} alt="img1" className="w-[100%] h-full object-cover " />
-
-                        </div>
-
-
-
-
-                        <span className="absolute -right-2 top-14 border-4 border-black h-7 rounded-md"></span>
-                        <span className="absolute -right-2 top-36 border-4 border-black h-10 rounded-md"></span>
-                        
-                    </div> */}
-
-
-
-
-
-
-
                 </div>
             </div>
         </div>
