@@ -7,7 +7,7 @@ const WhyChoose = () => {
   return (
     <div className='px-[5.5vw] my-[120px] h-screen'>
       <div className='flex flex-col items-center gap-[40px] md:gap-[2.5rem] h-full'>
-        <h2 className='text-[4rem]'>Why Choose <span className='text-[#EFAA76]'>Talentbuzzz</span></h2>
+        <h2 className='text-[3rem] md:text-[4rem]'>Why Choose <span className='text-[#EFAA76]'>Talentbuzzz</span></h2>
         <div className='cardContainer flex-col md:flex-row flex items-center gap-20 md:gap-10 h-[28rem] '>
         {/* ********** */}
           <div className='card gradient-border p-8 h-full w-full'>
