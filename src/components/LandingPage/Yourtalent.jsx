@@ -16,7 +16,7 @@ const Yourtalent = () => {
         <div className='bg-[#181818] px-[5.5vw] py-20 my-[120px] min-h-screen w-full'>
             <div className='flex items-end '>
                 <div className='left w-[41%] '>
-                    <h2 className='text-[4rem] font-semibold leading-tight'>Your Talent Searching Hub</h2>
+                    <h2 className='text-[2.5rem] md:text-[4rem] font-semibold leading-tight'>Your Talent Searching Hub</h2>
                 </div>
 
                 <div className='right w-[55%] pb-5 text-[#EFAA76] '>

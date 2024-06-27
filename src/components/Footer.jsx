@@ -59,7 +59,7 @@ const Footer = () => {
             </div>
             <div className='bottom w-full px-[3.8vw] text-center'>
                 {/* <img src={footerimg} alt="footerimg" /> */}
-                <span className='text-[210px] text-[#2C2C2C] '>talentbuzzz</span>
+                <span className='text-[15.544vw] text-[#2C2C2C] '>talentbuzzz</span>
 
             </div>
         </div>

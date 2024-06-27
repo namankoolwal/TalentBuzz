@@ -58,3 +58,9 @@ html{
     z-index: 2;
     border-radius: 2.5em;
   }
+
+  @media screen and (max-width: 768px){
+    html{
+      font-size: 8px;
+    }
+  }

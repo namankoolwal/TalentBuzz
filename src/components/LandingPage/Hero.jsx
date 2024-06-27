@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="hero flex items-start gap-3 justify-between relative z-[10] ">
         <div className='left w-[50%] flex flex-col gap-[24px]'>
 
-          <h1 className='font-bold text-[4rem] leading-tight'>
+          <h1 className='font-bold text-[2.5rem] md:text-[4rem] leading-tight'>
             <div>Let Your
               <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#7E317A] via-[#DB4469] to-[#EFAA76] '> Talent</span>
             </div>
