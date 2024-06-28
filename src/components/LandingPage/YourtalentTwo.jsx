@@ -2,8 +2,9 @@ import React from "react";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import img1 from "../../assets/images/Landingpage/Yourtalent/img1.svg";
-import img2 from "../../assets/images/Landingpage/Yourtalent/img2.svg";
+import img1 from "../../assets/images/Landingpage/Yourtalent/img1.png";
+import img2 from "../../assets/images/Landingpage/Yourtalent/img2.png";
+
 import { motion, useScroll, useTransform } from "framer-motion";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -111,13 +112,13 @@ const YourtalentTwo = () => {
                             <img
                                 src={img1}
                                 alt="img1"
-                                className="w-full h-full rounded-3xl  object-fill scale-[1.35]"
+                                className="w-full h-full rounded-3xl  object-fill "
                             />
                         </div>
                        
 
                         <div className="photo absolute w-full h-full flex items-start justify-center">
-                            <img src={img2} alt="img1" className="w-[100%] h-full rounded-3xl  object-cover scale-[1.35]" />
+                            <img src={img2} alt="img2" className="w-[100%] h-full rounded-2xl   " />
                         </div>
                         </div>
 

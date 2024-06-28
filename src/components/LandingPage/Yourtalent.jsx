@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import img1 from "../../assets/images/Landingpage/Yourtalent/img1.svg";
-import img2 from "../../assets/images/Landingpage/Yourtalent/img2.svg";
+import img1 from "../../assets/images/Landingpage/Yourtalent/img1.png";
+import img2 from "../../assets/images/Landingpage/Yourtalent/img2.png";
 
 const Yourtalent = () => {
   const targetRef = useRef(null);
