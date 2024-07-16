@@ -2,8 +2,9 @@ import React from "react";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import img1 from "../../assets/images/Landingpage/Yourtalent/img1.svg";
-import img2 from "../../assets/images/Landingpage/Yourtalent/img2.svg";
+import img1 from "../../assets/images/Landingpage/Yourtalent/img1.png";
+import img2 from "../../assets/images/Landingpage/Yourtalent/img2.png";
+
 import { motion, useScroll, useTransform } from "framer-motion";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -66,9 +67,9 @@ const YourtalentTwo = () => {
                     </div>
                 </div>
             </div>
-            <div className=" gallery mt-40 flex">
-                <div className="left w-1/2 ml-auto ">
-                    <div className="details  h-screen flex flex-col justify-center w-full ml-auto text-white gap-5">
+            <div className=" gallery mt-40 flex flex-col-reverse md:flex-row">
+                <div className="left w-full md:w-1/2 ml-auto ">
+                    <div className="details h-screen flex flex-col justify-center w-full ml-auto text-white gap-5">
                         <h4 className="text-[3rem]">Watch Short Videos</h4>
                         <div>
                             <p className="text-[1.5rem] md:text-[0.857rem] md:w-1/2">
@@ -85,7 +86,7 @@ const YourtalentTwo = () => {
 
                     {/*************************  */}
 
-                    <div className="details h-screen flex flex-col justify-center w-full ml-auto text-white gap-5">
+                    <div className=" details h-screen flex flex-col justify-center w-full ml-auto text-white gap-5">
                         <h4 className="text-[3rem]">Showcase Portfolio</h4>
                         <div>
                             <p className="text-[1.5rem] md:text-[0.857rem] md:w-1/2">
@@ -101,8 +102,8 @@ const YourtalentTwo = () => {
 
                     {/* *********************************** */}
                 </div>
-                <div className="rightblock w-1/2  h-screen flex flex-col justify-center items-end pr-10">
-                    <div className="relative w-[20vw]  h-[40vw] flex justify-center border-[4px] border-zinc-700 rounded-3xl outline outline-4 outline-zinc-900 ring-offset-2 ring-4 ring-offset-zinc-700 ring-zinc-800 ">
+                <div className="rightblock bg-[#181818] w-full md:w-1/2 md:h-screen flex flex-col justify-center items-center md:items-end md:pr-10">
+                    <div className="my-24 md:my-0  relative w-[50vw] md:w-[20vw] h-[100vw] md:h-[40vw] flex justify-center border-[4px] border-zinc-700 rounded-3xl outline outline-4 outline-zinc-900 ring-offset-2 ring-4 ring-offset-zinc-700 ring-zinc-800 ">
 
                     <span className="border-2 absolute z-10 border-zinc-700 bg-black w-20 h-2 rounded-br-xl rounded-bl-xl">      
                         </span>
@@ -111,13 +112,13 @@ const YourtalentTwo = () => {
                             <img
                                 src={img1}
                                 alt="img1"
-                                className="w-full h-full rounded-3xl  object-fill scale-[1.35]"
+                                className="w-full h-full rounded-3xl  object-fill "
                             />
                         </div>
                        
 
                         <div className="photo absolute w-full h-full flex items-start justify-center">
-                            <img src={img2} alt="img1" className="w-[100%] h-full rounded-3xl  object-cover scale-[1.35]" />
+                            <img src={img2} alt="img2" className="w-[100%] h-full rounded-2xl   " />
                         </div>
                         </div>
 
