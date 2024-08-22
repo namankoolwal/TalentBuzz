@@ -58,6 +58,9 @@ html{
     z-index: 2;
     border-radius: 2.5em;
   }
+  .cardcontent{
+    z-index: 5;
+  }
 
   @media screen and (max-width: 768px){
     html{

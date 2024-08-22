@@ -1,7 +1,9 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import { FaArrowRightLong } from "react-icons/fa6";
 import right from '../../assets/images/Landingpage/hero/right.png'
 import bg from '../../assets/images/Landingpage/hero/bg.png'
+import ModelParent from '../FeaturesPage/ModelParent';
 
 const Hero = () => {
   return (
@@ -15,8 +17,8 @@ const Hero = () => {
             </div>
             <div>Be Seen.</div>
           </h1>
-          <p className='text-[1.25rem]'>In a world brimming with diversity and uniqueness, every individual possesses a unique set of talents waiting to be discovered.. It's an invitation to uncover and showcase the remarkable abilities that lie within each of us.</p>
-          <button className='bg-[#DB4469] text-white w-fit mt-[16px] px-3 py-2 rounded-md flex items-center justify-between gap-3'>Book Now <FaArrowRightLong /></button>
+          <p className='text-[1.25rem]'>In a world full of diverse and unique people, everyone has special talents just waiting to be discovered. Talentbuzzz invites both artists to showcase their amazing abilities and users to uncover the perfect talent for their needs.</p>
+          <button className='text-white w-fit mt-[16px] px-5 py-2 rounded-full flex items-center justify-between gap-3 bg-gradient-to-l from-[#DB4469] to-[#0266FF] '><ModelParent text={"Inquire Now"}/></button>
         </div>
         <div className='right md:w-[50%] flex flex-col items-center gap-20'>
           <div>

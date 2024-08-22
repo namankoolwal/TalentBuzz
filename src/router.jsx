@@ -2,13 +2,15 @@
 import { Route , createBrowserRouter, createRoutesFromElements ,useRouteError  } from "react-router-dom";
 import Layout from "./Layout";
 import LandingPage from "./components/LandingPage/LandingPage";
+// import Model from "./components/FeaturesPage/Model";
+import ModelParent from "./components/FeaturesPage/ModelParent";
 
 
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path="/" element={<Layout />}>
             <Route path="" element={<LandingPage/>} />
-            <Route path="features" element={<> <div>Hello features</div></>} />
+            <Route path="features" element={<ModelParent text={"model to toogle"}/>} />
             <Route path="about" element={<> <div>Hello about</div></>} />
             <Route path="contact" element={<> <div>Hello contact</div></>} />
 
