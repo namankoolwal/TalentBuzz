@@ -1,6 +1,5 @@
-import React from 'react'
 import { RiDownload2Fill } from "react-icons/ri";
-import { IoIosArrowDown } from "react-icons/io";
+// import { IoIosArrowDown } from "react-icons/io";
 import logo from '../assets/images/logo.png'
 
 const Navbar = () => {
@@ -9,9 +8,9 @@ const Navbar = () => {
         <div>
             <div className="logo flex items-center justify-between">
                 <img src={logo} alt="logo" className='w-[11vw]' />
-                <button className='flex items-center gap-1'>Features <IoIosArrowDown /></button>
-                <button className='flex items-center gap-1'>About Us <IoIosArrowDown /></button>
-                <button className='flex items-center gap-1'>Contact Us <IoIosArrowDown /></button>
+                <button className='flex items-center gap-1'>Features </button>
+                <button className='flex items-center gap-1'>About Us </button>
+                <button className='flex items-center gap-1'>Contact Us </button>
                 <button className='flex items-center gap-2 bg-[#0E78F3] px-2 py-2 rounded-md'>Download Now <span className='font-semibold text-[1.618vw]'><RiDownload2Fill /></span></button>
             </div>
 

@@ -1,9 +1,7 @@
-import React from 'react'
 import Hero from './Hero'
 import Marque from './Marque'
 import HelpArtists from './HelpArtists'
 import WhyChose from './WhyChoose'
-import Testimonials from './Testimonials'
 import TalentShine from './TalentShine'
 import Buzz from './Buzz'
 import Faq from './Faq'
@@ -17,7 +15,6 @@ const LandingPage = () => {
       <HelpArtists/>
       <WhyChose/>
       <YourtalentTwo/>
-      <Testimonials/>
       <TalentShine/>
       <Buzz/>
       <Faq/>
