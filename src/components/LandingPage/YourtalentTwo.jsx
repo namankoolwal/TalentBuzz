@@ -13,7 +13,7 @@ const YourtalentTwo = () => {
     useEffect(() => {
         let ctx = gsap.context(() => {
             gsap.set(".photo:not(:first-child)", { opacity: 1, y: 1200 });
-            gsap.set(".details", { opacity: 1, y: 400 });
+            gsap.set(".details", { opacity: 0, y: 400 });
 
             const animation = gsap.to(".photo:not(:first-child)", {
                 opacity: 1,
@@ -48,16 +48,18 @@ const YourtalentTwo = () => {
                 // markers: true,
             });
 
-            ScrollTrigger.create({
-                trigger: ".details:not(:first-child)", // Second section (Connect)
-                start: "top bottom",
-                end: "bottom center",
-                onEnter: () => gsap.to(".backgroundChange", { backgroundColor: "black" }),
-                // onLeave: () => gsap.to(".backgroundChange", { backgroundColor: "#181818" }),
-                // onEnterBack: () => gsap.to(".backgroundChange", { backgroundColor: "black" }),
-                onLeaveBack: () => gsap.to(".backgroundChange", { backgroundColor: "#181818" }),
-                // markers: true,
-            });
+            // ScrollTrigger.create({
+            //     trigger: ".details:not(:first-child)", // Second section (Connect)
+            //     start: "top bottom",
+            //     end: "bottom center",
+            //     onEnter: () => gsap.to(".backgroundChange", { backgroundColor: "black" }),
+            //     // onLeave: () => gsap.to(".backgroundChange", { backgroundColor: "#181818" }),
+            //     // onEnterBack: () => gsap.to(".backgroundChange", { backgroundColor: "black" }),
+            //     onLeaveBack: () => gsap.to(".backgroundChange", { backgroundColor: "#181818" }),
+            //     // markers: true,
+            // });
+
+            
         });
 
         return () => ctx.revert();
@@ -128,7 +130,7 @@ const YourtalentTwo = () => {
 
                     {/* *********************************** */}
                 </div>
-                <div className="rightblock  w-full md:w-1/2 md:h-screen flex flex-col justify-center items-center md:items-end md:pr-10">
+                <div className="rightblock backgroundChange bg-[#181818] w-full md:w-1/2 md:h-screen flex flex-col justify-center items-center md:items-end md:pr-10">
                     <div className="my-24 md:my-0  relative w-[50vw] md:w-[20vw] h-[100vw] md:h-[40vw] flex justify-center border-[4px] border-zinc-700 rounded-3xl outline outline-4 outline-zinc-900 ring-offset-2 ring-4 ring-offset-zinc-700 ring-zinc-800 ">
 
                     <span className="border-2 absolute z-10 border-zinc-700 bg-black w-20 h-2 rounded-br-xl rounded-bl-xl">      
