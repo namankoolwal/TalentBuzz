@@ -53,9 +53,7 @@ const ModelParent = ({ text }) => {
                           className={`inline-block p-4 rounded-t-lg ${formType === "artist" &&  'text-[#CF4672]'} `}
                          
                           type="button"
-                          role="tab"
-                          aria-controls="profile"
-                          aria-selected="false"
+                          
                           onClick={()=>setFormType("artist")}
                         >
                           As Artist
@@ -67,9 +65,7 @@ const ModelParent = ({ text }) => {
                           className={`inline-block p-4 rounded-t-lg ${formType === "user" &&  'text-[#CF4672]'}`}
                          
                           type="button"
-                          role="tab"
-                          aria-controls="dashboard"
-                          aria-selected="false"
+                          
                           onClick={()=>setFormType("user")}
                         >
                           As User
@@ -80,7 +76,7 @@ const ModelParent = ({ text }) => {
                   <div id="default-styled-tab-content">
                     <div className="">
 
-                    {formType === "artist" ? <>This is Artist model <ArtistModel/> </> : <><UserModel/> </>}
+                    {formType === "artist" ? <><ArtistModel/> </> : <><UserModel/> </>}
                       
                     </div>
                    
@@ -93,8 +89,8 @@ const ModelParent = ({ text }) => {
 
                 <div className="flex items-start justify-between rounded-t absolute right-0 top-0.5">
                 
-                <button type="button" className="text-gray-600 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-full text-sm w-7 h-7 ml-auto inline-flex justify-center items-center " onClick={()=>setShow(false)}>
-                    <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                <button type="button" className="text-gray-600 bg-transparent bg-gray-200 hover:bg-gray-300 hover:text-gray-900 rounded-full text-sm w-9 h-9 ml-auto inline-flex justify-center items-center " onClick={()=>setShow(false)}>
+                    <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
                         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
                     </svg>
                     <span className="sr-only">Close modal</span>

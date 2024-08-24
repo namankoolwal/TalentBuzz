@@ -39,7 +39,7 @@ const Faq = () => {
     };
 
     return (
-        <div className='px-[5.5vw] my-[120px] w-full'>
+        <div className='px-[5.5vw] my-[60px] md:my-[120px] w-full'>
             <div className='border-4 border-[#b8b0b0] rounded-lg flex flex-col-reverse md:flex-row gap-10 h-full justify-center p-5'>
                 <div className='faqLeft md:w-[60%] flex flex-col gap-5 p-5'>
                     <h2 className='text-[4rem] font-semibold'>FAQs</h2>

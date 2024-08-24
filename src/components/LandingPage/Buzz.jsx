@@ -16,7 +16,7 @@ const Buzz = () => {
     }
 
     return (
-        <div className='px-[5.5vw] my-[120px] w-full'>
+        <div className='px-[5.5vw] my-[60px] md:my-[120px] w-full'>
             <div className='flex flex-col items-center gap-[2.5rem]'>
                 <div className='flex flex-col items-center justify-center'>
                     <h2 className='font-semibold text-[4rem] '>Create your <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#7E317A] from-[0%] via-[#DB4469] via-[81%] to-[#EFAA76]/50 to-[98%]'>Buzz</span></h2>

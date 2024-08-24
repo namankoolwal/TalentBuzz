@@ -1,11 +1,23 @@
+import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa6";
 
 const Footer = () => {
   return (
     <div className='bg-[#0A0A0A] w-full pt-7'>
         <div className='flex flex-col items-center justify-center gap-5'>
             <div className="top flex gap-10 text-[0.825rem] pb-10 px-[5vw]  items-start justify-evenly">
-                <div className='first w-[20%]  flex flex-col'>
+                <div className='first w-[20%] md:w-[25%] flex flex-col gap-8'>
                     <p className=' text-balance'>Talentbuzz is one of the India’s largest artists place where they can showcase their unseen talent, watch new skills, grow as an individual and expand their networks.</p>
+                    <div className="socials w-full flex items-center justify-between gap-5 p-2 pl-0">
+                      <span className="bg-white text-black font-bold text-lg p-2 rounded-full"><FaXTwitter /></span>
+                      <span className="bg-white text-black font-bold text-lg p-2 rounded-full"><FaInstagram /></span>
+                      <span className="bg-white text-black font-bold text-lg p-2 rounded-full"><FaLinkedinIn /></span>
+                      <span className="bg-white text-black font-bold text-lg p-2 rounded-full"><FaYoutube /></span>
+                      <span className="bg-white text-black font-bold text-lg p-2 rounded-full"><FaFacebook /></span>
+                    </div>
                 </div>
                 <div className="second list-none space-y-2 flex flex-col">
                     <li className='font-semibold'>COMPANY</li>

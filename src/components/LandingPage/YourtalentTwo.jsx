@@ -13,7 +13,7 @@ const YourtalentTwo = () => {
     useEffect(() => {
         let ctx = gsap.context(() => {
             gsap.set(".photo:not(:first-child)", { opacity: 1, y: 1200 });
-            gsap.set(".details", { opacity: 0, y: 400 });
+            gsap.set(".details>*", { opacity: 0, y: 200  });
 
             const animation = gsap.to(".photo:not(:first-child)", {
                 opacity: 1,
@@ -22,18 +22,17 @@ const YourtalentTwo = () => {
                 stagger: 1,
             });
 
-            const animation2 = gsap.to(".details", {
+            const animation2 = gsap.to(".details>*", {
                 opacity: 1,
                 y: 0,
                 duration: 1,
-                stagger: 1,
+                stagger: 3,
             });
 
             ScrollTrigger.create({
                 trigger: ".gallery",
                 start: "top top",
                 end: "bottom bottom",
-                pin: ".rightblock",
                 animation: animation,
                 scrub: true,
                 // markers: true,
@@ -46,24 +45,27 @@ const YourtalentTwo = () => {
                 animation: animation2,
                 scrub: true,
                 // markers: true,
-            });
-
-            // ScrollTrigger.create({
-            //     trigger: ".details:not(:first-child)", // Second section (Connect)
-            //     start: "top bottom",
-            //     end: "bottom center",
-            //     onEnter: () => gsap.to(".backgroundChange", { backgroundColor: "black" }),
-            //     // onLeave: () => gsap.to(".backgroundChange", { backgroundColor: "#181818" }),
-            //     // onEnterBack: () => gsap.to(".backgroundChange", { backgroundColor: "black" }),
-            //     onLeaveBack: () => gsap.to(".backgroundChange", { backgroundColor: "#181818" }),
-            //     // markers: true,
-            // });
-
+            });      
             
+            
+            // ScrollTrigger.create({
+            //         trigger: ".details:not(:first-child)", // Second section (Connect)
+            //         start: "top bottom",
+            //         end: "bottom center",
+            //         onEnter: () => gsap.to(".backgroundChange", { backgroundColor: "black" }),
+            //         // onLeave: () => gsap.to(".backgroundChange", { backgroundColor: "#181818" }),
+            //         // onEnterBack: () => gsap.to(".backgroundChange", { backgroundColor: "black" }),
+            //         onLeaveBack: () => gsap.to(".backgroundChange", { backgroundColor: "#181818" }),
+            //         // markers: true,
+            //     });
         });
 
         return () => ctx.revert();
     }, []);
+
+
+    
+    
 
     return (
         <div className="backgroundChange bg-[#181818] px-[5.5vw] py-20 my-[120px]">
@@ -80,9 +82,11 @@ const YourtalentTwo = () => {
                     </div>
                 </div>
             </div>
-            <div className=" gallery mt-40 flex flex-col-reverse md:flex-row">
-                <div className="left w-full md:w-1/2 ml-auto ">
-                    <div className="details h-screen font-bold flex flex-col justify-start w-full ml-auto text-white gap-5">
+            <div className=" gallery outline outline-yellow-400 mt-40 flex flex-col-reverse md:flex-row relative">
+                <div className="leftblock h-full w-full md:w-1/2 ml-auto outline outline-violet-200 ">
+                <div className="work-text w-[90%] mx-auto">
+                <div className="details ">
+                    <div className="h-[100vw] md:h-screen font-bold flex flex-col justify-center w-full ml-auto text-white gap-5">
                         <h4 className="text-[1rem] text-[#EFAA76]">DISCOVER</h4>
                         <div>
                             <p className="text-[1.5rem] md:text-[1.35rem] md:w-1/2">
@@ -95,10 +99,10 @@ const YourtalentTwo = () => {
                             </button>
                         </div>
                     </div>
-
+                </div>
                     {/*************************  */}
-
-                    <div className="details  h-screen font-bold flex flex-col justify-start w-full ml-auto text-white gap-5">
+                <div className="details">
+                    <div className="h-[100vw] md:h-screen font-bold flex flex-col justify-center w-full ml-auto text-white gap-5">
                         <h4 className="text-[1rem] text-[#EFAA76]">CONNECT</h4>
                         <div>
                             <p className="text-[1.5rem] md:text-[1.35rem] md:w-1/2">
@@ -111,10 +115,11 @@ const YourtalentTwo = () => {
                             </button>
                         </div>
                     </div>
-
+                </div>
                     {/* *********************************** */}
+                <div className="details ">
 
-                    <div className="details  h-screen font-bold flex flex-col justify-start w-full ml-auto text-white gap-5">
+                    <div className="h-[100vw] md:h-screen font-bold flex flex-col justify-center w-full ml-auto text-white gap-5 ">
                         <h4 className="text-[1rem] text-[#EFAA76]">HIRE</h4>
                         <div>
                             <p className="text-[1.5rem] md:text-[1.35rem] md:w-1/2">
@@ -127,11 +132,13 @@ const YourtalentTwo = () => {
                             </button>
                         </div>
                     </div>
-
-                    {/* *********************************** */}
                 </div>
-                <div className="rightblock backgroundChange bg-[#181818] w-full md:w-1/2 md:h-screen flex flex-col justify-center items-center md:items-end md:pr-10">
-                    <div className="my-24 md:my-0  relative w-[50vw] md:w-[20vw] h-[100vw] md:h-[40vw] flex justify-center border-[4px] border-zinc-700 rounded-3xl outline outline-4 outline-zinc-900 ring-offset-2 ring-4 ring-offset-zinc-700 ring-zinc-800 ">
+                    {/* *********************************** */}
+                    </div>
+                </div>
+                <div className="rightblock backgroundChange bg-[#181818] outline outline-green-400 sticky top-0 md:relative w-full md:w-1/2  flex flex-col justify-start items-center md:items-end md:pr-10">
+                <div className="work-right-bl w-full md:h-screen md:sticky top-0 flex flex-col items-center md:items-end justify-center">
+                    <div className="my-24 relative md:my-0 w-[48vw] md:w-[20vw] h-[100vw] md:h-[40vw] flex justify-center border-[4px] border-zinc-700 rounded-3xl outline outline-4 outline-zinc-900 ring-offset-2 ring-4 ring-offset-zinc-700 ring-zinc-800 ">
 
                     <span className="border-2 absolute z-10 border-zinc-700 bg-black w-20 h-2 rounded-br-xl rounded-bl-xl">      
                         </span>
@@ -150,13 +157,14 @@ const YourtalentTwo = () => {
                         </div>
 
                         <div className="photo absolute w-full h-full flex items-start justify-center">
-                            <img src={img2} alt="img2" className="w-full h-full rounded-3xl  object-fill " />
+                            <img src={img1} alt="img2" className="w-full h-full rounded-3xl  object-fill " />
                         </div>
                         </div>
 
                         <span className="absolute  -right-[14px] top-14 border-2 border-zinc-800  h-7 rounded-md"></span>
                         <span className="absolute -right-[14px] top-36 border-2 border-zinc-800  h-10 rounded-md"></span>
                     </div>
+                </div>    
                 </div>
             </div>
         </div>
