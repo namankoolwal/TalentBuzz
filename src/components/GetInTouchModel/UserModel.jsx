@@ -86,8 +86,8 @@ const UserModel = () => {
             const queryString = new URLSearchParams(formFields).toString();
             const urlWithParams = `${googleFormURL}?${queryString}`;
 
-            console.log("formdata ", formFields)
-            console.log('Submitting form:', urlWithParams);
+            // console.log("formdata ", formFields)
+            // console.log('Submitting form:', urlWithParams);
             fetch(urlWithParams, {
                 method: 'POST',
                 mode: 'no-cors',
@@ -122,7 +122,11 @@ const UserModel = () => {
 
     return (
         <>
-            <ToastContainer theme="dark" />
+            <ToastContainer
+                theme="dark"
+                pauseOnHover={false}
+                pauseOnFocusLoss={false}
+                className="text-xl md:text-base" />
             <div className=' text-black'>
                 <div className='title text-left'>
                     <h3 className='font-[500] text-[1.25rem] text-[#170F49]'>{step === 1 ? 'Personal Details' : 'Event Details'}</h3>

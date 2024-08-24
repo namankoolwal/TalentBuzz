@@ -54,10 +54,6 @@ const ArtistModel = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    // https://docs.google.com/forms/d/e/1FAIpQLSd7m0XHmwVCqTKtdcTW7eSQkBND7Tr_jYrb2v12KzXqoZchXg/viewform?usp=pp_url&entry.1645822644=dfs&entry.1409456964=sdfsd&entry.1162980994=dsfds
-
-
-
     if (validateForm()) {
 
 
@@ -73,8 +69,8 @@ const ArtistModel = () => {
         const queryString = new URLSearchParams(formFields).toString();
         const urlWithParams = `${googleFormURL}?${queryString}`;
 
-        console.log("formdata ", formFields)
-        console.log('Submitting form:', urlWithParams);
+        // console.log("formdata ", formFields)
+        // console.log('Submitting form:', urlWithParams);
         fetch(urlWithParams, {
           method: 'POST',
           mode: 'no-cors',
@@ -107,7 +103,11 @@ const ArtistModel = () => {
   };
   return (
     <>
-      <ToastContainer theme="dark" />
+      <ToastContainer 
+      theme="dark"  
+      pauseOnHover={false}
+      pauseOnFocusLoss={false}
+      className="text-xl md:text-base"/>
       <div className=' text-black'>
         <div className='title text-left'>
           <h3 className='font-[500] text-[1.25rem] text-[#170F49]'> Personal Details</h3>
@@ -147,3 +147,7 @@ const ArtistModel = () => {
 }
 
 export default ArtistModel
+
+
+// https://docs.google.com/forms/d/e/1FAIpQLSd7m0XHmwVCqTKtdcTW7eSQkBND7Tr_jYrb2v12KzXqoZchXg/viewform?usp=pp_url&entry.1645822644=dfs&entry.1409456964=sdfsd&entry.1162980994=dsfds
+
