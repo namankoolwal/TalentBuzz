@@ -3,7 +3,7 @@ import { Route , createBrowserRouter, createRoutesFromElements ,useRouteError  }
 import Layout from "./Layout";
 import LandingPage from "./components/LandingPage/LandingPage";
 // import Model from "./components/FeaturesPage/Model";
-import ModelParent from "./components/FeaturesPage/ModelParent";
+import ModelParent from "./components/GetInTouchModel/ModelParent";
 
 
 const router = createBrowserRouter(

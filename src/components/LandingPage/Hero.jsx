@@ -3,7 +3,7 @@ import React from 'react'
 import { FaArrowRightLong } from "react-icons/fa6";
 import right from '../../assets/images/Landingpage/hero/right.png'
 import bg from '../../assets/images/Landingpage/hero/bg.png'
-import ModelParent from '../FeaturesPage/ModelParent';
+import ModelParent from '../GetInTouchModel/ModelParent';
 
 const Hero = () => {
   return (
