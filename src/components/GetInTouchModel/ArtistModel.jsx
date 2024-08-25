@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import InputField from './InputField';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { SiGoogleforms } from "react-icons/si";
 
 const ArtistModel = () => {
 
@@ -124,7 +125,10 @@ const ArtistModel = () => {
 
             <InputField value={formData.phoneNo} handleChange={handleChange} type="number" name="phoneNo" placeholder="Phone Number" />
 
-            <button className='bg-gray-200 outline-none border-2 border-gray-300 focus:border-gray-400  rounded-md py-1.5 px-3 text-left text-gray-500 text-sm hover:bg-gray-400 hover:text-gray-700' onClick={handleRedirect}> Fill This Form To Join Artist Group &rarr;</button>
+            <button className='bg-[#7349bd] bg-opacity-20 outline-none border-2 border-gray-300 focus:border-gray-400  rounded-md py-1.5 px-3 text-left text-gray-600 text-sm hover:bg-opacity-40 hover:text-gray-700 flex items-center justify-between' onClick={handleRedirect}> Fill This Form To Join Artist Group &rarr; 
+            <SiGoogleforms className='w-5 h-5 '/> 
+            {/* <img src={formicon3d} alt="" className='bg-transparent mix-blend-multiply w-7 h-7' />  */}
+            </button>
 
 
             <div className='flex items-center justify-end'>
@@ -138,7 +142,7 @@ const ArtistModel = () => {
               </button>
             </div>
           </div>
-
+ 
 
         </form>
       </div>

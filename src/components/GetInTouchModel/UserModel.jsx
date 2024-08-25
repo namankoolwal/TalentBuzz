@@ -175,7 +175,7 @@ const UserModel = () => {
                                 <button
                                     type="button"
                                     onClick={handlePrev}
-                                    className='inline-block w-fit bg-[#CF4672] text-white py-2 px-10 rounded hover:bg-[#d84573] transition mt-4'
+                                    className='inline-block w-fit bg-white text-black border-2  py-2 px-10 rounded  transition mt-4'
                                 >
                                     Previous
                                 </button>

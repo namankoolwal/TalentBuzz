@@ -48,16 +48,16 @@ const YourtalentOne = () => {
             });      
             
             
-            ScrollTrigger.create({
-                    trigger: ".details:nth-of-type(2)", // Second section (Connect)
-                    start: "top center",
-                    end: "bottom top",
-                    onEnter: () => gsap.to(".backgroundChange", { backgroundColor: "black" }),
-                    // onLeave: () => gsap.to(".backgroundChange", { backgroundColor: "#181818" }),
-                    // onEnterBack: () => gsap.to(".backgroundChange", { backgroundColor: "black" }),
-                    onLeaveBack: () => gsap.to(".backgroundChange", { backgroundColor: "#181818" }),
-                    // markers: true,
-                });
+            // ScrollTrigger.create({
+            //         trigger: ".details:nth-of-type(2)", // Second section (Connect)
+            //         start: "top center",
+            //         end: "bottom top",
+            //         onEnter: () => gsap.to(".backgroundChange", { backgroundColor: "black" }),
+            //         // onLeave: () => gsap.to(".backgroundChange", { backgroundColor: "#181818" }),
+            //         // onEnterBack: () => gsap.to(".backgroundChange", { backgroundColor: "black" }),
+            //         onLeaveBack: () => gsap.to(".backgroundChange", { backgroundColor: "#181818" }),
+            //         // markers: true,
+            //     });
         });
 
         return () => ctx.revert();
@@ -68,7 +68,7 @@ const YourtalentOne = () => {
     
 
     return (
-        <div className="backgroundChange bg-[#181818] px-[5.5vw] py-20 my-[60px] md:my-[120px]">
+        <div className="backgroundChange bg-black px-[5.5vw] py-20 my-[60px] md:my-[120px]">
             <div className="flex items-end ">
                 <div className="left w-[49%] md:w-[41%] ">
                     <h2 className="text-[2.5rem] md:text-[4rem] font-semibold leading-tight">
@@ -136,7 +136,7 @@ const YourtalentOne = () => {
                     {/* *********************************** */}
                     </div>
                 </div>
-                <div className="rightblock backgroundChange bg-[#181818] sticky top-0 md:relative w-full md:w-1/2  flex flex-col justify-start items-center md:items-end md:pr-10">
+                <div className="rightblock backgroundChange bg-black sticky top-0 md:relative w-full md:w-1/2  flex flex-col justify-start items-center md:items-end md:pr-10">
                 <div className="work-right-bl w-full md:h-screen md:sticky top-0 flex flex-col items-center md:items-end justify-center">
                     <div className="my-24 relative md:my-0 w-[48vw] md:w-[20vw] h-[100vw] md:h-[40vw] flex justify-center border-[4px] border-zinc-700 rounded-3xl outline outline-4 outline-zinc-900 ring-offset-2 ring-4 ring-offset-zinc-700 ring-zinc-800 ">
 
