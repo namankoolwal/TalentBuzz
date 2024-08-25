@@ -6,26 +6,31 @@ import bg from '../../assets/images/Landingpage/hero/bg.png'
 import ModelParent from '../GetInTouchModel/ModelParent';
 
 const Hero = () => {
+  const handelClick = () =>{
+    alert("We Know you are super hyped and can't wait! Hang in there, the excitement is building!")
+  }
   return (
-    <div className='relative px-[5.5vw]  my-[60px] md:my-[120px] z-[10] w-full h-full '>
+    <div className='relative px-[5.5vw]  my-[60px] md:my-[120px] z-[10] w-full h-full'>
       <div className="hero flex flex-col-reverse md:flex-row py-5 items-start gap-20 md:gap-3 justify-between relative z-[10] ">
-        <div className='left md:w-[50%] flex flex-col gap-[24px]'>
+        <div className='left md:w-[50%] flex flex-col gap-[24px] '>
 
-          <h1 className='font-bold text-[3.5rem] md:text-[4rem] leading-tight'>
-            <div>Let Your
+          <h1 className='font-bold text-[3rem] md:text-[4rem] leading-tight'>
+            <div className='inline-block'>Let Your
               <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#7E317A] via-[#DB4469] to-[#EFAA76] '> Talent</span>
+            <div className='inline-block md:block pl-3 md:pl-0'>Be Seen.</div>
             </div>
-            <div>Be Seen.</div>
           </h1>
-          <p className='text-[1.25rem] w-[80%]'>In a world full of diverse and unique people, everyone has special talents just waiting to be discovered. Talentbuzzz invites both artists to showcase their amazing abilities and users to uncover the perfect talent for their needs.</p>
-          <span className='text-white w-fit md:mt-[16px] px-8 py-3 md:px-10 md:py-[14px] rounded-full flex items-center justify-between gap-3 bg-gradient-to-l from-[#DB4469] to-[#0266FF] text-lg cursor-pointer'><ModelParent text={"INQUIRE NOW"}/></span>
+          <p className='text-[1.25rem] md:w-[80%]'>In a world full of diverse and unique people, everyone has special talents just waiting to be discovered. Talentbuzzz invites both artists to showcase their amazing abilities and users to uncover the perfect talent for their needs.</p>
+          <span className='text-white w-fit md:mt-[16px] px-9 py-4 md:px-10 md:py-[14px] rounded-full flex items-center justify-between gap-3 bg-gradient-to-l from-[#DB4469] to-[#0266FF] text-lg cursor-pointer'>
+          <ModelParent text={"INQUIRE NOW"}/>
+          </span>
         </div>
         <div className='right md:w-[50%] flex flex-col items-center gap-20'>
           <div>
             <img src={right} alt="hero" className='w-full' />
           </div>
           <div className='flex items-center gap-10'>
-            <button className='bg-black rounded-lg p-2 px-5 flex items-center gap-3 border border-[#D7456C]'>
+            <button className='bg-black rounded-lg p-2 px-5 flex items-center gap-3 border border-[#D7456C]' onClick={ModelParent}>
               <svg className="h-9 w-9" viewBox="-9 0 274 274" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g>
                   <path
@@ -61,7 +66,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className='background absolute bgred50 top-10 md:-top-24 bottom-24 right-0 z-[1] '>
+      <div className='background absolute bgred50 opacity-55 md:opacity-100 -top-10 md:-top-24 bottom-0 right-0 z-[1] '>
         <img src={bg} alt="background" />
       </div>
     </div>
