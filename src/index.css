@@ -89,7 +89,7 @@ html{
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    mix-blend-mode: multiply;
+    mix-blend-mode: darken;
 }
 /* ********************************** */
 
