@@ -1,52 +1,93 @@
-import React from 'react'
-import { motion } from "framer-motion"
+import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
 
+
+// Using GSAP
 const Marque = () => {
+  const marqueeRef1 = useRef(null);
+  const marqueeRef2 = useRef(null);
+
+  useEffect(() => {
+    const marqueeElement1 = marqueeRef1.current;
+    const marqueeElement2 = marqueeRef2.current;
+
+    // Set the initial positions
+    gsap.set(marqueeElement1, { x: '0%' });
+    gsap.set(marqueeElement2, { x: '0%' }); // Position the second marquee after the first
+
+
+    // Create the animation for both marquees
+    gsap.to(marqueeElement1, {
+      x: `-100%`,
+      duration: 7,
+      ease: 'linear',
+      repeat: -1,
+    });
+
+    gsap.to(marqueeElement2, {
+      x: `-100%`,
+      duration: 7,
+      ease: 'linear',
+      repeat: -1,
+      delay: 0, // Start the second marquee after the first one completes
+    });
+
+    return () => {
+      // Kill the animations on component unmount
+      gsap.killTweensOf(marqueeElement1);
+      gsap.killTweensOf(marqueeElement2);
+    };
+  }, []);
+
   return (
-    <div className='my-[70px] md:my-[120px] overflow-x-hidden'>
-        <motion.div
-            initial={{ x: '-0.5%' }}
-          animate={{ x: "-100%" }}
-          transition={{ ease: "linear", repeat: Infinity, duration: 7 }}
-         className='flex gap-10 whitespace-nowrap'>
-        {["Professional artists" , "Content Creaters" , "Musicians" , "Professional Dancers" , "Actors" , "Influencers" , "Professional artists" , "Content Creaters" , "Musicians" , "Professional Dancers" , "Actors" , "Influencers" ].map((item,index) => (
-                <span key={index} className='text-[#C63054] text-[1.25rem] md:text-[1rem] bg-[#FEFEFF] px-9 py-2 rounded-full'>{item}</span>
+    <div className='my-[70px] md:my-[120px] overflow-hidden flex items-center gap-0'>
+      <h1 ref={marqueeRef1} className='flex gap-10 whitespace-nowrap pr-10'>
+        {["Professional artists", "Content Creators", "Musicians", "Professional Dancers", "Actors", "Influencers"].map((item, index) => (
+          <span key={index} className='text-[#C63054] text-[1.25rem] md:text-[1rem] bg-[#FEFEFF] px-9 py-2 rounded-full'>
+            {item}
+          </span>
         ))}
-        </motion.div>
+      </h1>
+      <h1 ref={marqueeRef2} className='flex gap-10 whitespace-nowrap pr-10'>
+        {["Professional artists", "Content Creators", "Musicians", "Professional Dancers", "Actors", "Influencers"].map((item, index) => (
+          <span key={index} className='text-[#C63054] text-[1.25rem] md:text-[1rem] bg-[#FEFEFF] px-9 py-2 rounded-full'>
+            {item}
+          </span>
+        ))}
+      </h1>
     </div>
-  )
+  );
 }
 
-export default Marque
 
 
-{/* <div className='my-[120px] '>
-        <motion.div
-        initial={{ x: "0" }}
-        animate={{ x: "-128%" }}
-        transition={{ ease: "linear", duration: 7, repeat: Infinity }}
-            
-         className='flex gap-10 whitespace-nowrap'>
-        {["Professional artists" , "Content Creaters" , "Musicians" , "Professional Dancers" , "Actors" , "Influencers","Professional artists" , "Content Creaters" , "Musicians" , "Professional Dancers" , "Actors" , "Influencers", ].map((item,index) => (
-                <span key={index} className='text-[#C63054] bg-[#FEFEFF] px-10 py-3 rounded-full text-[1.5rem]'>{item}</span>
-        ))}
-        </motion.div>
-    </div> */}
+// =================================================================================================
+// Using Framer
+// const Marque = () => {
+//   return (
+//     <div className='my-[70px] md:my-[120px] overflow-x-hidden flex items-center gap-0'>
+//         <motion.h1
+//             initial={{ x: '-0%' }}
+//           animate={{ x: "-100%" }}
+//           transition={{ ease: "linear", repeat: Infinity, duration: 7 }}
+//          className='flex gap-10 whitespace-nowrap pr-10'>
+//         {["Professional artists" , "Content Creaters" , "Musicians" , "Professional Dancers" , "Actors" , "Influencers" ].map((item,index) => (
+//                 <span key={index} className='text-[#C63054] text-[1.25rem] md:text-[1rem] bg-[#FEFEFF] px-9 py-2 rounded-full'>{item}</span>
+//         ))}
+//         </motion.h1>
+//         <motion.h1
+//             initial={{ x: '-0%' }}
+//           animate={{ x: "-100%" }}
+//           transition={{ ease: "linear", repeat: Infinity, duration: 7 }}
+//          className='flex gap-10 whitespace-nowrap pr-10'>
+//         {["Professional artists" , "Content Creaters" , "Musicians" , "Professional Dancers" , "Actors" , "Influencers"].map((item,index) => (
+//                 <span key={index} className='text-[#C63054] text-[1.25rem] md:text-[1rem] bg-[#FEFEFF] px-9 py-2 rounded-full'>{item}</span>
+//         ))}
+//         </motion.h1>
+//     </div>
+//   )
+// }
 
 
 
-
-
-
-
-    // <div className='my-[120px] '>
-    //     <motion.div
-    //         initial={{ x: '-0.5%' }}
-    //       animate={{ x: "-100%" }}
-    //       transition={{ ease: "linear", repeat: Infinity, duration: 7 }}
-    //      className='flex gap-10 whitespace-nowrap'>
-    //     {["Professional artists" , "Content Creaters" , "Musicians" , "Professional Dancers" , "Actors" , "Influencers" , "Professional artists" , "Content Creaters" , "Musicians" , "Professional Dancers" , "Actors" , "Influencers" ].map((item,index) => (
-    //             <span key={index} className='text-[#C63054] bg-[#FEFEFF] px-9 py-2 rounded-full'>{item}</span>
-    //     ))}
-    //     </motion.div>
-    // </div>
+export default Marque;

@@ -157,7 +157,7 @@ const YourtalentOne = () => {
                         </div>
 
                         <div className="photo absolute w-full h-full flex items-start justify-center">
-                            <img src={img1} alt="img2" className="w-full h-full rounded-3xl  object-fill " />
+                            <img src={img2} alt="img2" className="w-full h-full rounded-3xl  object-fill " />
                         </div>
                         </div>
 

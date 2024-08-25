@@ -16,15 +16,16 @@ const ModelParent = ({ text }) => {
     <>
       <div className="z-[999]">
         {/* <!-- Modal toggle --> */}
-        <span className="" type="button" onClick={() => setShow(!show)}>
+        <span className="" onClick={() => setShow(!show)}>
           {text}
         </span>
 
         {/* <!-- Main modal --> */}
         <div
+          // inert="true"  -// This attribute is used to prevent the modal from being focused on when it is not visible
+          {...(show ? {} : {inert: "true"})}
           tabIndex="-1"
-          aria-hidden="true"
-          className={`${
+          className={`mainModel ${
             show ? " " : "hidden"
           } overflow-y-auto overflow-x-hidden fixed top-0  right-0 left-0  z-50 flex justify-center items-center w-full md:inset-0 h-[calc(100%-0rem)] max-h-full backdrop-blur-sm cursor-default bg-opacity-50 bg-gray-900 dark:bg-opacity-50 text-center `}
         >

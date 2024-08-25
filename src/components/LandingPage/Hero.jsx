@@ -18,7 +18,7 @@ const Hero = () => {
             <div>Be Seen.</div>
           </h1>
           <p className='text-[1.25rem]'>In a world full of diverse and unique people, everyone has special talents just waiting to be discovered. Talentbuzzz invites both artists to showcase their amazing abilities and users to uncover the perfect talent for their needs.</p>
-          <button className='text-white w-fit md:mt-[16px] px-8 py-3 md:px-10 md:py-[14px] rounded-full flex items-center justify-between gap-3 bg-gradient-to-l from-[#DB4469] to-[#0266FF] text-lg'><ModelParent text={"INQUIRE NOW"}/></button>
+          <span className='text-white w-fit md:mt-[16px] px-8 py-3 md:px-10 md:py-[14px] rounded-full flex items-center justify-between gap-3 bg-gradient-to-l from-[#DB4469] to-[#0266FF] text-lg cursor-pointer'><ModelParent text={"INQUIRE NOW"}/></span>
         </div>
         <div className='right md:w-[50%] flex flex-col items-center gap-20'>
           <div>
