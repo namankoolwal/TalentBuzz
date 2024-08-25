@@ -74,6 +74,27 @@ html{
     mask-position: center;
   }
 
+
+
+/* AboutUs > IamgeSection > Way3 */
+  .image-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    background-image: url('./assets/images/AboutUs/ImageSection/Group.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+/* ********************************** */
+
+
+
   /* .details{
     outline: 1px solid red;
    
