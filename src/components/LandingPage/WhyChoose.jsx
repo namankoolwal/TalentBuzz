@@ -5,10 +5,10 @@ import card3 from '../../assets/images/Landingpage/whychoose/card3.svg'
 
 const WhyChoose = () => {
   return (
-    <div className='px-[5.5vw] my-[60px] md:my-[120px] h-screen '>
-      <div className='flex flex-col items-center gap-[40px] md:gap-[2.5rem] h-full'>
-        <h2 className='text-[3rem] md:text-[4rem]'>Why Choose <span className='text-[#EFAA76]'>Talentbuzzz</span></h2>
-        <div className='cardContainer flex-col md:flex-row flex items-center gap-20 md:gap-10 h-[28rem] '>
+    <div className='px-[5.5vw] my-[60px] lg:my-[120px] h-full'>
+      <div className='flex flex-col items-center gap-[40px] lg:gap-[2.5rem] h-full'>
+        <h2 className='text-[3rem] lg:text-[4rem]'>Why Choose <span className='text-[#EFAA76]'>Talentbuzzz</span></h2>
+        <div className='cardContainer flex-row flex-wrap md:flex-nowrap flex items-center gap-20 lg:gap-10 '>
         {/* ********** */}
           <div className='card gradient-border p-8 h-full w-full'>
           <span></span>

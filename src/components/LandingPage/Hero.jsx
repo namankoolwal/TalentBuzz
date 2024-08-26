@@ -4,11 +4,17 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import right from '../../assets/images/Landingpage/hero/right.png'
 import bg from '../../assets/images/Landingpage/hero/bg.png'
 import ModelParent from '../GetInTouchModel/ModelParent';
+import Toast from '../Toast';
 
 const Hero = () => {
+  const [showToast, setShowToast] = React.useState(false)
+  const msg = "We Know you are super hyped and can't wait! \n Hang in there, the excitement is building!"
   const handelClick = () =>{
-    alert("We Know you are super hyped and can't wait! Hang in there, the excitement is building!")
-  }
+    // setShowToast(true)
+
+    confirm("We Know you are super hyped and can't wait!\nHang in there, the excitement is building!")
+
+  } 
   return (
     <div className='relative px-[5.5vw]  my-[60px] md:my-[120px] z-[10] w-full h-full'>
       <div className="hero flex flex-col-reverse md:flex-row py-5 items-start gap-20 md:gap-3 justify-between relative z-[10] ">
@@ -30,7 +36,7 @@ const Hero = () => {
             <img src={right} alt="hero" className='w-full' />
           </div>
           <div className='flex items-center gap-10'>
-            <button className='bg-black rounded-lg p-2 px-5 flex items-center gap-3 border border-[#D7456C]' onClick={ModelParent}>
+            <button className='bg-black rounded-lg p-2 px-5 flex items-center gap-3 border border-[#D7456C]' onClick={handelClick}>
               <svg className="h-9 w-9" viewBox="-9 0 274 274" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g>
                   <path
@@ -63,6 +69,8 @@ const Hero = () => {
 
               </span>
             </button>
+    <Toast showToast={showToast} msg={msg} setShowToast={setShowToast}/>
+
           </div>
         </div>
       </div>

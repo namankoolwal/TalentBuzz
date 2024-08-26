@@ -82,14 +82,14 @@ const YourtalentOne = () => {
                     </div>
                 </div>
             </div>
-            <div className=" gallery mt-40 flex flex-col-reverse md:flex-row relative">
-                <div className="leftblock h-full w-full md:w-1/2 ml-auto ">
+            <div className=" gallery  -yellow-400 mt-40 flex flex-col-reverse lg:flex-row relative">
+                <div className="leftblock h-full w-full lg:w-1/2 ml-auto  -violet-200 ">
                 <div className="work-text w-[90%] mx-auto">
-                <div className="details ">
-                    <div className="h-[100vw] md:h-screen font-bold flex flex-col justify-center w-full ml-auto text-white gap-5">
+                <div className="details">
+                    <div className="h-[100vw] lg:h-screen font-bold flex flex-col justify-center w-full ml-auto text-white gap-5">
                         <h4 className="text-[1rem] text-[#EFAA76]">DISCOVER</h4>
                         <div>
-                            <p className="text-[1.5rem] md:text-[1.35rem] md:w-1/2">
+                            <p className="text-[1.5rem] lg:text-[1.35rem] lg:w-1/2">
                             Showcase your talent to a global and let opportunities find you.
                             </p>
                         </div>
@@ -102,10 +102,10 @@ const YourtalentOne = () => {
                 </div>
                     {/*************************  */}
                 <div className="details">
-                    <div className="h-[100vw] md:h-screen font-bold flex flex-col justify-center w-full ml-auto text-white gap-5">
+                    <div className="h-[100vw] lg:h-screen font-bold flex flex-col justify-center w-full ml-auto text-white gap-5">
                         <h4 className="text-[1rem] text-[#EFAA76]">CONNECT</h4>
                         <div>
-                            <p className="text-[1.5rem] md:text-[1.35rem] md:w-1/2">
+                            <p className="text-[1.5rem] lg:text-[1.35rem] lg:w-1/2">
                             Easily connect with artists tailored to your event needs and requirements.
                             </p>
                         </div>
@@ -119,10 +119,10 @@ const YourtalentOne = () => {
                     {/* *********************************** */}
                 <div className="details ">
 
-                    <div className="h-[100vw] md:h-screen font-bold flex flex-col justify-center w-full ml-auto text-white gap-5 ">
+                    <div className="h-[100vw] lg:h-screen font-bold flex flex-col justify-center w-full ml-auto text-white gap-5 ">
                         <h4 className="text-[1rem] text-[#EFAA76]">HIRE</h4>
                         <div>
-                            <p className="text-[1.5rem] md:text-[1.35rem] md:w-1/2">
+                            <p className="text-[1.5rem] lg:text-[1.35rem] lg:w-1/2">
                             Hire the perfect artist by filtering options like genre, location, and availability.
                             </p>
                         </div>
@@ -136,9 +136,9 @@ const YourtalentOne = () => {
                     {/* *********************************** */}
                     </div>
                 </div>
-                <div className="rightblock backgroundChange bg-black sticky top-0 md:relative w-full md:w-1/2  flex flex-col justify-start items-center md:items-end md:pr-10">
-                <div className="work-right-bl w-full md:h-screen md:sticky top-0 flex flex-col items-center md:items-end justify-center">
-                    <div className="my-24 relative md:my-0 w-[48vw] md:w-[20vw] h-[100vw] md:h-[40vw] flex justify-center border-[4px] border-zinc-700 rounded-3xl outline outline-4 outline-zinc-900 ring-offset-2 ring-4 ring-offset-zinc-700 ring-zinc-800 ">
+                <div className="rightblock backgroundChange bg-black  md:py-10 lg:py-0 -green-400 sticky top-0 lg:relative w-full lg:w-1/2  flex flex-col justify-start items-center md:items-end md:pr-10">
+                <div className="work-right-bl w-full lg:h-screen lg:sticky top-0 flex flex-col items-center lg:items-end justify-center">
+                    <div className="my-24 relative md:my-0 w-[48vw]  lg:w-[20vw] h-[100vw] lg:h-[40vw] flex justify-center border-[4px] border-zinc-700 rounded-3xl  -4 -zinc-900 ring-offset-2 ring-4 ring-offset-zinc-700 ring-zinc-800 ">
 
                     <span className="border-2 absolute z-10 border-zinc-700 bg-black w-20 h-2 rounded-br-xl rounded-bl-xl">      
                         </span>

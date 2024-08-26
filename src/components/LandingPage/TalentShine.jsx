@@ -4,9 +4,9 @@ import rightimg from '../../assets/images/Landingpage/Talentshine/rightimg.svg'
 
 const TalentShine = () => {
     return (
-        <div className=' px-[4.5vw] my-[60px] md:my-[60px] mt-[0px] md:h-screen flex items-center md:items-end justify-center '>
-            <div className='bg-[#2C2C2C] relative h-3/4 w-full px-10 rounded-3xl '>
-                <div className='flex flex-col-reverse md:flex-row w-full h-full py-20 '>
+        <div className=' px-[4.5vw] my-[60px] md:my-[60px] mt-[0px] lg:h-screen flex items-center md:items-end justify-center '>
+            <div className='bg-[#2C2C2C] relative  lg:h-3/4 w-full px-10 rounded-3xl '>
+                <div className='flex flex-col-reverse md:flex-row w-full h-full py-20 relative'>
                     <div className='left md:w-1/2 h-full flex flex-col gap-[2rem] justify-center '>
                         <h2 className='font-semibold text-[4rem] leading-tight'>
                             Ready to Let Your Talent Shine?
@@ -18,8 +18,8 @@ const TalentShine = () => {
                     </div>
 
 
-                    <div className='right md:w-1/2  '>
-                        <img src={rightimg} alt="" className=' -translate-y-48 translate-x-10' />
+                    <div className='right md:w-1/2 h-[28vh] md:h-0 lg:h-full '>
+                        <img src={rightimg} alt="" className=' -translate-y-48 translate-x-10 ' />
                     </div>
                 </div>
 
