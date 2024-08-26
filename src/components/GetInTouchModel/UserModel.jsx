@@ -68,9 +68,9 @@ const UserModel = () => {
         const finalFormData = {
             ...formData,
             artistType: formData.artistType || "None",
-            budget: formData.budget || "null",
-            eventType: formData.eventType || "null",
-            tellmore: formData.tellmore || "null",
+            budget: formData.budget || "None",
+            eventType: formData.eventType || "None",
+            tellmore: formData.tellmore || "None",
         };
 
         console.log("Submitting form data:", finalFormData);
