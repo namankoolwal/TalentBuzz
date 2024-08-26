@@ -29,15 +29,15 @@ const ModelParent = ({ text }) => {
             show ? " " : "hidden"
           } overflow-y-auto overflow-x-hidden fixed top-0  right-0 left-0  z-50 flex justify-center items-center w-full md:inset-0 h-[calc(100%-0rem)] max-h-full backdrop-blur-sm cursor-default bg-opacity-50 bg-gray-900 dark:bg-opacity-50 text-center `}
         >
-          <div className="relative w-full max-w-[62rem] max-h-screen">
+          <div className="relative w-full p-5 md:p-0 max-w-[62rem] max-h-screen">
             {/* <!-- Modal content --> */}
             <div className="relative w-full h-full bg-white p-1 rounded-xl overflow-hidden shadow dark:bg-white text-black">
             
               
               {/* <!-- Modal body --> */}
-              <div className="flex w-full h-full overflow-hidden relative">
+              <div className="flex w-full h-full mx-auto overflow-hidden relative">
               
-                <div className="leftSide w-full h-full px-4 py-6 mt-3 ml-3 space-y-6">
+                <div className="leftSide mx-auto w-full h-full px-10 md:px-4 py-6 mt-3 ml-3 space-y-6">
                   <div className="flex flex-col items-start justify-start text-left">
                     <h4 className="font-semibold text text-[1.5rem]">Get In Touch</h4>
                     <p className="text-[0.90rem]">
@@ -84,14 +84,14 @@ const ModelParent = ({ text }) => {
                   </div>
                 </div>
 
-                <div className="rightSide w-full p-6 flex items-center justify-center overflow-hidden">
+                <div className="rightSide hidden w-full p-6 md:flex items-center justify-center overflow-hidden">
                   <img src={getInTouch} alt="getInTouch" className="w-full h-full object-cover rounded-xl" />
                 </div>
 
-                <div className="flex items-start justify-between rounded-t absolute right-0 top-0.5">
+                <div className="flex items-start justify-between rounded-t absolute right-2 top-2 md:right-0 md:top-0.5">
                 
                 <button type="button" className="text-gray-600 bg-transparent bg-gray-200 hover:bg-gray-300 hover:text-gray-900 rounded-full text-sm w-9 h-9 ml-auto inline-flex justify-center items-center " onClick={()=>setShow(false)}>
-                    <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                    <svg className="w-6 h-6 md:w-4 md:h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
                         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
                     </svg>
                     <span className="sr-only">Close modal</span>

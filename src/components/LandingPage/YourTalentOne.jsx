@@ -13,7 +13,7 @@ const YourtalentOne = () => {
     useEffect(() => {
         let ctx = gsap.context(() => {
             gsap.set(".photo:not(:first-child)", { opacity: 1, y: 1200 });
-            gsap.set(".details>*", { opacity: 0, y: 200  });
+            gsap.set(".details > *:not(:first-child)", { opacity: 0, y: 1200  });
 
             const animation = gsap.to(".photo:not(:first-child)", {
                 opacity: 1,
@@ -22,7 +22,7 @@ const YourtalentOne = () => {
                 stagger: 1,
             });
 
-            const animation2 = gsap.to(".details>*", {
+            const animation2 = gsap.to(".details > *:not(:first-child)", {
                 opacity: 1,
                 y: 0,
                 duration: 1,
@@ -46,18 +46,6 @@ const YourtalentOne = () => {
                 scrub: true,
                 // markers: true,
             });      
-            
-            
-            // ScrollTrigger.create({
-            //         trigger: ".details:nth-of-type(2)", // Second section (Connect)
-            //         start: "top center",
-            //         end: "bottom top",
-            //         onEnter: () => gsap.to(".backgroundChange", { backgroundColor: "black" }),
-            //         // onLeave: () => gsap.to(".backgroundChange", { backgroundColor: "#181818" }),
-            //         // onEnterBack: () => gsap.to(".backgroundChange", { backgroundColor: "black" }),
-            //         onLeaveBack: () => gsap.to(".backgroundChange", { backgroundColor: "#181818" }),
-            //         // markers: true,
-            //     });
         });
 
         return () => ctx.revert();

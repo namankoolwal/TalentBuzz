@@ -74,7 +74,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className='background absolute bgred50 opacity-55 md:opacity-100 -top-10 md:-top-24 bottom-0 right-0 z-[1] '>
+      <div className='background hidden md:block absolute bgred50 opacity-55 md:opacity-100 -top-10 md:-top-24 bottom-0 right-0 z-[1] '>
         <img src={bg} alt="background" />
       </div>
     </div>
