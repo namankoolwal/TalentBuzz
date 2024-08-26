@@ -7,7 +7,7 @@ import { SiGoogleforms } from "react-icons/si";
 
 const ArtistModel = () => {
 
-  const [error, setError] = useState("")
+  const [error, setError] = useState("All fields are required")
   const [submitBtnDisabled, setSubmitBtnDisabled] = useState(true);
 
   const [formData, setFormData] = useState({
@@ -57,14 +57,15 @@ const ArtistModel = () => {
 
     if (validateForm()) {
 
+      // https://docs.google.com/forms/d/e/1FAIpQLSfFucJTmE-RKRo5elD_A2kZtj5QL5NMZlLEkWmDK-nz7lFwjg/viewform?usp=pp_url&entry.422787563=rajat+&entry.1279153158=9602261095&entry.1027127362=rajat@gmail.com
 
       if (formData.firstName && formData.email && formData.phoneNo) {
         setSubmitBtnDisabled(true);
-        const googleFormURL = 'https://docs.google.com/forms/d/e/1FAIpQLSd7m0XHmwVCqTKtdcTW7eSQkBND7Tr_jYrb2v12KzXqoZchXg/formResponse';
+        const googleFormURL = 'https://docs.google.com/forms/d/e/1FAIpQLSfFucJTmE-RKRo5elD_A2kZtj5QL5NMZlLEkWmDK-nz7lFwjg/formResponse';
         const formFields = {
-          'entry.1645822644': formData.firstName,
-          'entry.1409456964': formData.email,
-          'entry.1162980994': formData.phoneNo,
+          'entry.422787563': formData.firstName,
+          'entry.1027127362': formData.email,
+          'entry.1279153158': formData.phoneNo,
         };
 
         const queryString = new URLSearchParams(formFields).toString();
@@ -118,12 +119,12 @@ const ArtistModel = () => {
           {error && <p className='text-red-500 text-xs text-left -top-5 absolute'>*{error}</p>}
           <div className=' flex flex-col gap-2'>
 
-            <InputField value={formData.firstName} handleChange={handleChange} type="text" name="firstName" placeholder="First Name" />
+            <InputField value={formData.firstName} handleChange={handleChange} type="text" name="firstName" placeholder="*Full Name" />
 
 
-            <InputField value={formData.email} handleChange={handleChange} type="email" name="email" placeholder="Email" />
+            <InputField value={formData.email} handleChange={handleChange} type="email" name="email" placeholder="*Email" />
 
-            <InputField value={formData.phoneNo} handleChange={handleChange} type="number" name="phoneNo" placeholder="Phone Number" />
+            <InputField value={formData.phoneNo} handleChange={handleChange} type="number" name="phoneNo" placeholder="*Phone Number" />
 
             <button className='bg-[#7349bd] bg-opacity-20 outline-none border-2 border-gray-300 focus:border-gray-400  rounded-md py-1.5 px-3 text-left text-gray-600 text-sm hover:bg-opacity-40 hover:text-gray-700 flex items-center justify-between' onClick={handleRedirect}> Fill This Form To Join Artist Group &rarr; 
             <SiGoogleforms className='w-5 h-5 '/> 

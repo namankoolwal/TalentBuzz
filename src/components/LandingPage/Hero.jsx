@@ -4,7 +4,6 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import right from '../../assets/images/Landingpage/hero/right.png'
 import bg from '../../assets/images/Landingpage/hero/bg.png'
 import ModelParent from '../GetInTouchModel/ModelParent';
-import Toast from '../Toast';
 
 const Hero = () => {
   const [showToast, setShowToast] = React.useState(false)
@@ -69,7 +68,6 @@ const Hero = () => {
 
               </span>
             </button>
-    <Toast showToast={showToast} msg={msg} setShowToast={setShowToast}/>
 
           </div>
         </div>
