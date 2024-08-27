@@ -11,7 +11,7 @@ const CardSection = () => {
 
 
                 <div className="w-full md:p-10 pt-0 flex flex-col gap-8 rounded-lg ">
-                    <img className="rounded-t-lg" src={card1} alt="" />
+                    <img loading='lazy' className="rounded-t-lg" src={card1} alt="" />
                     <div className="p-0 flex flex-col gap-8">
                         <h5 className=" text-[2rem] font-bold ">How we started</h5>
                         <p className=" font-normal text-[1.1rem] md:text-[1.3rem] leading-relaxed">Talentbuzzz was created to address the challenges both artists and those seeking talent face in today’s market. We noticed how the dominance of big agencies and the absence of direct hiring platforms limited opportunities. Our journey began with a mission to empower artists to showcase their talents and provide users with a seamless way to discover and hire the perfect talent.</p>
@@ -25,7 +25,7 @@ const CardSection = () => {
 
 
                 <div className="w-full md:p-10 pt-0 flex flex-col gap-8 rounded-lg shadow">
-                    <img className="rounded-t-lg" src={card2} alt="" />
+                    <img loading='lazy' className="rounded-t-lg" src={card2} alt="" />
                     <div className="p-0 flex flex-col gap-8">
                         <h5 className="text-[2rem] font-bold ">Our Vision</h5>
                         <p className="text-[1.1rem] md:text-[1.3rem] font-normal leading-relaxed">At Talentbuzzz, our vision is to create a world where every artist has the freedom and tools to thrive, and where every user can easily discover and book the talent they need. We believe in a transparent, fair, and innovative platform that empowers creativity and facilitates meaningful connections between artists and clients.</p>

@@ -12,7 +12,7 @@ const HowItWork = () => {
                 <div className='text-[#5B61FA] text-[2rem] md:text-[1.7rem] font-semibold'>HOW IT WORKS</div>
                     <div className='text-[2.4rem] md:text-[3.2rem] font-semibold text-center'> How It Works for Artists </div>
                     <div className='text-[1.5rem] w-full text-center text-pretty'>
-                        <img src={HowItWorkImg} alt="" />
+                        <img loading='lazy' src={HowItWorkImg} alt="" />
                     </div>
                 </div>
             </div>

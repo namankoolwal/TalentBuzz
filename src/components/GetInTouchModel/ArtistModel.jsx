@@ -128,7 +128,7 @@ const ArtistModel = () => {
 
             <button className='bg-[#7349bd] bg-opacity-20 outline-none border-2 border-gray-300 focus:border-gray-400  rounded-md py-1.5 px-3 text-left text-gray-600 text-sm hover:bg-opacity-40 hover:text-gray-700 flex items-center justify-between' onClick={handleRedirect}> Fill This Form To Join Artist Group &rarr; 
             <SiGoogleforms className='w-5 h-5 '/> 
-            {/* <img src={formicon3d} alt="" className='bg-transparent mix-blend-multiply w-7 h-7' />  */}
+            {/* <img loading='lazy' src={formicon3d} alt="" className='bg-transparent mix-blend-multiply w-7 h-7' />  */}
             </button>
 
 

@@ -140,7 +140,7 @@ const YourtalentTwo = () => {
                     </span>
                 <div className="relative w-full h-full  overflow-hidden rounded-3xl ">
                     <div className="photo absolute w-full h-full flex items-start justify-center">
-                        <img
+                        <img loading='lazy'
                             src={img1}
                             alt="img1"
                             className="w-full h-full rounded-3xl  object-fill "
@@ -149,11 +149,11 @@ const YourtalentTwo = () => {
                    
 
                     <div className="photo absolute w-full h-full flex items-start justify-center">
-                        <img src={img2} alt="img2" className="w-full h-full rounded-3xl  object-fill " />
+                        <img loading='lazy' src={img2} alt="img2" className="w-full h-full rounded-3xl  object-fill " />
                     </div>
 
                     <div className="photo absolute w-full h-full flex items-start justify-center">
-                        <img src={img2} alt="img2" className="w-full h-full rounded-3xl  object-fill " />
+                        <img loading='lazy' src={img2} alt="img2" className="w-full h-full rounded-3xl  object-fill " />
                     </div>
                     </div>
 

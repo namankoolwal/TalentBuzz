@@ -135,12 +135,12 @@ const YourtalentOne = () => {
                 <div className="work-right-bl w-full md:h-screen md:sticky top-0 flex flex-col items-center md:items-end justify-center">
                     <div className="my-24 relative md:my-0 w-[48vw]  md:w-[20vw] h-[98vw] md:h-[41vw] flex justify-center  ring-offset-2 z-[99]  rounded-[35px] md:rounded-[50px] " style={{backgroundImage : `url${frame}`}}>
 
-                    <img src={frame} alt="" className="absolute z-10 w-full h-full" />
+                    <img loading='lazy' src={frame} alt="" className="absolute z-10 w-full h-full" />
 
 
                     <div className="relative w-[96%] h-full pt-0  overflow-hidden rounded-[32px] md:rounded-[32px] lg:rounded-[44px]  ">
                         <div className="photo absolute w-full h-full flex items-start justify-center">
-                            <img
+                            <img loading='lazy'
                                 src={img1}
                                 alt="img1"
                                 className="w-full h-full rounded-3xl  object-fill "
@@ -149,11 +149,11 @@ const YourtalentOne = () => {
                        
 
                         <div className="photo absolute w-full h-full flex items-start justify-center">
-                            <img src={img3} alt="img2" className="w-full h-full rounded-3xl  object-fill " />
+                            <img loading='lazy' src={img3} alt="img2" className="w-full h-full rounded-3xl  object-fill " />
                         </div>
 
                         <div className="photo absolute w-full h-full flex items-start justify-center">
-                            <img src={img2} alt="img2" className="w-full h-full rounded-3xl  object-fill " />
+                            <img loading='lazy' src={img2} alt="img2" className="w-full h-full rounded-3xl  object-fill " />
                         </div>
                         </div>
 

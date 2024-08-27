@@ -26,7 +26,7 @@ const TiltCard = () => {
               Discover, book, and enjoy top-tier artists for any occasion.
             </h5>
             <div className="p-5">
-              <img src={HomeScreen} alt="HomeScreen" className="mx-auto w-3/4 md:w-auto" />
+              <img loading='lazy' src={HomeScreen} alt="HomeScreen" className="mx-auto w-3/4 md:w-auto" />
             </div>
           </div>
         </Tilt>
@@ -37,7 +37,7 @@ const TiltCard = () => {
               Effortless Booking and Management
             </h5>
             <div className="p-5 pt-0">
-              <img src={Two} alt="HomeScreen" className="mx-auto md:w-auto" />
+              <img loading='lazy' src={Two} alt="HomeScreen" className="mx-auto md:w-auto" />
             </div>
           </div>
         </Tilt>
@@ -49,7 +49,7 @@ const TiltCard = () => {
               Choose Your Own Artist
             </h5>
             <div className="p-5">
-              <img src={Three} alt="HomeScreen" className="mx-auto" />
+              <img loading='lazy' src={Three} alt="HomeScreen" className="mx-auto" />
             </div>
           </div>
         </Tilt>
@@ -67,7 +67,7 @@ const TiltCard = () => {
           <div className="flex flex-row">
             <div className="w-[25%]">
               <div className="rounded-full mx-auto flex items-center justify-center w-full h-full">
-                <img src={Mic} alt="Mic" className="bg-white rounded-full p-2 w-10 md:w-12 object-contain" />
+                <img loading='lazy' src={Mic} alt="Mic" className="bg-white rounded-full p-2 w-10 md:w-12 object-contain" />
               </div>
             </div>
             <div className="flex flex-col w-full h-full justify-center gap-8">
@@ -75,12 +75,12 @@ const TiltCard = () => {
                 Hire under your Budget
               </h5>
               <div className="p-5">
-                <img src={Five} alt="HomeScreen" className="mx-auto md:w-auto" />
+                <img loading='lazy' src={Five} alt="HomeScreen" className="mx-auto md:w-auto" />
               </div>
             </div>
             <div className="w-[25%]">
               <div className="rounded-full mx-auto flex items-end pb-8 justify-center w-full h-full">
-                <img src={Purse} alt="Purse" className="bg-white rounded-full p-2 w-10 md:w-12 object-contain" />
+                <img loading='lazy' src={Purse} alt="Purse" className="bg-white rounded-full p-2 w-10 md:w-12 object-contain" />
               </div>
             </div>
           </div>

@@ -19,14 +19,14 @@ const TalentShine = () => {
 
 
                     <div className='right md:w-1/2 h-[28vh] md:h-0 xl:h-full'>
-                        <img src={rightimg} alt="" className=' -translate-y-48 translate-x-10 ' />
+                        <img loading='lazy' src={rightimg} alt="" className=' -translate-y-48 translate-x-10 ' />
                     </div>
                 </div>
 
 
 
                 <div className='absolute bottom-0 left-1'>
-                    <img src={leftbg} alt="" className='w-3/4' />
+                    <img loading='lazy' src={leftbg} alt="" className='w-3/4' />
                 </div>
             </div>
         </div>

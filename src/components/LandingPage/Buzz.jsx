@@ -23,7 +23,7 @@ const Buzz = () => {
                     <p className='text-[1.5rem] w-[60%] text-center'>Where Artistry Meets Innovation: Hear What Our Artists and Creators Have to Say!</p>
                 </div>
                 <div className='relative flex items-center justify-center ' onMouseLeave={mouseLeave}>
-                    <img src={buzzimg} alt="" className='w-3/4' />
+                    <img loading='lazy' src={buzzimg} alt="" className='w-3/4' />
                     <button className='absolute  rounded-full p-6' onMouseEnter={mouseEnter}></button>
                     <button ref={followRef} className='bg-[#EFAA76] text-black px-8 font-semibold py-2 opacity-0 rounded-lg absolute top-48  transition-all duration-200' onClick={() => { alert("Following") }}> Follow Us!</button>
 

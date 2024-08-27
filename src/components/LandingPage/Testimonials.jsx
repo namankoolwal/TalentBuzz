@@ -11,7 +11,7 @@ const Testimonials = () => {
                 <p className='text-[1.5rem] w-[60%] text-center'>Where Artistry Meets Innovation: Hear What Our Artists and Creators Have to Say!</p>
             </div>
             <div className='w-fit '>
-                <img src={testimonials} className='w-fit h-fit object-contain ' alt="" />
+                <img loading='lazy' src={testimonials} className='w-fit h-fit object-contain ' alt="" />
             </div>
             <div>
             <button className='bg-[#DB4469] text-white w-fit mt-[16px] px-3 py-2 rounded-md flex items-center justify-between gap-3'>Book Now <FaArrowRightLong /></button>

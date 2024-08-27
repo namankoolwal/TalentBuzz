@@ -51,7 +51,7 @@ const Hero = () => {
         </div>
         <div className='right md:w-[50%] flex flex-col items-center gap-20'>
           <div>
-            <img src={right} alt="hero" className='w-full' />
+            <img loading='lazy' src={right} alt="hero" className='w-full' />
           </div>
           <div className='flex items-center gap-10'>
             <button className='bg-black rounded-lg p-2 px-5 flex items-center gap-3 border border-[#D7456C]' onClick={handelClick}>
@@ -92,7 +92,7 @@ const Hero = () => {
         </div>
       </div>
       <div className='background hidden md:block absolute bgred50 opacity-55 md:opacity-100 -top-10 md:-top-24 bottom-0 right-0 z-[1] '>
-        <img src={bg} alt="background" />
+        <img loading='lazy' src={bg} alt="background" />
       </div>
     </div>
   )

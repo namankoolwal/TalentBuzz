@@ -19,7 +19,7 @@ const OneStopSolution = () => {
                     </div>
                     <div className='w-full md:w-1/2 '>
 
-                        <img src={rightimg} alt="" className='mx-auto'/>
+                        <img loading='lazy' src={rightimg} alt="" className='mx-auto'/>
                     </div>
                     <div className='flex justify-center '>
                 <button className='bg-[#EFAA76] text-black w-fit  px-5 py-2 rounded-md flex items-center justify-between gap-3'>

@@ -85,7 +85,7 @@ const ModelParent = ({ text }) => {
                 </div>
 
                 <div className="rightSide hidden w-full p-6 md:flex items-center justify-center overflow-hidden">
-                  <img src={getInTouch} alt="getInTouch" className="w-full h-full object-cover rounded-xl" />
+                  <img loading='lazy' src={getInTouch} alt="getInTouch" className="w-full h-full object-cover rounded-xl" />
                 </div>
 
                 <div className="flex items-start justify-between rounded-t absolute right-2 top-2 md:right-0 md:top-0.5">

@@ -15,7 +15,7 @@ const Navbar = () => {
     <div className="px-[3vw] md:px-[5.5vw] text-[1.125rem] py-5 relative">
       <div className="flex items-center justify-between gap-40">
         <NavLink to={"/"}>
-          <img src={logo} alt="logo" className="w-[25vw] md:w-[11vw]" />
+          <img loading='lazy' src={logo} alt="logo" className="w-[25vw] md:w-[11vw]" />
         </NavLink>
         <div className="md:hidden">
           <button onClick={toggleMenu}>

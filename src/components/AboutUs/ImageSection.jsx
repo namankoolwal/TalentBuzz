@@ -13,7 +13,7 @@
 
 //     {Array.from({ length: 6 }).map((_, i) => (
 //       <div key={i} className=' w-full rounded-full h-full text-yellow-400 overflow-hidden'>
-//         <img src={card2} alt="" className='w-full h-full object-cover object-center' />
+//         <img loading='lazy' src={card2} alt="" className='w-full h-full object-cover object-center' />
 //       </div>
 //     ))}
         
@@ -47,7 +47,7 @@
 // <div className='flex items-center justify-center h-[40vmin] md:h-[70vmin]'>
 
 //     <div className="mask1 w-full  flex items-center justify-center">
-//         <img
+//         <img loading='lazy'
 //           src={card2}
 //           alt="Cinque Terre"
 //           className="w-full h-full object-cover object-center"
