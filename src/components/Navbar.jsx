@@ -74,8 +74,8 @@ const Navbar = () => {
         <NavLink
           to={"/features"}
           onClick={toggleMenu}
-          className={`text-white text-2xl font-bold py-2 mt-10 transform transition-transform duration-500 ease-in-out ${
-            isOpen ? "translate-x-0 opacity-100 delay-100" : "translate-x-10 opacity-0"
+          className={`text-white text-2xl font-bold py-2 mt-10 delay-100 transform transition-transform duration-500 ease-in-out ${
+            isOpen ? "translate-x-0 opacity-100 " : "translate-x-10 opacity-0"
           }`}
         >
           Features
@@ -99,8 +99,8 @@ const Navbar = () => {
           Contact Us
         </NavLink>
         <button
-          className={`flex font-bold text-xl items-center gap-2 bg-[#0E78F3] text-white px-2 py-4 rounded-md mt-4 w-full justify-center transform transition-transform duration-300 ease-in-out ${
-            isOpen ? "translate-x-0 opacity-100 delay-400" : "translate-x-10 opacity-0"
+          className={`inline-flex font-bold text-xl items-center gap-2 bg-[#0E78F3] text-white px-2 py-4 rounded-xl mt-4 w-full justify-center transform transition-transform duration-300 ease-in-out ${
+            isOpen ? "translate-x-0 opacity-100 delay-[400ms]" : "translate-x-10 opacity-0"
           }`}
         >
           Download Now{" "}

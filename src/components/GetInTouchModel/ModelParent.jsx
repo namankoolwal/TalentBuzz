@@ -14,7 +14,7 @@ const ModelParent = ({ text }) => {
 
   return (
     <>
-      <div className="z-[999]">
+      <div className="z-[990]">
         {/* <!-- Modal toggle --> */}
         <span className="" onClick={() => setShow(!show)}>
           {text}

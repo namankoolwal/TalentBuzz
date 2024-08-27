@@ -15,178 +15,105 @@ Currently, two official plugins are available:
 
 
 
-
-
 /* eslint-disable no-unused-vars */
-import React from "react";
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
-import img1 from "../../assets/images/Landingpage/Yourtalent/img1.png";
-import img2 from "../../assets/images/Landingpage/Yourtalent/img2.png";
-import img3 from "../../assets/images/Landingpage/Yourtalent/img3.png";
-import frame from '../../assets/images/Landingpage/Yourtalent/frame.png'
+import React from 'react'
+import { Tilt } from 'react-tilt'
+import HomeScreen from '../../assets/images/FeaturesPage/TiltCard/HomeScreen.png'
+import Two from '../../assets/images/FeaturesPage/TiltCard/Two.png'
+import Three from '../../assets/images/FeaturesPage/TiltCard/Three.png'
+import Five from '../../assets/images/FeaturesPage/TiltCard/Five.png'
+import Mic from '../../assets/images/FeaturesPage/TiltCard/Mic.png'
+import Purse from '../../assets/images/FeaturesPage/TiltCard/Purse.png'
 
-gsap.registerPlugin(ScrollTrigger);
-
-
-const YourtalentOne = () => {
-
-   
-    useEffect(() => { 
-        const elements = document.querySelectorAll('.details:not(:first-of-type) > *');
-
-        console.log(elements)
-        let ctx = gsap.context(() => {
-            gsap.set(".photo:not(:first-child)", { opacity: 1, y: 1200 });
-            gsap.set(".details:not(:first-of-type) > *", { opacity: 0, y: 200  });
-
-            const animation = gsap.to(".photo:not(:first-child)", {
-                opacity: 1,
-                y: 0,
-                duration: 1,
-                stagger: 1,
-            });
-
-            const animation2 = gsap.to(".details:not(:first-of-type) > *", {
-                opacity: 1,
-                y: 0,
-                duration: 1,
-                stagger: 3,
-            });
-
-            ScrollTrigger.create({
-                trigger: ".gallery",
-                start: "top top",
-                end: "bottom bottom",
-                animation: animation,
-                scrub: true,
-                // markers: true,
-            });
-
-            ScrollTrigger.create({
-                trigger: ".gallery",
-                start: "top top",
-                end: "bottom bottom",
-                animation: animation2,
-                scrub: true,
-                // markers: true,
-            });      
-        });
-
-        return () => ctx.revert();
-    }, []);
-
-
-    
-    
-
+const TiltCard = () => {
+    const TiltOptions = {
+        scale: 1, 
+        perspective: 5000,
+        max: 20,
+    }
     return (
-        <div className="backgroundChange bg-black px-[5.5vw] py-20 my-[60px] md:my-[120px]">
-            <div className="flex items-end ">
-                <div className="left w-[49%] md:w-[41%] ">
-                    <h2 className="text-[2.5rem] md:text-[4rem] font-semibold leading-tight">
-                        Your Talent Searching Hub
-                    </h2>
-                </div>
+        <div className='px-[5.5vw] my-[60px] md:my-[120px] h-full'>
+            <div className='grid grid-cols-2 gap-3 md:gap-5'>
+                {/* ======================================================== */}
 
-                <div className="right w-[50%] md:w-[55%] pb-3 md:pb-5 text-[#EFAA76] ">
-                    <div className="text-[1.5rem] border-b border-[#EFAA76]">
-                        Discover, Connect, Shine
-                    </div>
-                </div>
-            </div>
-            <div className=" gallery  -yellow-400 mt-40 flex flex-col-reverse lg:flex-row relative">
-                <div className="leftblock h-full w-full lg:w-1/2 ml-auto  -violet-200 ">
-                <div className="work-text w-[90%] mx-auto">
-                <div className="details">
-                    <div className="h-[100vw] lg:h-screen font-bold flex flex-col justify-center w-full ml-auto text-white gap-5">
-                        <h4 className="text-[2rem] text-[#EFAA76]">DISCOVER</h4>
-                        <div>
-                            <p className="text-[1.75rem] lg:text-[1.75rem] lg:w-full">
-                            Showcase your talent to a global and let opportunities find you.
-                            </p>
-                        </div>
-                        <div className="">
-                            <button className="border border-[#EFAA76] font-normal text-xl px-5 py-2 rounded-md">
-                                Contact Now
-                            </button>
+                <Tilt options={TiltOptions} className='one bg-[#191A1F] rounded-xl p-5 row-span-2'>
+                    <div className='flex flex-col w-full h-full justify-center gap-10'>
+                        <span className='text-[#909090] font-semibold'>For Users</span>
+                        <h5 className='text-center text-[1rem] md:text-[1.9rem] font-semibold'>
+                            Discover, book, and enjoy top-tier artists for any occasion.
+                        </h5>
+                        <div className='p-5 '>
+                            <img src={HomeScreen} alt="HomeScreen" className='mx-auto w-3/4 md:w-auto' />
                         </div>
                     </div>
-                </div>
-                    {/*************************  */}
-                <div className="details">
-                    <div className="h-[100vw] lg:h-screen font-bold flex flex-col justify-center w-full ml-auto text-white gap-5">
-                        <h4 className="text-[2rem] text-[#EFAA76]">CONNECT</h4>
-                        <div>
-                            <p className="text-[1.75rem] lg:text-[1.75rem] lg:w-full">
-                            Easily connect with artists tailored to your event needs and requirements.
-                            </p>
-                        </div>
-                        <div className="">
-                            <button className="border border-[#EFAA76] font-normal text-xl px-5 py-2 rounded-md">
-                                Contact Now
-                            </button>
+                </Tilt>
+                {/* ======================================================== */}
+
+                <Tilt options={TiltOptions} className='two bg-[#191A1F] rounded-xl p-5'>
+                    <div className='flex flex-col w-full h-full justify-center gap-10'>
+                        <h5 className='text-center text-[1rem] md:text-[1.9rem] w-3/4 mx-auto font-semibold bg-gradient-to-r from-[#DB4469] to-[#0266FF] bg-clip-text text-transparent'>
+                            Effortless Booking and Management
+                        </h5>
+                        <div className='p-5 pt-0'>
+                            <img src={Two} alt="HomeScreen" className='mx-auto  md:w-auto' />
                         </div>
                     </div>
-                </div>
-                    {/* *********************************** */}
-                <div className="details ">
 
-                    <div className="h-[100vw] lg:h-screen font-bold flex flex-col justify-center w-full ml-auto text-white gap-5 ">
-                        <h4 className="text-[2rem] text-[#EFAA76]">HIRE</h4>
-                        <div>
-                            <p className="text-[1.75rem] lg:text-[1.75rem] lg:w-full">
-                            Hire the perfect artist by filtering options like genre, location, and availability.
-                            </p>
-                        </div>
-                        <div className="">
-                            <button className="border border-[#EFAA76] font-normal text-xl px-5 py-2 rounded-md">
-                                Contact Now
-                            </button>
+                </Tilt>
+                {/* ======================================================== */}
+
+                <Tilt options={TiltOptions} className='three bg-[#191A1F] rounded-xl p-5'>
+                    <div className='flex flex-col gap-4 justify-center  w-full h-full md:gap-0'>
+                        <span className='text-[#909090] font-semibold'>For Users</span>
+                        <h5 className='text-center text-[1rem] md:text-[1.9rem] w-3/4 mx-auto font-semibold'>
+                            Choose Your Own Artist
+                        </h5>
+                        <div className='p-5 '>
+                            <img src={Three} alt="HomeScreen" className='mx-auto ' />
                         </div>
                     </div>
-                </div>
-                    {/* *********************************** */}
-                    </div>
-                </div>
-                <div className="rightblock backgroundChange bg-black  md:py-10 lg:py-0 -green-400 sticky top-0 lg:relative w-full lg:w-1/2  flex flex-col justify-start items-center md:items-end md:pr-10">
-                <div className="work-right-bl w-full lg:h-screen lg:sticky top-0 flex flex-col items-center lg:items-end justify-center">
-                    <div className="my-24 relative md:my-0 w-[48vw]  md:w-[20vw] h-[98vw] md:h-[41vw] flex justify-center  ring-offset-2 z-[99]  rounded-[35px] md:rounded-[50px] " style={{backgroundImage : `url${frame}`}}>
+                </Tilt>
+                {/* ======================================================== */}
 
-                    <img src={frame} alt="" className="absolute z-10 w-full h-full" />
-
-
-                    <div className="relative w-[96%] h-full pt-0  overflow-hidden rounded-[32px] md:rounded-[32px] lg:rounded-[44px]  ">
-                        <div className="photo absolute w-full h-full flex items-start justify-center">
-                            <img
-                                src={img1}
-                                alt="img1"
-                                className="w-full h-full rounded-3xl  object-fill "
-                            />
-                        </div>
-                       
-
-                        <div className="photo absolute w-full h-full flex items-start justify-center">
-                            <img src={img3} alt="img2" className="w-full h-full rounded-3xl  object-fill " />
-                        </div>
-
-                        <div className="photo absolute w-full h-full flex items-start justify-center">
-                            <img src={img2} alt="img2" className="w-full h-full rounded-3xl  object-fill " />
-                        </div>
-                        </div>
-
-
+                <Tilt options={TiltOptions} className='four w-[85%] bg-[#191A1F] rounded-xl p-5'>
+                    <div className='flex flex-col gap-4   w-full h-full md:gap-0'>
+                        <span className='text-[#909090] font-semibold'>For Artists</span>
+                        <h5 className='text-center text-[1rem] md:text-[1.9rem] mx-auto font-semibold bg-gradient-to-r from-[#DB4469] to-[#0266FF] bg-clip-text text-transparent'>
+                            Search Artist Around You
+                        </h5>
 
                     </div>
-                </div>    
+                </Tilt>
+                {/* ======================================================== */}
+
+                <div  className='five w-[115%] -translate-x-[13%] rounded-xl '>
+                <Tilt options={TiltOptions} className='rounded-xl p-5 bg-[#191A1F]'>
+                    <div className='flex flex-row '>
+                        <div className=' w-[25%]   '>
+                            <div className=' rounded-full mx-auto flex items-center justify-center w-full h-full'>
+                                <img src={Mic} alt="Mic" className=' bg-white rounded-full p-2 w-10 md:w-12 object-contain' />
+                            </div>
+                        </div>
+                        <div className='flex flex-col w-full h-full justify-center gap-8'>
+                            <h5 className='text-center text-[1rem] md:text-[1.9rem]  mx-auto font-semibold'>
+                                Hire under your Budget
+                            </h5>
+                            <div className='p-5 '>
+                                <img src={Five} alt="HomeScreen" className='mx-auto  md:w-auto' />
+                            </div>
+                        </div>
+                        <div className=' w-[25%]'>
+                            <div className=' rounded-full mx-auto flex items-end pb-8 justify-center w-full h-full'>
+                                <img src={Purse} alt="Mic" className=' bg-white rounded-full p-2 w-10 md:w-12 object-contain' />
+                            </div>
+                        </div>
+
+                    </div>
+                    </Tilt>
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default YourtalentOne;
-
-
-
+export default TiltCard
