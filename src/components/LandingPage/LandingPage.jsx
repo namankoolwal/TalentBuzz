@@ -9,17 +9,20 @@ import YourtalentTwo from './YourtalentTwo'
 import YourtalentOne from './YourTalentOne'
 
 const LandingPage = () => {
+  const handelClick =()=>{
+    confirm("We Know you are super hyped and can't wait!\nHang in there, the excitement is building!")
+  }
   return (
     <div className='w-full min-h-screen'>
         <Hero/>
       <Marque/>
       <HelpArtists/>
-      <WhyChose/>
+      <WhyChose handelClick={handelClick}/>
       {/* <YourtalentTwo/> */}
-      <YourtalentOne/>
-      <TalentShine/>
-      <Buzz/>
-      <Faq/>
+      <YourtalentOne handelClick={handelClick}/>
+      <TalentShine handelClick={handelClick}/>
+      <Buzz handelClick={handelClick}/>
+      <Faq handelClick={handelClick}/>
     </div>
   )
 }

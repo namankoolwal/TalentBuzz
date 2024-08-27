@@ -29,11 +29,11 @@ const FAQ_DATA = [
     }
 ];
 
-const Faq = () => {
+const Faq = ({handelClick}) => {
     const [answer, setAnswer] = useState(FAQ_DATA[0].answer);
     const [activeQuestion, setActiveQuestion] = useState(FAQ_DATA[0].id);
 
-    const handleClick = (faq) => {
+    const handleFaqClick = (faq) => {
         setAnswer(faq.answer);
         setActiveQuestion(faq.id);
     };
@@ -47,7 +47,7 @@ const Faq = () => {
                         <button
                             key={faq.id}
                             className={`text-left border border-[#1B1B1B] ml-3 cursor-pointer rounded-full px-10 py-3 ${activeQuestion === faq.id ? 'bg-[#1B1B1B] text-white' : ''} hover:border-[#464646]`}
-                            onClick={() => handleClick(faq)}
+                            onClick={() => handleFaqClick(faq)}
                         >
                             {faq.question}
                         </button>
@@ -62,7 +62,7 @@ const Faq = () => {
                 </div>
             </div>
             <div className='flex justify-center pt-5'>
-                <button className='bg-[#EFAA76] text-black w-fit mt-[16px] px-5 py-2 rounded-md flex items-center justify-between gap-3'>
+                <button className='bg-[#EFAA76] text-black w-fit mt-[16px] px-5 py-2 rounded-md flex items-center justify-between gap-3' onClick={handelClick}>
                     Get Started Now
                 </button>
             </div>

@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import buzzimg from '../../assets/images/Landingpage/Buzz/buzzimg.svg'
 
 
-const Buzz = () => {
+const Buzz = ({handelClick}) => {
 
     const followRef = useRef()
     const mouseEnter = () => {
@@ -28,7 +28,7 @@ const Buzz = () => {
                     <button ref={followRef} className='bg-[#EFAA76] text-black px-8 font-semibold py-2 opacity-0 rounded-lg absolute top-48  transition-all duration-200' onClick={() => { alert("Following") }}> Follow Us!</button>
 
                 </div>
-                <button className='bg-[#EFAA76] text-black w-fit mt-[16px] px-5 py-2 rounded-md flex items-center justify-between gap-3'>Explore Now</button>
+                <button className='bg-[#EFAA76] text-black w-fit mt-[16px] px-5 py-2 rounded-md flex items-center justify-between gap-3' onClick={handelClick}>Explore Now</button>
             </div>
         </div>
     )

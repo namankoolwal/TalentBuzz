@@ -3,7 +3,7 @@ import card1 from '../../assets/images/Landingpage/whychoose/card1.svg'
 import card2 from '../../assets/images/Landingpage/whychoose/card2.svg'
 import card3 from '../../assets/images/Landingpage/whychoose/card3.svg'
 
-const WhyChoose = () => {
+const WhyChoose = ({handelClick}) => {
   return (
     <div className='px-[5.5vw] my-[60px] lg:my-[120px] h-full'>
       <div className='flex flex-col items-center gap-[40px] lg:gap-[2.5rem] h-full'>
@@ -16,7 +16,7 @@ const WhyChoose = () => {
               <img loading='lazy' src={card1} alt="" className='w-14'/>
               <h3 className='text-[2rem]'>Streamlined Booking Process</h3>
               <p className='text-[1.125rem]'>Easily search and book artists with our user-friendly platform</p>
-              <button className='bg-[#EFAA76] p-2 rounded-md text-black w-fit'>Book Now</button>
+              <button className='bg-[#EFAA76] p-2 rounded-md text-black w-fit' onClick={handelClick}>Book Now</button>
           </div>
           </div>
         {/* ********** */}
@@ -27,7 +27,7 @@ const WhyChoose = () => {
               <img loading='lazy' src={card2} alt="" className='w-20'/>
               <h3 className='text-[2rem]'>Discover Hidden Talents</h3>
               <p className='text-[1.125rem]'>Advanced search capabilities for finding artists by genre, location</p>
-              <button className='bg-[#EFAA76] p-2 rounded-md text-black w-fit'>Book Now</button>
+              <button className='bg-[#EFAA76] p-2 rounded-md text-black w-fit' onClick={handelClick}>Book Now</button>
           </div>
           </div>
         {/* ********** */}
@@ -38,7 +38,7 @@ const WhyChoose = () => {
               <img loading='lazy' src={card3} alt="" className='w-20'/>
               <h3 className='text-[2rem]'>Comprehensive Artist Profiles</h3>
               <p className='text-[1.125rem]'>View detailed profiles, reviews, and performance videos of artists</p>
-              <button className='bg-[#EFAA76] p-2 rounded-md text-black w-fit'>Book Now</button>
+              <button className='bg-[#EFAA76] p-2 rounded-md text-black w-fit' onClick={handelClick}>Book Now</button>
           </div>
           </div>
         </div>

@@ -5,6 +5,9 @@ import logo from "../assets/images/logo.png";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  const handelClick =()=>{
+    confirm("We Know you are super hyped and can't wait!\nHang in there, the excitement is building!")
+  }
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -53,7 +56,9 @@ const Navbar = () => {
           >
             Contact Us
           </NavLink>
-          <button className="flex items-center gap-2 bg-[#0E78F3] px-2 py-2 rounded-md">
+          <button className="flex items-center gap-2 bg-[#0E78F3] px-2 py-2 rounded-md"
+          onClick={handelClick}
+          >
             Download Now{" "}
             <span className="font-semibold text-[1.618vw]">
               <RiDownload2Fill />
@@ -102,6 +107,7 @@ const Navbar = () => {
           className={`inline-flex font-bold text-xl items-center gap-2 bg-[#0E78F3] text-white px-2 py-4 rounded-xl mt-4 w-full justify-center transform transition-transform duration-300 ease-in-out ${
             isOpen ? "translate-x-0 opacity-100 delay-[400ms]" : "translate-x-10 opacity-0"
           }`}
+          onClick={handelClick}
         >
           Download Now{" "}
           <span>

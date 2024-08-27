@@ -11,7 +11,7 @@ import frame from '../../assets/images/Landingpage/Yourtalent/frame.png'
 gsap.registerPlugin(ScrollTrigger);
 
 
-const YourtalentOne = () => {
+const YourtalentOne = ({handelClick}) => {
 
    
     useEffect(() => { 
@@ -89,7 +89,9 @@ const YourtalentOne = () => {
                             </p>
                         </div>
                         <div className="">
-                            <button className="border border-[#EFAA76] font-normal px-5 py-2 rounded-md">
+                            <button className="border border-[#EFAA76] font-normal px-5 py-2 rounded-md"
+                                onClick={handelClick}
+                            >
                                 Contact Now
                             </button>
                         </div>

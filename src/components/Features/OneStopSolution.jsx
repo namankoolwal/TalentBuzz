@@ -5,7 +5,7 @@ import AllInOneBg from '../../assets/images/FeaturesPage/HowItWork/AllInOneBg.pn
 
 
 
-const OneStopSolution = () => {
+const OneStopSolution = ({handelClick}) => {
   return (
     <section className="px-[5.5vw] py-[60px] md:py-[120px] h-full bg-cover bg-center bg-no-repeat" style={{backgroundImage:`url(${AllInOneBg})`}}>
        <div 
@@ -22,7 +22,7 @@ const OneStopSolution = () => {
                         <img loading='lazy' src={rightimg} alt="" className='mx-auto'/>
                     </div>
                     <div className='flex justify-center '>
-                <button className='bg-[#EFAA76] text-black w-fit  px-5 py-2 rounded-md flex items-center justify-between gap-3'>
+                <button className='bg-[#EFAA76] text-black w-fit  px-5 py-2 rounded-md flex items-center justify-between gap-3' onClick={handelClick}>
                     Explore Now
                 </button>
             </div>

@@ -5,10 +5,8 @@ import ModelParent from '../GetInTouchModel/ModelParent';
 
 
 
-const GatewayToTalent = () => {
-  const handelClick =()=>{
-    confirm("We Know you are super hyped and can't wait!\nHang in there, the excitement is building!")
-  }
+const GatewayToTalent = ({handelClick}) => {
+  
   return (
     <div className='px-[5.5vw] my-[60px] md:my-[120px] h-full bg-cover bg-center bg-no-repeat' 
     style={{ backgroundImage: `url(${bg})` }}>

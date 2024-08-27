@@ -8,14 +8,17 @@ import Faq from '../LandingPage/Faq'
 import OneStopSolution from './OneStopSolution'
 
 const Features = () => {
+  const handelClick =()=>{
+    confirm("We Know you are super hyped and can't wait!\nHang in there, the excitement is building!")
+  }
   return (
     <div className='w-full min-h-screen h-full'>
-      <GatewayToTalent/>
+      <GatewayToTalent handelClick={handelClick}/>
       <BringingTalent/>
       <TiltCard/>
       <HowItWork/>
-      <OneStopSolution/>
-      <Faq/>
+      <OneStopSolution handelClick={handelClick}/>
+      <Faq handelClick={handelClick}/>
     </div>
   )
 }
