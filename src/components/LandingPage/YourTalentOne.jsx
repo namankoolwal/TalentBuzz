@@ -20,7 +20,7 @@ const YourtalentOne = () => {
         console.log(elements)
         let ctx = gsap.context(() => {
             gsap.set(".photo:not(:first-child)", { opacity: 1, y: 1200 });
-            gsap.set(".details:not(:first-of-type) > *", { opacity: 0, y: 200  });
+            gsap.set(".details:not(:first-of-type) > *", { opacity: 0, y: 1200 });
 
             const animation = gsap.to(".photo:not(:first-child)", {
                 opacity: 1,
@@ -33,7 +33,7 @@ const YourtalentOne = () => {
                 opacity: 1,
                 y: 0,
                 duration: 1,
-                stagger: 3,
+                stagger: 2,
             });
 
             ScrollTrigger.create({
@@ -80,11 +80,11 @@ const YourtalentOne = () => {
             <div className=" gallery  mt-40 flex flex-col-reverse md:flex-row relative">
                 <div className="leftblock h-full w-full lg:w-1/2 ml-auto  -violet-200 ">
                 <div className="work-text w-[90%] mx-auto">
-                <div className="details">
-                    <div className="h-[100vw] lg:h-screen font-bold flex flex-col justify-center w-full ml-auto text-white gap-5">
+                <div className="details w-3/4">
+                    <div className="first h-[100vw] lg:h-screen font-bold flex flex-col justify-center w-full ml-auto text-white gap-5">
                         <h4 className="text-[1.75rem] text-[#EFAA76]">DISCOVER</h4>
                         <div>
-                            <p className="text-[1.5rem] lg:text-[1.5rem] lg:w-full">
+                            <p className="text-[1.5rem] lg:text-[1.5rem] lg:w-3/4">
                             Showcase your talent to a global and let opportunities find you.
                             </p>
                         </div>
@@ -96,11 +96,11 @@ const YourtalentOne = () => {
                     </div>
                 </div>
                     {/*************************  */}
-                <div className="details">
-                    <div className="h-[100vw] lg:h-screen font-bold flex flex-col justify-center w-full ml-auto text-white gap-5">
+                <div className="details w-3/4">
+                    <div className="second h-[100vw] lg:h-screen font-bold flex flex-col justify-center w-full ml-auto text-white gap-5">
                         <h4 className="text-[1.75rem] text-[#EFAA76]">CONNECT</h4>
                         <div>
-                            <p className="text-[1.5rem] lg:text-[1.5rem] lg:w-full">
+                            <p className="text-[1.5rem] lg:text-[1.5rem] lg:w-3/4">
                             Easily connect with artists tailored to your event needs and requirements.
                             </p>
                         </div>
@@ -112,12 +112,12 @@ const YourtalentOne = () => {
                     </div>
                 </div>
                     {/* *********************************** */}
-                <div className="details ">
+                <div className="details w-3/4">
 
-                    <div className="h-[100vw] lg:h-screen font-bold flex flex-col justify-center w-full ml-auto text-white gap-5 ">
+                    <div className="third h-[100vw] lg:h-screen font-bold flex flex-col justify-center w-full ml-auto text-white gap-5 ">
                         <h4 className="text-[1.75rem] text-[#EFAA76]">HIRE</h4>
                         <div>
-                            <p className="text-[1.5rem] lg:text-[1.5rem] lg:w-full">
+                            <p className="text-[1.5rem] lg:text-[1.5rem] lg:w-3/4">
                             Hire the perfect artist by filtering options like genre, location, and availability.
                             </p>
                         </div>
