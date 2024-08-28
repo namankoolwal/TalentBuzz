@@ -112,12 +112,12 @@ const ArtistModel = () => {
       className="text-xl md:text-base"/>
       <div className=' text-black'>
         <div className='title text-left'>
-          <h3 className='font-[500] text-[1.25rem] text-[#170F49]'> Personal Details</h3>
-          <h5 className='text-[#6F6C90] text-[0.85rem]'>Please fill your information so we can get in touch with you.</h5>
+          <h3 className='font-[500] text-[1.75rem] md:text-[1.25rem] text-[#170F49]'> Personal Details</h3>
+          <h5 className='text-[#6F6C90] text-[1.125rem] md:text-[0.85rem]'>Please fill your information so we can get in touch with you.</h5>
         </div>
         <form onSubmit={handleSubmit} className='mt-6  relative'>
-          {error && <p className='text-red-500 text-xs text-left -top-5 absolute'>*{error}</p>}
-          <div className=' flex flex-col gap-2'>
+          {error && <p className='text-red-500 text-lg md:text-xs text-left -top-9 md:-top-5 absolute'>*{error}</p>}
+          <div className=' flex flex-col mt-14 md:mt-0 gap-5 md:gap-2'>
 
             <InputField value={formData.firstName} handleChange={handleChange} type="text" name="firstName" placeholder="*Full Name" />
 
@@ -126,17 +126,17 @@ const ArtistModel = () => {
 
             <InputField value={formData.phoneNo} handleChange={handleChange} type="number" name="phoneNo" placeholder="*Phone Number" />
 
-            <button className='bg-[#7349bd] bg-opacity-20 outline-none border-2 border-gray-300 focus:border-gray-400  rounded-md py-1.5 px-3 text-left text-gray-600 text-sm hover:bg-opacity-40 hover:text-gray-700 flex items-center justify-between' onClick={handleRedirect}> Fill This Form To Join Artist Group &rarr; 
+            <button className='bg-[#7349bd] bg-opacity-20 outline-none border-2 border-gray-300 focus:border-gray-400  rounded-md py-2.5 md:py-1.5 px-3 text-left text-gray-600 text-2xl md:text-sm hover:bg-opacity-40 hover:text-gray-700 flex items-center justify-between' onClick={handleRedirect}> Fill This Form To Join Artist Group &rarr; 
             <SiGoogleforms className='w-5 h-5 '/> 
             {/* <img loading='lazy' src={formicon3d} alt="" className='bg-transparent mix-blend-multiply w-7 h-7' />  */}
             </button>
 
 
-            <div className='flex items-center justify-end'>
+            <div className='flex items-center mt-5 md:mt-0 justify-end'>
 
               <button
                 type="submit"
-                className='inline-block w-fit bg-[#CF4672] text-white py-2 px-10 rounded hover:bg-[#d84573] transition mt-4 disabled:opacity-70 disabled:cursor-not-allowed'
+                className='inline-block w-fit text-2xl md:text-base py-3 md:py-2 px-10 bg-[#CF4672] text-white  rounded hover:bg-[#d84573] transition mt-4 disabled:opacity-70 disabled:cursor-not-allowed'
                 disabled={submitBtnDisabled}
               >
                 Submit

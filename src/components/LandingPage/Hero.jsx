@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useRef } from 'react'
+import React, { useRef ,useState} from 'react'
 import { FaArrowRightLong } from "react-icons/fa6";
 import right from '../../assets/images/Landingpage/hero/right.png'
 import bg from '../../assets/images/Landingpage/hero/bg.png'
@@ -7,6 +7,8 @@ import ModelParent from '../GetInTouchModel/ModelParent';
 import Typed from 'typed.js';
 
 const Hero = () => {
+  const [show, setShow] = useState(false);
+
   const el = useRef(null)
 
   React.useEffect(() => {
@@ -36,6 +38,7 @@ const Hero = () => {
   } 
   return (
     <div className='relative px-[5.5vw]  my-[60px] md:my-[120px] z-[10] w-full h-full'>
+          {show && <ModelParent showToggle={show} setShow={setShow} />}
       <div className="hero flex flex-col-reverse md:flex-row py-5 items-start gap-20 md:gap-3 justify-between relative z-[10] ">
         <div className='left md:w-[50%] flex flex-col gap-[24px] '>
 
@@ -45,8 +48,8 @@ const Hero = () => {
             <div ref={el} className='h-[4.5rem] md:h-[4.938rem] text-[#D3466F]'></div>
           </h1>
           <p className='text-[1.25rem] md:w-[80%]'>In a world full of diverse and unique people, everyone has special talents just waiting to be discovered. Talentbuzzz invites both artists to showcase their amazing abilities and users to uncover the perfect talent for their needs.</p>
-          <span className='text-white w-fit md:mt-[16px] px-9 py-4 md:px-10 md:py-[14px] rounded-full flex items-center justify-between gap-3 bg-gradient-to-l from-[#DB4469] to-[#0266FF] text-lg cursor-pointer'>
-          <ModelParent text={"INQUIRE NOW"}/>
+          <span className='text-white w-fit md:mt-[16px] px-9 py-4 md:px-10 md:py-[14px] rounded-full flex items-center justify-between gap-3 bg-gradient-to-l from-[#DB4469] to-[#0266FF] text-lg cursor-pointer' onClick={() => setShow(true)}>
+              Inquire now
           </span>
         </div>
         <div className='right md:w-[50%] flex flex-col items-center gap-20'>

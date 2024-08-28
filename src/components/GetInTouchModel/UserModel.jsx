@@ -128,10 +128,10 @@ const UserModel = () => {
             />
             <div className="text-black">
                 <div className="title text-left">
-                    <h3 className="font-[500] text-[1.25rem] text-[#170F49]">
+                    <h3 className="font-[500] text-[1.75rem] md:text-[1.25rem] text-[#170F49]">
                         {step === 1 ? 'Personal Details' : 'Event Details'}
                     </h3>
-                    <h5 className="text-[#6F6C90] text-[0.85rem]">
+                    <h5 className="text-[#6F6C90] text-[1.125rem] md:text-[0.85rem]">
                         {step === 1
                             ? 'Please fill your information so we can get in touch with you.'
                             : 'Please fill your event details so we can get in touch with you.'}
@@ -139,12 +139,12 @@ const UserModel = () => {
                 </div>
                 <form onSubmit={handleSubmit} className="mt-6 relative">
                     {error && (
-                        <p className="text-red-500 text-xs text-left -top-5 absolute">
+                        <p className="text-red-500 text-lg md:text-xs text-left -top-9 md:-top-5 absolute">
                             *{error}
                         </p>
                     )}
                     {step === 1 && (
-                        <div className="flex flex-col gap-2">
+                        <div className="flex flex-col mt-14 md:mt-0 gap-5 md:gap-2">
                             <InputField
                                 value={formData.fullName}
                                 handleChange={handleChange}
@@ -173,11 +173,11 @@ const UserModel = () => {
                                 name="cityBasedIn"
                                 placeholder="*City Based In"
                             />
-                            <div className="flex items-center justify-end">
+                            <div className="flex items-center mt-5 md:mt-0 justify-end">
                                 <button
                                     type="button"
                                     onClick={handleNext}
-                                    className="inline-block w-fit bg-[#CF4672] text-white py-2 px-10 rounded hover:bg-[#d84573] transition mt-4 disabled:opacity-70 disabled:cursor-not-allowed"
+                                    className="inline-block w-fit bg-[#CF4672] text-white text-2xl md:text-base py-3 md:py-2 px-10 rounded hover:bg-[#d84573] transition mt-4 disabled:opacity-70 disabled:cursor-not-allowed"
                                 >
                                     Next
                                 </button>
@@ -186,16 +186,15 @@ const UserModel = () => {
                     )}
 
                     {step === 2 && (
-                        <div className="flex flex-col gap-2">
-                            <div>
-                                {/* <label className="block text-sm font-medium text-gray-700">Artist you are looking for</label> */}
+                        <div className="flex flex-col mt-14 md:mt-0 gap-5 md:gap-2">
+                          
                                 <select
                                     name="artistType"
                                     value={formData.artistType}
                                     onChange={handleChange}
-                                    className="block w-full py-1 px-3 border md:border-2 bg-gray-100 border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                                    className="block w-full py-2.5 md:py-1 px-3 text-2xl border md:border-2  bg-gray-100 border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                                 >
-                                    <option value="None">Artist You are looking for</option>
+                                    <option disabled value="None" className='text-gray-500'>Artist You are looking for</option>
                                     <option value="None">None</option>
                                     <option value="Musician">Musician</option>
                                     <option value="Dancer">Dancer</option>
@@ -203,7 +202,6 @@ const UserModel = () => {
                                     <option value="Comedian">Comedian</option>
                                     <option value="Lifestyle">Lifestyle</option>
                                 </select>
-                            </div>
                             <InputField
                                 value={formData.eventType}
                                 handleChange={handleChange}
@@ -225,17 +223,17 @@ const UserModel = () => {
                                 name="tellmore"
                                 placeholder="Tell Us more about your Event"
                             />
-                            <div className="flex justify-between">
+                            <div className="flex justify-between mt-5 md:mt-0">
                                 <button
                                     type="button"
                                     onClick={handlePrev}
-                                    className="inline-block w-fit bg-white text-black border-2 py-2 px-10 rounded transition mt-4"
+                                    className="inline-block w-fit bg-white text-black border-2 text-2xl md:text-base py-1 md:py-0.5 px-10 rounded transition mt-4"
                                 >
                                     Previous
                                 </button>
                                 <button
                                     type="submit"
-                                    className="inline-block w-fit bg-[#CF4672] text-white py-2 px-10 rounded hover:bg-[#d84573] transition mt-4 disabled:opacity-70 disabled:cursor-not-allowed"
+                                    className="inline-block w-fit bg-[#CF4672] text-white text-2xl md:text-base py-3 md:py-2 px-10 rounded hover:bg-[#d84573] transition mt-4 disabled:opacity-70 disabled:cursor-not-allowed"
                                     disabled={submitBtnDisabled}
                                 >
                                     Submit
