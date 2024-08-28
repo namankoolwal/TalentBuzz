@@ -45,7 +45,7 @@ const ModelParent = ({ text, showToggle, setShow }) => {
                     <ul className="flex flex-wrap -mb-px text-sm font-medium text-center">
                       <li className="me-2 -mb-2 mt-2" role="presentation">
                         <button
-                          className={`inline-block p-4 text-xl md:text-base rounded-t-lg ${
+                          className={`inline-block p-4 text-2xl md:text-base rounded-t-lg ${
                             formType === "artist" && "text-[#CF4672]"
                           }`}
                           type="button"
@@ -57,7 +57,7 @@ const ModelParent = ({ text, showToggle, setShow }) => {
                       <li className="me-2 border-r border-gray-400 mt-4"></li>
                       <li className="me-2 -mb-2 mt-2" role="presentation">
                         <button
-                          className={`inline-block p-4 text-xl md:text-base rounded-t-lg ${
+                          className={`inline-block p-4 text-2xl md:text-base rounded-t-lg ${
                             formType === "user" && "text-[#CF4672]"
                           }`}
                           type="button"
