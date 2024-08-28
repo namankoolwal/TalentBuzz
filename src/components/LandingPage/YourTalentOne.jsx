@@ -20,7 +20,7 @@ const YourtalentOne = ({handelClick}) => {
         console.log(elements)
         let ctx = gsap.context(() => {
             gsap.set(".photo:not(:first-child)", { opacity: 1, y: 1200 });
-            gsap.set(".details:not(:first-of-type) > *", { opacity: 0, y: 1200 });
+            gsap.set(".details:not(:first-of-type) > *", { opacity: 0, y: 200 });
 
             const animation = gsap.to(".photo:not(:first-child)", {
                 opacity: 1,
