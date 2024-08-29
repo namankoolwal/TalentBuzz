@@ -8,7 +8,7 @@ import logo from "../assets/images/logo.png";
 
 const Footer = () => {
   return (
-    <div className=' bg-[#1b1b1b] md:bg-[#0A0A0A] w-full '>
+    <footer className=' bg-[#1b1b1b] md:bg-[#0A0A0A] w-full '>
       <div className='flex flex-col items-center justify-center gap-5'>
       
         <div className="top flex flex-col md:flex-row gap-12 md:gap-10 text-[1.35rem] md:text-[1rem] py-20 md:py-10 px-[5vw]  items-start justify-evenly">
@@ -88,7 +88,7 @@ const Footer = () => {
                 <span className='text-[15.544vw] text-[#2C2C2C] '>talentbuzzz</span>
             </div> */}
       </div>
-    </div>
+    </footer>
   )
 }
 

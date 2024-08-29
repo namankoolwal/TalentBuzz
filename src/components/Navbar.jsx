@@ -26,7 +26,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="px-[3vw] md:px-[5.5vw] text-[1.125rem] py-5 relative">
+    <nav className="px-[3vw] md:px-[5.5vw] text-[1.125rem] py-5 relative">
       <div className="flex items-center justify-between gap-40">
         <NavLink to={"/"}>
           <img loading='lazy' src={logo} alt="logo" className="w-[25vw] md:w-[12vw]" />
@@ -109,7 +109,7 @@ const Navbar = () => {
         </NavLink>
         <div
           
-          onClick={handelContact}
+          onClick={()=>{toggleMenu();handelContact()}}
           className={`text-white text-2xl font-bold py-2 cursor-pointer transform transition-transform duration-500 ease-in-out ${
             isOpen ? "translate-x-0 opacity-100 delay-300" : "translate-x-10 opacity-0"
           }`}
@@ -128,7 +128,7 @@ const Navbar = () => {
           </span>
         </button>
       </div>
-    </div>
+    </nav>
   );
 };
 
