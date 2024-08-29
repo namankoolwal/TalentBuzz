@@ -3,8 +3,19 @@ import React, { useState } from "react";
 import { RiDownload2Fill, RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import logo from "../assets/images/logo.png";
 import { NavLink } from "react-router-dom";
+import { useLenis } from "lenis/react";
 
 const Navbar = () => {
+
+  const lenis = useLenis();
+
+  const handelContact = () => {
+    // Scroll to the bottom smoothly using Lenis
+    lenis.scrollTo(document.body.scrollHeight, {
+      duration: 1, // Adjust the duration as needed (seconds)
+    });
+  };
+
   const handelClick =()=>{
     confirm("We Know you are super hyped and can't wait!\nHang in there, the excitement is building!")
   }
@@ -46,16 +57,14 @@ const Navbar = () => {
           >
             About Us
           </NavLink>
-          <NavLink
-            to={"/contact"}
-            className={({ isActive }) =>
-              `flex items-center gap-1 ${
-                isActive ? "text-[#EFAA76]" : "text-white"
-              }`
+          <span onClick={handelContact}
+            
+            className={
+              `flex items-center gap-1 cursor-pointer`
             }
           >
             Contact Us
-          </NavLink>
+          </span>
           <button className="flex items-center gap-2 bg-[#0E78F3] px-2 py-2 rounded-md"
           onClick={handelClick}
           >
@@ -98,17 +107,15 @@ const Navbar = () => {
         >
           About Us
         </NavLink>
-        <NavLink
-          to={"/contact"}
-          onClick={toggleMenu}
-          className={({isActive})=>`${
-                isActive ? "text-[#EFAA76]" : "text-white"
-              } text-2xl font-bold py-2 transform transition-transform duration-500 ease-in-out ${
+        <div
+          
+          onClick={handelContact}
+          className={`text-white text-2xl font-bold py-2 cursor-pointer transform transition-transform duration-500 ease-in-out ${
             isOpen ? "translate-x-0 opacity-100 delay-300" : "translate-x-10 opacity-0"
           }`}
         >
           Contact Us
-        </NavLink>
+        </div>
         <button
           className={`inline-flex font-bold text-xl items-center gap-2 bg-[#0E78F3] text-white px-2 py-4 rounded-xl mt-4 w-full justify-center transform transition-transform duration-300 ease-in-out ${
             isOpen ? "translate-x-0 opacity-100 delay-[400ms]" : "translate-x-10 opacity-0"
