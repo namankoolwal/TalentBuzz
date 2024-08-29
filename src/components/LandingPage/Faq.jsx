@@ -62,7 +62,7 @@ const Faq = ({handelClick}) => {
                 </div>
             </div>
             <div className='flex justify-center pt-5'>
-                <button className='bg-[#EFAA76] text-black w-fit mt-[16px] px-5 py-2 rounded-md flex items-center justify-between gap-3' onClick={handelClick}>
+                <button className='bg-[#EFAA76] text-black text-xl md:text-base w-fit mt-[16px] px-5 py-2 rounded-md flex items-center justify-between gap-3' onClick={handelClick}>
                     Get Started Now
                 </button>
             </div>

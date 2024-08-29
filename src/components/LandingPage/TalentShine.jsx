@@ -14,7 +14,7 @@ const TalentShine = ({handelClick}) => {
                         <p className='text-[1.25rem] '>
                             Join TalentBuzzz and become part of a thriving community of talented individuals.
                         </p>
-                        <button className='bg-[#EFAA76] text-black w-fit mt-[16px] px-3 py-2 rounded-md flex items-center justify-between gap-3' onClick={handelClick}>Download Now</button>
+                        <button className='bg-[#EFAA76] text-black text-xl md:text-base w-fit mt-[16px] px-3 py-2 rounded-md flex items-center justify-between gap-3' onClick={handelClick}>Download Now</button>
                     </div>
 
 
