@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className=' bg-[#1b1b1b] md:bg-[#0A0A0A] w-full '>
         <div className='flex flex-col items-center justify-center gap-5'>
-            <div className="top flex flex-col md:flex-row gap-12 md:gap-10 text-[1.55rem] md:text-[1rem] py-20 md:py-10 px-[5vw]  items-start justify-evenly">
+            <div className="top flex flex-col md:flex-row gap-12 md:gap-10 text-[1.35rem] md:text-[1rem] py-20 md:py-10 px-[5vw]  items-start justify-evenly">
                 <div className='first w-[100%] md:w-[25%] flex flex-col gap-8'>
                     <p className=' md:text-balance leading-10 md:leading-normal'>Talentbuzz is one of the India’s largest artists place where they can showcase their unseen talent, watch new skills, grow as an individual and expand their networks.</p>
                     <div className="socials w-full flex items-center justify-evenly md:justify-between gap-5 p-2 pl-0">
