@@ -10,7 +10,7 @@ const Footer = () => {
         <div className='flex flex-col items-center justify-center gap-5'>
             <div className="top flex flex-col md:flex-row gap-12 md:gap-10 text-[1.35rem] md:text-[1rem] py-20 md:py-10 px-[5vw]  items-start justify-evenly">
                 <div className='first w-[100%] md:w-[25%] flex flex-col gap-8'>
-                    <p className=' md:text-balance leading-10 md:leading-normal'>Talentbuzz is one of the India’s largest artists place where they can showcase their unseen talent, watch new skills, grow as an individual and expand their networks.</p>
+                    <p className=' md:text-balance leading-10 text-[1.5rem] md:text-[1rem] md:leading-normal'>Talentbuzz is one of the India’s largest artists place where they can showcase their unseen talent, watch new skills, grow as an individual and expand their networks.</p>
                     <div className="socials w-full flex items-center justify-evenly md:justify-between gap-5 p-2 pl-0">
                       <span className="bg-white text-black font-bold text-4xl md:text-lg p-3 md:p-2 rounded-full"><FaXTwitter /></span>
                       <span className="bg-white text-black font-bold text-4xl md:text-lg p-3 md:p-2 rounded-full"><FaInstagram /></span>
@@ -20,13 +20,13 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="second list-none space-y-2 mt-2 md:mt-0 flex flex-col">
-                    <li className='font-semibold text-[2rem] md:text-[1.25rem]'>COMPANY</li>
+                    <li className='font-semibold text-[1.5rem] md:text-[1.15rem]'>COMPANY</li>
                     <li>About Us</li>
                     <li>Privacy policy</li>
                     <li>Terms & conditions</li>
                 </div>
                 <div className="third list-none space-y-2 flex flex-col">
-                    <li className='font-semibold text-[2rem] md:text-[1.25rem]'>QUICK LINKS</li>
+                    <li className='font-semibold text-[1.5rem] md:text-[1.15rem]'>QUICK LINKS</li>
                     <li>Hire talents</li>
                     <li>Find Work</li>
                     <li>Features</li>
@@ -34,7 +34,7 @@ const Footer = () => {
                     <li>Blog</li>
                 </div>
                 <div className='fourth list-none space-y-3 flex flex-col '>
-                <li className='font-semibold text-[2rem] md:text-[1.25rem]'>DOWNLOAD THE APP</li>
+                <li className='font-semibold text-[1.5rem] md:text-[1.15rem]'>DOWNLOAD THE APP</li>
                 <li><button className='bg-[#CD3056] rounded-lg p-4 md:p-2 flex items-center gap-4 md:gap-2 w-full'>
               <svg className="w-10 md:w-5" viewBox="-9 0 274 274" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g>
