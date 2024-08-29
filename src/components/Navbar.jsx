@@ -79,7 +79,9 @@ const Navbar = () => {
         <NavLink
           to={"/features"}
           onClick={toggleMenu}
-          className={`text-white text-2xl font-bold py-2 mt-10 delay-100 transform transition-transform duration-500 ease-in-out ${
+          className={({isActive})=>`${
+                isActive ? "text-[#EFAA76]" : "text-white"
+              } text-2xl font-bold py-2 mt-10 delay-100 transform transition-transform duration-500 ease-in-out ${
             isOpen ? "translate-x-0 opacity-100 " : "translate-x-10 opacity-0"
           }`}
         >
@@ -88,7 +90,9 @@ const Navbar = () => {
         <NavLink
           to={"/about"}
           onClick={toggleMenu}
-          className={`text-white text-2xl font-bold py-2 transform transition-transform duration-500 ease-in-out ${
+          className={({isActive})=>`${
+                isActive ? "text-[#EFAA76]" : "text-white"
+              } text-2xl font-bold py-2 transform transition-transform duration-500 ease-in-out ${
             isOpen ? "translate-x-0 opacity-100 delay-200" : "translate-x-10 opacity-0"
           }`}
         >
@@ -97,7 +101,9 @@ const Navbar = () => {
         <NavLink
           to={"/contact"}
           onClick={toggleMenu}
-          className={`text-white text-2xl font-bold py-2 transform transition-transform duration-500 ease-in-out ${
+          className={({isActive})=>`${
+                isActive ? "text-[#EFAA76]" : "text-white"
+              } text-2xl font-bold py-2 transform transition-transform duration-500 ease-in-out ${
             isOpen ? "translate-x-0 opacity-100 delay-300" : "translate-x-10 opacity-0"
           }`}
         >

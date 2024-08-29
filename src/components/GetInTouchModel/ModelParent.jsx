@@ -33,10 +33,10 @@ const ModelParent = ({ text, showToggle, setShow }) => {
           <div className="relative w-full p-5 md:p-0 max-w-[62rem] max-h-screen">
             <div className="relative w-full h-full bg-white p-2 rounded-xl overflow-hidden shadow dark:bg-white text-black">
               <div className="flex w-full h-full mx-auto overflow-hidden relative">
-                <div className="leftSide mx-auto w-full h-full px-10 md:px-4 py-6 mt-3 ml-3 space-y-6">
+                <div className="leftSide mx-auto w-full h-full px-10 md:px-4 py-6 mt-3 ml-3 space-y-8 md:space-y-6">
                   <div className="flex flex-col items-start justify-start text-left">
-                    <h4 className="font-semibold text text-[1.75rem] md:text-[1.5rem]">Get In Touch</h4>
-                    <p className="text-[1.1rem] md:text-[0.90rem]">
+                    <h4 className="font-semibold text text-[2.5rem] md:text-[1.5rem]">Get In Touch</h4>
+                    <p className="text-[1.25rem] md:text-[0.90rem]">
                       Fill out the form below, and we’ll get back to you as soon
                       as possible.
                     </p>

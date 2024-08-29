@@ -47,7 +47,7 @@ const Hero = () => {
             </div>
             <div ref={el} className='h-[4.5rem] md:h-[4.938rem] text-[#D3466F]'></div>
           </h1>
-          <p className='text-[1.25rem] md:w-[80%]'>In a world full of diverse and unique people, everyone has special talents just waiting to be discovered. Talentbuzzz invites both artists to showcase their amazing abilities and users to uncover the perfect talent for their needs.</p>
+          <p className='text-[1.5rem] md:text-[1.3rem] md:w-[80%]'>In a world full of diverse and unique people, everyone has special talents just waiting to be discovered. Talentbuzzz invites both artists to showcase their amazing abilities and users to uncover the perfect talent for their needs.</p>
           <span className='text-white w-fit mt-[16px] px-9 py-4 md:px-10 md:py-[14px] rounded-full flex items-center justify-between gap-3 bg-gradient-to-l from-[#DB4469] to-[#0266FF] text-xl cursor-pointer' onClick={() => setShow(true)}>
               Inquire now
           </span>

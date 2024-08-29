@@ -46,7 +46,7 @@ const Faq = ({handelClick}) => {
                     {FAQ_DATA.map((faq) => (
                         <button
                             key={faq.id}
-                            className={`text-left border border-[#1B1B1B] ml-3 cursor-pointer rounded-full px-10 py-3 ${activeQuestion === faq.id ? 'bg-[#1B1B1B] text-white' : ''} hover:border-[#464646]`}
+                            className={`text-left border text-[1.125rem] md:text-[1.1rem] border-[#1B1B1B] md:ml-3 cursor-pointer rounded-full px-8 md:px-10 py-3 ${activeQuestion === faq.id ? 'bg-[#1B1B1B] text-white' : ''} hover:border-[#464646]`}
                             onClick={() => handleFaqClick(faq)}
                         >
                             {faq.question}
@@ -56,13 +56,13 @@ const Faq = ({handelClick}) => {
 
                 <div className='faqRight md:w-[40%] p-7 pb-3 flex flex-col gap-5'>
                     <h3 className='text-[3rem]'>Answers</h3>
-                    <div className='w-full h-44 md:h-full bg-[#1B1B1B] rounded-2xl p-5'>
-                        <div className='text-[1rem]'>{answer}</div>
+                    <div className='w-full h-56 md:h-full bg-[#1B1B1B] rounded-2xl p-5'>
+                        <div className='text-[1.2rem] md:text-[1.1rem]'>{answer}</div>
                     </div>
                 </div>
             </div>
             <div className='flex justify-center pt-5'>
-                <button className='bg-[#EFAA76] text-black text-xl md:text-base w-fit mt-[16px] px-5 py-2 rounded-md flex items-center justify-between gap-3' onClick={handelClick}>
+                <button className='bg-[#EFAA76] text-black text-2xl md:text-lg w-fit mt-[16px] px-5 py-3 rounded-md flex items-center justify-between gap-3' onClick={handelClick}>
                     Get Started Now
                 </button>
             </div>

@@ -106,12 +106,12 @@ const YourtalentOne = ({ handelClick }) => {
                             <div className="first h-[100vw] lg:h-screen font-bold flex flex-col justify-center w-full ml-auto text-white gap-5">
                                 <h4 className="text-[1.75rem] text-[#EFAA76]">DISCOVER</h4>
                                 <div>
-                                    <p className="text-[1.5rem] lg:text-[1.5rem] lg:w-3/4">
+                                    <p className="text-[1.6rem] lg:text-[1.5rem] lg:w-3/4">
                                         Showcase your talent to a global audience and let opportunities find you.
                                     </p>
                                 </div>
                                 <div className="">
-                                    <button className="border border-[#EFAA76] font-normal px-5 py-2 rounded-md"
+                                    <button className="border border-[#EFAA76] text-xl md:text-base font-normal px-5 py-2 rounded-md"
                                         onClick={handelClick}
                                     >
                                         Contact Now
@@ -123,12 +123,14 @@ const YourtalentOne = ({ handelClick }) => {
                             <div className="second h-[100vw] lg:h-screen font-bold flex flex-col justify-center w-full ml-auto text-white gap-5">
                                 <h4 className="text-[1.75rem] text-[#EFAA76]">CONNECT</h4>
                                 <div>
-                                    <p className="text-[1.5rem] lg:text-[1.5rem] lg:w-3/4">
+                                    <p className="text-[1.6rem] lg:text-[1.5rem] lg:w-3/4">
                                         Easily connect with artists tailored to your event needs and requirements.
                                     </p>
                                 </div>
                                 <div className="">
-                                    <button className="border border-[#EFAA76] font-normal px-5 py-2 rounded-md">
+                                    <button className="border border-[#EFAA76] text-xl md:text-base font-normal px-5 py-2 rounded-md"
+                                    onClick={handelClick}
+                                    >
                                         Contact Now
                                     </button>
                                 </div>
@@ -138,12 +140,14 @@ const YourtalentOne = ({ handelClick }) => {
                             <div className="third h-[100vw] lg:h-screen font-bold flex flex-col justify-center w-full ml-auto text-white gap-5">
                                 <h4 className="text-[1.75rem] text-[#EFAA76]">HIRE</h4>
                                 <div>
-                                    <p className="text-[1.5rem] lg:text-[1.5rem] lg:w-3/4">
+                                    <p className="text-[1.6rem] lg:text-[1.5rem] lg:w-3/4">
                                         Hire the perfect artist by filtering options like genre, location, and availability.
                                     </p>
                                 </div>
                                 <div className="">
-                                    <button className="border border-[#EFAA76] font-normal px-5 py-2 rounded-md">
+                                    <button className="border border-[#EFAA76] text-xl md:text-base font-normal px-5 py-2 rounded-md"
+                                    onClick={handelClick}
+                                    >
                                         Contact Now
                                     </button>
                                 </div>

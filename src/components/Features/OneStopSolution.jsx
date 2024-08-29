@@ -22,7 +22,7 @@ const OneStopSolution = ({handelClick}) => {
                         <img loading='lazy' src={rightimg} alt="" className='mx-auto'/>
                     </div>
                     <div className='flex justify-center '>
-                <button className='bg-[#EFAA76] text-black w-fit  px-5 py-2 rounded-md flex items-center justify-between gap-3' onClick={handelClick}>
+                <button className='bg-[#EFAA76] text-black w-fit text-2xl md:text-lg px-5 py-2 rounded-md flex items-center justify-between gap-3' onClick={handelClick}>
                     Explore Now
                 </button>
             </div>

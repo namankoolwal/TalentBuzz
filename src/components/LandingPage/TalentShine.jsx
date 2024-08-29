@@ -11,10 +11,10 @@ const TalentShine = ({handelClick}) => {
                         <h2 className='font-semibold text-[4rem] leading-tight'>
                             Ready to Let Your Talent Shine?
                         </h2>
-                        <p className='text-[1.25rem] '>
+                        <p className='text-[1.5rem] md:text-[1.3rem] '>
                             Join TalentBuzzz and become part of a thriving community of talented individuals.
                         </p>
-                        <button className='bg-[#EFAA76] text-black text-xl md:text-base w-fit mt-[16px] px-3 py-2 rounded-md flex items-center justify-between gap-3' onClick={handelClick}>Download Now</button>
+                        <button className='bg-[#EFAA76] text-black text-2xl md:text-lg w-fit mt-[16px] px-3 py-3 rounded-md flex items-center justify-between gap-3' onClick={handelClick}>Download Now</button>
                     </div>
 
 
