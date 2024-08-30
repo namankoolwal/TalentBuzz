@@ -16,7 +16,7 @@ const GatewayToTalent = ({ handelClick }) => {
           <div className='text-[2.8rem] md:text-[4rem] font-semibold text-center'>
             Your Gateway to Talent and Opportunity
           </div>
-          <div className='md:-translate-y-6' onClick={() => setShow(true)}>
+          <div className='sm:translate-y-10 md:-translate-y-6 translate-custom' onClick={() => setShow(true)}>
             <span className='text-white w-fit md:mt-[16px] px-9 py-4 md:px-10 md:py-[14px] rounded-full flex items-center justify-between gap-3 bg-gradient-to-l from-[#DB4469] to-[#0266FF] text-lg cursor-pointer'>
               INQUIRE NOW
             </span>

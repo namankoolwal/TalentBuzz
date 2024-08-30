@@ -3,7 +3,7 @@ import buzzimg from '../../assets/images/Landingpage/Buzz/buzzimg.svg'
 import ModelParent from '../GetInTouchModel/ModelParent';
 
 
-const Buzz = ({handelClick}) => {
+const Buzz = () => {
     const [show, setShow] = useState(false);
 
     const followRef = useRef()

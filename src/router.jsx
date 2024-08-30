@@ -4,7 +4,6 @@ import Layout from "./Layout";
 import LandingPage from "./components/LandingPage/LandingPage";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Features from "./components/Features/Features";
-import ContactUs from "./components/ContactUs/ContactUs";
 
 
 const router = createBrowserRouter(
@@ -13,7 +12,6 @@ const router = createBrowserRouter(
             <Route path="" element={<LandingPage/>} />
             <Route path="features" element={<Features/>} />
             <Route path="about" element={<AboutUs/>} />
-            <Route path="contact" element={<ContactUs/>} />
 
         </Route>
     )
