@@ -8,13 +8,16 @@ import ImageSection from './ImageSection'
 
 
 const AboutUs = () => {
+  const handelClick =()=>{
+    confirm("We Know you are super hyped and can't wait!\nHang in there, the excitement is building!")
+  }
   return (
     <div className='w-full min-h-screen h-full'>
         <AboutTalentBuzz/>
         <CardSection/>
-        <YourArtist/>
+        <YourArtist handelClick={handelClick}/>
         <ImageSection/>
-        <LookingForTalent/>
+        <LookingForTalent handelClick={handelClick}/>
     </div>
   )
 }
