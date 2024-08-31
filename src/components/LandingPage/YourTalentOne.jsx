@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import ModelParent from '../GetInTouchModel/ModelParent';
 import img1 from "../../assets/images/Landingpage/Yourtalent/img1.png";
 import img2 from "../../assets/images/Landingpage/Yourtalent/img2.png";
 import img3 from "../../assets/images/Landingpage/Yourtalent/img3.png";
@@ -10,7 +11,8 @@ import frame from "../../assets/images/Landingpage/Yourtalent/frame.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const YourtalentOne = ({ handelClick }) => {
+const YourtalentOne = () => {
+    const [show, setShow] = useState(false);
     const [imagesLoaded, setImagesLoaded] = useState(false);
 
     // Code to detect when all images are loaded
@@ -86,6 +88,7 @@ const YourtalentOne = ({ handelClick }) => {
 
     return (
         <div className="backgroundChange bg-black px-[5.5vw] py-20 my-[60px] md:my-[120px]">
+        {show && <ModelParent showToggle={show} setShow={setShow} />}
             <div className="flex items-end ">
                 <div className="left w-[49%] md:w-[41%] ">
                     <h2 className="text-[2.5rem] md:text-[4rem] font-semibold leading-tight">
@@ -112,7 +115,7 @@ const YourtalentOne = ({ handelClick }) => {
                                 </div>
                                 <div className="">
                                     <button className="border border-[#EFAA76] text-xl md:text-base font-normal px-5 py-2 rounded-md"
-                                        onClick={handelClick}
+                                        onClick={() => setShow(true)}
                                     >
                                         Contact Now
                                     </button>
@@ -129,7 +132,7 @@ const YourtalentOne = ({ handelClick }) => {
                                 </div>
                                 <div className="">
                                     <button className="border border-[#EFAA76] text-xl md:text-base font-normal px-5 py-2 rounded-md"
-                                    onClick={handelClick}
+                                    onClick={() => setShow(true)}
                                     >
                                         Contact Now
                                     </button>
@@ -146,7 +149,7 @@ const YourtalentOne = ({ handelClick }) => {
                                 </div>
                                 <div className="">
                                     <button className="border border-[#EFAA76] text-xl md:text-base font-normal px-5 py-2 rounded-md"
-                                    onClick={handelClick}
+                                    onClick={() => setShow(true)}
                                     >
                                         Contact Now
                                     </button>
