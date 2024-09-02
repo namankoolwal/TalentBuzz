@@ -77,7 +77,7 @@ const HowItWork = () => {
                   <span className=' bg-black rounded-full flex items-center justify-center w-6 h-6  md:text-sm p-7 font-semibold md:p-4'><span className='-mb-1'>1</span></span>
                   <span>Download The app</span>
                 </div>
-                <div><img src={HoriConnectDot} alt="ConnectDot" className='w-3/4  mx-auto md:w-full' /></div>
+                <div><img src={HoriConnectDot} alt="ConnectDot" className='w-3/4 py-2 mx-auto md:w-full' /></div>
 
 
 
@@ -88,7 +88,7 @@ const HowItWork = () => {
                   <span className=' bg-black rounded-full flex items-center justify-center w-6 h-6 text-2xl md:text-sm p-7 font-semibold md:p-4'><span className='-mb-1'>2</span></span>
                   <span>Create a Profile</span>
                 </div>
-                <div><img src={HoriConnectDot} alt="ConnectDot" className='w-3/4  mx-auto md:w-full' /></div>
+                <div><img src={HoriConnectDot} alt="ConnectDot" className='w-3/4 py-2 mx-auto md:w-full' /></div>
 
 
 
@@ -100,7 +100,7 @@ const HowItWork = () => {
                   <span className=' bg-black rounded-full flex items-center justify-center w-6 h-6 text-2xl md:text-sm p-7 font-semibold md:p-4'><span className='-mb-1'>3</span></span>
                   <span>Upload Your Work</span>
                 </div>
-                <div><img src={HoriConnectDot} alt="ConnectDot" className='w-3/4  mx-auto md:w-full' /></div>
+                <div><img src={HoriConnectDot} alt="ConnectDot" className='w-3/4 py-2 mx-auto md:w-full' /></div>
 
 
 
