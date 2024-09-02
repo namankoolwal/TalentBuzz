@@ -39,7 +39,7 @@ const Hero = () => {
   return (
     <div className='relative px-[5.5vw]  my-[60px] md:my-[120px] z-[10] w-full h-full'>
           {show && <ModelParent showToggle={show} setShow={setShow} />}
-      <div className="hero flex flex-col-reverse md:flex-row py-5 items-start gap-20 md:gap-3 justify-between relative z-[10] ">
+      <div className="hero  flex flex-col-reverse md:flex-row py-5 items-start gap-20 md:gap-3 justify-between relative z-[10] ">
         <div className='left md:w-[50%] flex flex-col md:gap-[24px] '>
 
           <h1 className='font-bold text-[3rem] md:text-[3.8rem] leading-tight'>
@@ -93,10 +93,11 @@ const Hero = () => {
 
           </div>
         </div>
+        <div className='scrollport background hidden md:block overflow-hidden absolute opacity-55 md:opacity-100 -right-20 top-0 md:-top-24 bottom-0 -z-[1] '>
+        <img loading='lazy' src={bg} alt="background" className='w-full h-full' />
+      </div> 
       </div>
-      <div className='background hidden md:block absolute bgred50 opacity-55 md:opacity-100 -top-10 md:-top-24 bottom-0 right-0 z-[1] '>
-        <img loading='lazy' src={bg} alt="background" />
-      </div>
+      
     </div>
   )
 }

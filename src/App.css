@@ -88,6 +88,15 @@ background-color: black;
   background-repeat: no-repeat;
   mix-blend-mode: darken;
 }
+
+
+
+.scrollport {
+  mask-image: linear-gradient(to bottom, #000, #000, #000, #0000);
+  -webkit-mask-image: linear-gradient(to bottom, #000, #000, #000, #0000);
+}
+
+
 /* ********************************** */
 
 
@@ -107,6 +116,7 @@ margin: 0;
 
 /* Firefox */
 input[type=number] {
+  appearance: textfield;
 -moz-appearance: textfield;
 }
 

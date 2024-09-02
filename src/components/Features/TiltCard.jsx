@@ -4,6 +4,7 @@ import { Tilt } from 'react-tilt';
 import HomeScreen from '../../assets/images/FeaturesPage/TiltCard/HomeScreen.png';
 import Two from '../../assets/images/FeaturesPage/TiltCard/Two.png';
 import Three from '../../assets/images/FeaturesPage/TiltCard/Three.png';
+import Four from '../../assets/images/FeaturesPage/TiltCard/Four.png';
 import Mic from '../../assets/images/FeaturesPage/TiltCard/Mic.png';
 import Purse from '../../assets/images/FeaturesPage/TiltCard/Purse.png';
 import Five from '../../assets/images/FeaturesPage/TiltCard/Five.png';
@@ -43,7 +44,7 @@ const TiltCard = () => {
         </Tilt>
         {/* ======================================================== */}
         <Tilt options={TiltOptions} className="three bg-[#191A1F] rounded-2xl p-8 md:p-5 col-span-12 md:col-span-6">
-          <div className="flex flex-col gap-10 justify-center w-full h-full md:gap-0">
+          <div className="flex flex-col gap-10 justify-center w-full h-full md:gap-2">
             <span className="text-[#909090] text-2xl md:text-base font-semibold">For Users</span>
             <h5 className="text-center text-[2.25rem] md:text-[1.9rem] w-3/4 mx-auto font-semibold">
               Choose Your Own Artist
@@ -54,12 +55,15 @@ const TiltCard = () => {
           </div>
         </Tilt>
         {/* ======================================================== */}
-        <Tilt options={TiltOptions} className="four bg-[#191A1F] rounded-2xl p-8 md:p-5 col-span-12 h-[30rem] md:h-full md:col-span-5">
-          <div className="flex flex-col gap-10 w-full h-full md:gap-0">
+        <Tilt options={TiltOptions} className="four bg-[#191A1F] rounded-2xl p-8 md:p-5 col-span-12 md:col-span-5">
+          <div className="flex flex-col gap-10 w-full h-full md:gap-3">
             <span className="text-[#909090] text-2xl md:text-base font-semibold">For Artists</span>
             <h5 className="text-center  text-[2.125rem] md:text-[1.9rem] mx-auto font-semibold bg-gradient-to-r from-[#DB4469] to-[#0266FF] bg-clip-text text-transparent">
               Search Artist Around You
             </h5>
+            <div className="p-5">
+              <img loading='lazy' src={Four} alt="HomeScreen" className="mx-auto" />
+            </div>
           </div>
         </Tilt>
         {/* ======================================================== */}

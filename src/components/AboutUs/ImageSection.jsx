@@ -66,14 +66,14 @@
 // ***************************************Way 3*************************************
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import card2 from '../../assets/images/AboutUs/CardSection/card2.png'
+import clipcard from '../../assets/images/AboutUs/ImageSection/clipcard.png'
 
 const ImageSection = () => {
     return (
         <div className='px-[5.5vw] my-[60px] md:my-[120px] h-full '>
             <div
                 className='relative h-[40vmin] md:h-[70vmin] bg-cover bg-center bg-no-repeat image-section'
-                style={{ backgroundImage: `url(${card2})` }}
+                style={{ backgroundImage: `url(${clipcard})` }}
             >
 
 
