@@ -65,7 +65,7 @@ const Navbar = () => {
           >
             Contact Us
           </span>
-          <button className="flex items-center gap-2 bg-[#0E78F3] px-2 py-2 rounded-md"
+          <button className="flex items-center font-semibold gap-2 bg-gradient-to-l from-[#DB4469] to-[#0266FF] px-3 py-2 rounded-md"
           onClick={handelClick}
           >
             Download Now{" "}
@@ -117,7 +117,7 @@ const Navbar = () => {
           Contact Us
         </div>
         <button
-          className={`inline-flex font-bold text-xl items-center gap-2 bg-[#0E78F3] text-white px-2 py-4 rounded-xl mt-4 w-full justify-center transform transition-transform duration-300 ease-in-out ${
+          className={`inline-flex font-bold text-2xl items-center gap-2 bg-gradient-to-l from-[#DB4469] to-[#0266FF] text-white px-2 py-4 rounded-xl mt-4 w-full justify-center transform transition-transform duration-300 ease-in-out ${
             isOpen ? "translate-x-0 opacity-100 delay-[400ms]" : "translate-x-10 opacity-0"
           }`}
           onClick={handelClick}
