@@ -28,7 +28,7 @@ const Buzz = () => {
                 <div className='relative flex items-center justify-center ' onMouseLeave={mouseLeave}>
                     <img loading='lazy' src={buzzimg} alt="" className='w-3/4' />
                     <button className='absolute  rounded-full p-6' onMouseEnter={mouseEnter}></button>
-                    <button ref={followRef} className='bg-[#EFAA76] text-black px-8 font-semibold py-2 opacity-0 rounded-lg absolute top-48  transition-all duration-200' onClick={() => { alert("Following") }}> Follow Us!</button>
+                    <button ref={followRef} className='bg-[#EFAA76] text-black px-8 font-semibold py-2 opacity-0 rounded-lg absolute top-48  transition-all duration-200' onClick={() => {window.open("https://chat.whatsapp.com/E9UeQoB4BECGrNZbs5Aep1" , "_blank")}}> Join Now !</button>
 
                 </div>
                 <button className='bg-[#EFAA76] text-black w-fit mt-[16px] text-2xl md:text-lg px-5 py-3 rounded-md flex items-center justify-between  gap-3' onClick={() => setShow(true)}>Explore Now</button>

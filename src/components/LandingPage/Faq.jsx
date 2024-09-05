@@ -4,22 +4,22 @@ import React, { useEffect, useState } from 'react';
 const FAQ_DATA = [
     {
         id: 1,
-        question: 'Why do we choose Talentbuzz over other platforms?',
+        question: 'Why do we choose Talentbuzzz over other platforms?',
         answer: 'Talentbuzzz offers direct connections between artists and clients, verified profiles, and tailored search options, making it easier to find and hire the perfect talent without middlemen.'
     },
     {
         id: 2,
-        question: 'What exactly is Talentbuzz?',
+        question: 'What exactly is Talentbuzzz?',
         answer: 'Talentbuzzz is a platform that connects artists with clients, helping artists showcase their skills and get hired quickly and directly, without any middlemen.'
     },
     {
         id: 3,
-        question: 'How do I find work on Talentbuzz?',
+        question: 'How do I find work on Talentbuzzz?',
         answer: 'To find work on Talentbuzzz, create a profile showcasing your skills and portfolio. Once set up, clients can discover and hire you directly for projects that match your expertise. You can also explore and apply to opportunities posted on the platform.'
     },
     {
         id: 4,
-        question: 'How to hire an artist on Talentbuzz?',
+        question: 'How to hire an artist on Talentbuzzz?',
         answer: 'To hire an artist on Talentbuzzz, simply search and filter by criteria like genre, location, or availability. Browse through artist profiles, review their portfolios, and once you find the right fit, you can book them directly through the platform.'
     },
     {

@@ -16,7 +16,7 @@ const Footer = () => {
           <span className="md:hidden">
           <img loading='lazy' src={logo} alt="logo" className="w-[28vw] md:w-[8vw]  md:-mb-5" />
         </span>
-            <p className=' md:text-balance leading-10 text-[1.5rem] md:text-[1rem] md:leading-normal'>Talentbuzz is one of the India’s largest artists place where they can showcase their unseen talent, watch new skills, grow as an individual and expand their networks.</p>
+            <p className=' md:text-balance leading-10 text-[1.5rem] md:text-[1rem] md:leading-normal'>Talentbuzzz is one of the India’s largest artists place where they can showcase their unseen talent, watch new skills, grow as an individual and expand their networks.</p>
             <div className="socials w-full flex items-center justify-evenly md:justify-between gap-5 p-2 pl-0">
               <span className="bg-white text-black font-bold text-4xl md:text-lg p-3 md:p-2 rounded-full"><FaXTwitter /></span>
               <span className="bg-white text-black font-bold text-4xl md:text-lg p-3 md:p-2 rounded-full"><FaInstagram /></span>
