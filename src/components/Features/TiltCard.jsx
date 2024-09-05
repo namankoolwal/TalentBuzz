@@ -34,8 +34,8 @@ const TiltCard = () => {
         {/* ======================================================== */}
         <Tilt options={TiltOptions} className="two bg-[#191A1F] rounded-2xl p-8 md:p-5 col-span-12 md:col-span-6">
           <div className="flex flex-col w-full h-full justify-center gap-10 md:gap-10">
-            <h5 className="text-center text-[2.25rem] md:text-[1.9rem] md:w-3/4 mx-auto font-semibold bg-gradient-to-r from-[#DB4469] to-[#0266FF] bg-clip-text text-transparent">
-              Effortless Booking and Management
+            <h5 className="text-center text-[2.25rem] md:text-[1.9rem] md:w-[55%] mx-auto font-semibold bg-gradient-to-r from-[#DB4469] to-[#0266FF] bg-clip-text text-transparent">
+              Get Booking and Management within 2-3 days
             </h5>
             <div className="p-5 md:pt-0">
               <img loading='lazy' src={Two} alt="HomeScreen" className="mx-auto md:w-auto" draggable={false} />
