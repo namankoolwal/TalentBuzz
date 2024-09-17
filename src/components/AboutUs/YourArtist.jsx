@@ -17,7 +17,7 @@ const YourArtist = () => {
                 If You’re an Artist, Contact Us
                 </div>
                 <div className='text-[1.5rem] md:text-[1.5rem] md:w-[90%] text-center text-pretty'>
-                Are you an artist ready to take your career to new heights? Talentbuzzz is designed with you in mind. Our platform lets you showcase your skills, connect with industry professionals, and secure opportunities that align with your passion. Join our community and let your creativity shine.
+                Are you an artist ready to take your career to new heights? Talentbuzzz is designed with you in mind. Join us to change the way you hire, and get hired!
                 </div>
                 <button className='bg-[#EFAA76] text-2xl md:text-lg text-black w-fit  px-5 py-2 rounded-md flex items-center justify-between gap-3' onClick={() => setShow(true)}>Contact Us</button>
             </div>

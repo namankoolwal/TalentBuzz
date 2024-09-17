@@ -20,7 +20,7 @@ const WhyChoose = () => {
               <img loading='lazy' src={card1} alt="" className='w-14'/>
               <h3 className='text-[2rem]'>Streamlined Booking Process</h3>
               <p className='text-[1.5rem] md:text-[1.125rem]'>Easily search and book artists with our user-friendly platform</p>
-              <button className='bg-[#EFAA76] mt-2 md:mt-0 py-3 px-4 rounded-md text-2xl md:text-lg text-black w-fit' onClick={() => setShow(true)}>Contact Us</button>
+              {/* <button className='bg-[#EFAA76] mt-2 md:mt-0 py-3 px-4 rounded-md text-2xl md:text-lg text-black w-fit' onClick={() => setShow(true)}>Contact Us</button> */}
           </div>
           </div>
         {/* ********** */}
@@ -31,7 +31,7 @@ const WhyChoose = () => {
               <img loading='lazy' src={card2} alt="" className='w-20'/>
               <h3 className='text-[2rem]'>Discover Hidden Talents</h3>
               <p className='text-[1.5rem] md:text-[1.125rem]'>Advanced search capabilities for finding artists by genre, location</p>
-              <button className='bg-[#EFAA76] mt-2 md:mt-0 py-3 px-4 text-2xl md:text-lg rounded-md text-black w-fit' onClick={() => setShow(true)}>Contact Us</button>
+              {/* <button className='bg-[#EFAA76] mt-2 md:mt-0 py-3 px-4 text-2xl md:text-lg rounded-md text-black w-fit' onClick={() => setShow(true)}>Contact Us</button> */}
           </div>
           </div>
         {/* ********** */}
@@ -42,7 +42,7 @@ const WhyChoose = () => {
               <img loading='lazy' src={card3} alt="" className='w-20'/>
               <h3 className='text-[2rem]'>Comprehensive Artist Profiles</h3>
               <p className='text-[1.5rem] md:text-[1.125rem]'>View detailed profiles, reviews, and performance videos of artists</p>
-              <button className='bg-[#EFAA76] mt-2 md:mt-0 py-3 px-4 text-2xl md:text-lg rounded-md text-black w-fit' onClick={() => setShow(true)}>Contact Us</button>
+              {/* <button className='bg-[#EFAA76] mt-2 md:mt-0 py-3 px-4 text-2xl md:text-lg rounded-md text-black w-fit' onClick={() => setShow(true)}>Contact Us</button> */}
           </div>
           </div>
         </div>

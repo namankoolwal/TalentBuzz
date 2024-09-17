@@ -92,7 +92,7 @@ const YourtalentOne = () => {
             <div className="flex items-end ">
                 <div className="left w-[49%] md:w-[41%] ">
                     <h2 className="text-[2.5rem] md:text-[4rem] font-semibold leading-tight">
-                        Your Talent Searching Hub
+                        Your Talent Hub
                     </h2>
                 </div>
 

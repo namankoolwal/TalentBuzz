@@ -5,6 +5,7 @@ import CardSection from './CardSection'
 import YourArtist from './YourArtist'
 import LookingForTalent from './LookingForTalent'
 import ImageSection from './ImageSection'
+import TiredOfOutreaching from './TiredOfOutreaching'
 
 
 const AboutUs = () => {
@@ -13,6 +14,7 @@ const AboutUs = () => {
   }
   return (
     <div className='w-full min-h-screen h-full'>
+    <TiredOfOutreaching/>
         <AboutTalentBuzz/>
         <CardSection/>
         <YourArtist handelClick={handelClick}/>

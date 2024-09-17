@@ -13,9 +13,9 @@ const OneStopSolution = ({handelClick}) => {
             >
                 <div className='flex flex-col items-center justify-center gap-10 md:px-8'>
                 <div className='text-[#5B61FA] text-[2rem] md:text-[1.7rem] font-semibold'>ALL IN ONE APP</div>
-                    <div className='text-[2.4rem] md:text-[3.2rem] font-semibold text-center'> One-Stop Talent Solution </div>
+                    <div className='text-[2.4rem] md:text-[3.2rem] font-semibold text-center'> Talentbuzzz: Your one-stop talent solution </div>
                     <div className='text-[1.5rem] w-full  mx-auto text-center text-pretty -mt-5'>
-                    Streamline your event planning and talent booking in one seamless experience.
+                    Manage your event, bookings, and your artists all through one interface.
                     </div>
                     <div className='w-full md:w-1/2 '>
 

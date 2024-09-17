@@ -144,14 +144,10 @@ background: #555;
 }
 
 
-@media (min-width: 516px) and (max-width: 767px) {
-.translate-custom {
-  transform: translateY(2.5rem); /* Equivalent to translate-y-10 in Tailwind */
-}
-}
 
-@media (min-width: 1476px){
+
+@media (min-width: 1764px){
 .translate-custom {
-  transform: translateY(1.5rem) !important ; /* Equivalent to translate-y-10 in Tailwind */
+  transform: translateY(-3.2rem) !important ; /* Equivalent to translate-y-10 in Tailwind */
 }
 }

@@ -19,7 +19,7 @@ const LookingForTalent = () => {
             If You’re Looking for Talent, Get in Touch with Us
             </div>
             <div className='text-[1.5rem] md:text-[1.5rem] md:w-[90%] md:text-center text-pretty'>
-            Are you in need of exceptional talent for your next project or event? Talentbuzzz offers a streamlined solution to discover, connect, and book the perfect artists. Whether you’re seeking a performer, a creative collaborator, or anything in between, our platform makes the process simple and efficient.
+            Want to hire talent but find it difficult to spot them? Break the wall of outreach, and let us help you change how you hire. 
             </div>
             <button className='bg-[#EFAA76] text-black w-fit text-2xl md:text-lg px-5 py-2 rounded-md flex items-center justify-center gap-3' onClick={() => setShow(true)}>Contact Us</button>
         </div>

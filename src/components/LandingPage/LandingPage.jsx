@@ -6,6 +6,7 @@ import TalentShine from './TalentShine'
 import Buzz from './Buzz'
 import Faq from './Faq'
 import YourtalentOne from './YourTalentOne'
+import HelpRecruters from './HelpRecruters'
 
 const LandingPage = () => {
   const handelClick =()=>{
@@ -16,6 +17,7 @@ const LandingPage = () => {
         <Hero/>
       <Marque/>
       <HelpArtists/>
+      <HelpRecruters/>
       <WhyChose/>
       <YourtalentOne handelClick={handelClick}/>
       <TalentShine handelClick={handelClick}/>

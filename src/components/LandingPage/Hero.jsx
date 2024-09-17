@@ -14,24 +14,24 @@ const Hero = () => {
   const {setShowToast,setToastMessage} = useContext(ToastContext)
 
 
-  const el = useRef(null)
+  // const el = useRef(null)
 
-  React.useEffect(() => {
-    const typed = new Typed(el.current, {
-      strings: ['Musicians' , 'Dancers' , 'Actors'],
-      typeSpeed: 80,
-      backSpeed: 40,
-      backDelay: 1000,
-      smartBackspace: true,
-      loop: true,
-      showCursor: false,
-    });
+  // React.useEffect(() => {
+  //   const typed = new Typed(el.current, {
+  //     strings: ['Musicians' , 'Dancers' , 'Actors'],
+  //     typeSpeed: 80,
+  //     backSpeed: 40,
+  //     backDelay: 1000,
+  //     smartBackspace: true,
+  //     loop: true,
+  //     showCursor: false,
+  //   });
 
-    return () => {
-      // Destroy Typed instance during cleanup to stop animation
-      typed.destroy();
-    };
-  }, []);
+  //   return () => {
+  //     // Destroy Typed instance during cleanup to stop animation
+  //     typed.destroy();
+  //   };
+  // }, []);
 
 
 
@@ -48,14 +48,17 @@ const Hero = () => {
       <div className="hero  flex flex-col-reverse md:flex-row py-5 items-start gap-20 md:gap-3 justify-between relative z-[10] ">
         <div className='left md:w-[50%] flex flex-col md:gap-[24px] '>
 
-          <h1 className='font-bold text-[3rem] md:text-[3.8rem] leading-tight'>
-            <div className='block'>Hire and get Hired
+          <h1 className='font-extrabold mb-5 md:mb-0 text-[3rem] md:text-[3.5rem] md:w-[95%] leading-tight text-transparent bg-clip-text bg-gradient-to-r from-[#d3364f]  via-[#0822b4] to-[#2445b3]'>
+            <div className='block'>Where Passion Becomes Profession
             </div>
-            <div ref={el} className='h-[4.5rem] md:h-[4.938rem] text-transparent bg-clip-text bg-gradient-to-r from-[#d3364f]  via-[#0228ff] to-[#02175a]'></div>
+            {/* <div ref={el} className='h-[4.5rem] md:h-[4.938rem] text-transparent bg-clip-text bg-gradient-to-r from-[#d3364f]  via-[#0228ff] to-[#02175a]'></div> */}
           </h1>
-          <p className='text-[1.5rem] md:text-[1.3rem] md:w-[80%]'>In a world full of diverse and unique people, everyone has special talents just waiting to be discovered. Talentbuzzz invites both artists to showcase their amazing abilities and users to uncover the perfect talent for their needs.</p>
+          <p className='text-[1.5rem] md:text-[1.3rem] md:w-[80%]'>We are here to connect your art to the right opportunity. Everyone has a special talent that is just waiting to be discovered, and with Talentbuzz, you might just be at the right place at the right time.
+
+<span className='mt-7 block'>Take the first step towards your dream.</span>
+</p>
           <span className='text-white w-fit mt-[16px] px-9 py-4 md:px-10 md:py-[14px] rounded-full flex items-center justify-between gap-3 bg-gradient-to-l from-[#DB4469] to-[#0266FF] text-xl cursor-pointer' onClick={() => setShow(true)}>
-              Inquire now
+              Know More
           </span>
         </div>
         <div className='right md:w-[50%] flex flex-col items-center gap-20'>
