@@ -67,7 +67,7 @@ const Hero = () => {
           </div>
           <div className='flex items-center gap-10'>
             <button className='bg-black rounded-lg p-2 px-5 flex items-center gap-3 border border-[#D7456C]' 
-            onClick={()=>{setShowToast('error'); setToastMessage("this is toast msg")}}>
+            onClick={handelClick}>
               <svg className="h-9 w-9" viewBox="-9 0 274 274" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g>
                   <path
