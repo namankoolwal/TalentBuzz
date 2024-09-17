@@ -48,7 +48,7 @@ const Hero = () => {
       <div className="hero  flex flex-col-reverse md:flex-row py-5 items-start gap-20 md:gap-3 justify-between relative z-[10] ">
         <div className='left md:w-[50%] flex flex-col md:gap-[24px] '>
 
-          <h1 className='font-extrabold mb-5 md:mb-0 text-[3rem] md:text-[3.5rem] md:w-[95%] leading-tight text-transparent bg-clip-text bg-gradient-to-r from-[#d3364f]  via-[#0822b4] to-[#2445b3]'>
+          <h1 className='font-extrabold mb-5 md:mb-0 text-[3rem] md:text-[3.5rem] md:w-[95%] leading-tight text-white/95'>
             <div className='block'>Where Passion Becomes Profession
             </div>
             {/* <div ref={el} className='h-[4.5rem] md:h-[4.938rem] text-transparent bg-clip-text bg-gradient-to-r from-[#d3364f]  via-[#0228ff] to-[#02175a]'></div> */}

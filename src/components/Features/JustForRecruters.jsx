@@ -6,11 +6,14 @@ const JustForRecruters = () => {
                 className='h-full w-full py-10 bg-contain bg-center bg-no-repeat '
             >
                 <div className='flex flex-col items-center justify-center gap-10 md:p-8'>
-                    <div className='text-[2.8rem] md:text-[4rem] font-semibold'>Special features just for recruiters:</div>
-                    <div className='text-[1.5rem] w-[100%] text-left pl-5 space-y-1.5 md:pl-20 text-pretty'>
+                    <div className='text-[2.8rem] md:text-[4rem] text-left w-full font-semibold'>Special features just for recruiters:</div>
+                    <div className='text-[1.5rem] w-[100%] text-left pl-10 md:pl-20 text-pretty'>
+                    <ul className="list-disc space-y-1.5">
+
                         <li>Discover, book, and enjoy top-tier (music comedy etc etc) artists for any occasion.</li>
                         <li>Set your own budget</li>
                         <li>Get talent from anywhere in (India/World)</li>
+                    </ul>
 
                     </div>
 

@@ -15,8 +15,8 @@ const HowItWork = () => {
         className='h-full w-full bg-contain bg-center bg-no-repeat '
       >
         <div className='flex flex-col items-center justify-center gap-10 '>
-          <div className='text-[#5B61FA] text-[2rem] md:text-[1.7rem] font-semibold'>HOW IT WORKS</div>
-          <div className='text-[2.4rem] md:text-[3.2rem] font-semibold text-center'> How It Works for Artists </div>
+          <div className='text-[#5B61FA] text-[2rem] md:text-[1.7rem]  font-semibold'>HOW DOES IT WORKS ?</div>
+          <div className='text-[2.4rem] md:text-[3.2rem] font-semibold  text-center w-full'> How It Works for Artists </div>
           <div className='text-[1rem] w-full h-full rounded-xl overflow-y-hidden py-20 md:py-0 bg-[#191A1F]'>
             {/* <img loading='lazy' src={HowItWorkImg} alt="" /> */}
             <div className='hidden  md:flex relative flex-col gap-24 md:gap-14 w-full h-full py-32'>
