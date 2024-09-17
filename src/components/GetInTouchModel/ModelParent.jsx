@@ -4,9 +4,11 @@ import React, { useState, useEffect } from "react";
 import UserModel from "./UserModel";
 import getInTouch from '../../assets/images/Model/getInTouch.png';
 import ArtistModel from "./ArtistModel";
+import 'react-toastify/dist/ReactToastify.css';
 
 const ModelParent = ({ text, showToggle, setShow }) => {
   const [show, setShowState] = useState(false);
+  
 
   useEffect(() => {
     setShowState(showToggle);
@@ -18,6 +20,7 @@ const ModelParent = ({ text, showToggle, setShow }) => {
     <>
       <div className="z-[990]">
         {/* <!-- Modal toggle --> */}
+       
         <span className="" onClick={() => setShowState(!show)}>
           {text}
         </span>
@@ -43,6 +46,20 @@ const ModelParent = ({ text, showToggle, setShow }) => {
                   </div>
                   <div className="mb-4 -mt-10 border-b border-gray-400">
                     <ul className="flex flex-wrap -mb-px text-sm font-medium text-center">
+                    <li className="me-2 -mb-2 mt-2" role="presentation">
+                        <button
+                          className={`inline-block p-4 text-2xl md:text-base rounded-t-lg ${
+                            formType === "user" && "text-[#CF4672]"
+                          }`}
+                          type="button"
+                          onClick={() => setFormType("user")}
+                        >
+                          As User
+                        </button>
+                      </li>
+                     
+                      <li className="me-2 border-r border-gray-400 mt-4"></li>
+
                       <li className="me-2 -mb-2 mt-2" role="presentation">
                         <button
                           className={`inline-block p-4 text-2xl md:text-base rounded-t-lg ${
@@ -54,28 +71,17 @@ const ModelParent = ({ text, showToggle, setShow }) => {
                           As Artist
                         </button>
                       </li>
-                      <li className="me-2 border-r border-gray-400 mt-4"></li>
-                      <li className="me-2 -mb-2 mt-2" role="presentation">
-                        <button
-                          className={`inline-block p-4 text-2xl md:text-base rounded-t-lg ${
-                            formType === "user" && "text-[#CF4672]"
-                          }`}
-                          type="button"
-                          onClick={() => setFormType("user")}
-                        >
-                          As User
-                        </button>
-                      </li>
+                      
                     </ul>
                   </div>
                   <div id="default-styled-tab-content">
                     <div className="">
-                      {formType === "artist" ? <ArtistModel /> : <UserModel />}
+                      {formType === "artist" ? <ArtistModel setShow={setShow}/> : <UserModel setShow={setShow} />}
                     </div>
                   </div>
                 </div>
 
-                <div className="rightSide hidden w-full p-6 md:flex items-center justify-center overflow-hidden">
+                <div className="rightSide hidden w-full p-6 pr-9 md:flex items-center justify-center overflow-hidden">
                   <img
                     loading="lazy"
                     src={getInTouch}

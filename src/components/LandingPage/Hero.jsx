@@ -1,13 +1,18 @@
 /* eslint-disable no-unused-vars */
-import React, { useRef ,useState} from 'react'
+import React, { useEffect, useRef ,useState ,useContext} from 'react'
 import { FaArrowRightLong } from "react-icons/fa6";
 import right from '../../assets/images/Landingpage/hero/right.png'
 import bg from '../../assets/images/Landingpage/hero/bg.png'
 import ModelParent from '../GetInTouchModel/ModelParent';
 import Typed from 'typed.js';
 
+import { ToastContext } from '../Context/context';
+
 const Hero = () => {
   const [show, setShow] = useState(false);
+
+  const {setShowToast,setToastMessage} = useContext(ToastContext)
+
 
   const el = useRef(null)
 
@@ -39,6 +44,7 @@ const Hero = () => {
   return (
     <div className='relative px-[5.5vw]  my-[60px] md:my-[120px] z-[10] w-full h-full'>
           {show && <ModelParent showToggle={show} setShow={setShow} />}
+   
       <div className="hero  flex flex-col-reverse md:flex-row py-5 items-start gap-20 md:gap-3 justify-between relative z-[10] ">
         <div className='left md:w-[50%] flex flex-col md:gap-[24px] '>
 
@@ -57,7 +63,8 @@ const Hero = () => {
             <img loading='lazy' src={right} alt="hero" className='w-full' />
           </div>
           <div className='flex items-center gap-10'>
-            <button className='bg-black rounded-lg p-2 px-5 flex items-center gap-3 border border-[#D7456C]' onClick={handelClick}>
+            <button className='bg-black rounded-lg p-2 px-5 flex items-center gap-3 border border-[#D7456C]' 
+            onClick={()=>{setShowToast('error'); setToastMessage("this is toast msg")}}>
               <svg className="h-9 w-9" viewBox="-9 0 274 274" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g>
                   <path

@@ -1,11 +1,13 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState,useContext } from 'react';
 import InputField from './InputField';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContext } from '../Context/context';
 
-const UserModel = () => {
+
+const UserModel = ({setShow}) => {
+    const {setShowToast,setToastMessage} = useContext(ToastContext)
     const [step, setStep] = useState(1); // Track the current step
     const [error, setError] = useState("All fields are required");
     const [nextBtnDisabled, setNextBtnDisabled] = useState(true);
@@ -73,7 +75,7 @@ const UserModel = () => {
             tellmore: formData.tellmore || "None",
         };
 
-        console.log("Submitting form data:", finalFormData);
+        // console.log("Submitting form data:", finalFormData);
 
         // https://docs.google.com/forms/d/e/1FAIpQLSemWuOcxoP5QpV0w32wHJifoRNlv7YvWxJfgjoGhIizbddY5w/viewform?usp=pp_url&entry.960653726=naman&entry.115660721=naman@gmail.com&entry.81776937=1234567890&entry.1811095387=alwar&entry.2045396758=Musician&entry.347350977=party&entry.1409734665=1500&entry.1517268973=party+hai
 
@@ -97,7 +99,9 @@ const UserModel = () => {
             mode: 'no-cors',
         })
             .then(() => {
-                toast.success("Form submitted successfully");
+                setShowToast('success'); 
+                setToastMessage("Form submitted successfully")
+                setShow(false);
 
                 setSubmitBtnDisabled(false);
                 setFormData({
@@ -114,18 +118,15 @@ const UserModel = () => {
             })
             .catch((error) => {
                 setSubmitBtnDisabled(false);
-                toast.error("Error submitting form. Please try again.");
+                console.error('Error submitting form:', error);
+                setShowToast('error'); 
+                setToastMessage("Error submitting form. Please try again.")
             });
     };
 
     return (
         <>
-            <ToastContainer
-                theme="dark"
-                pauseOnHover={false}
-                pauseOnFocusLoss={false}
-                className="text-xl md:text-base"
-            />
+            
             <div className="text-black">
                 <div className="title text-left">
                     <h3 className="font-[500] text-[1.75rem] md:text-[1.25rem] text-[#170F49]">

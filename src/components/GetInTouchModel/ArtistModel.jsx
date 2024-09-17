@@ -1,11 +1,12 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState ,useContext } from 'react';
 import InputField from './InputField';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import { SiGoogleforms } from "react-icons/si";
+import { ToastContext } from '../Context/context';
 
-const ArtistModel = () => {
+const ArtistModel = ({setShow}) => {
+  const {setShowToast,setToastMessage} = useContext(ToastContext)
 
   const [error, setError] = useState("All fields are required")
   const [submitBtnDisabled, setSubmitBtnDisabled] = useState(true);
@@ -68,17 +69,24 @@ const ArtistModel = () => {
           'entry.1279153158': formData.phoneNo,
         };
 
+
+
+
+        
+
+
         const queryString = new URLSearchParams(formFields).toString();
         const urlWithParams = `${googleFormURL}?${queryString}`;
 
-        // console.log("formdata ", formFields)
         // console.log('Submitting form:', urlWithParams);
         fetch(urlWithParams, {
           method: 'POST',
           mode: 'no-cors',
         })
           .then(() => {
-            toast.success("Form submitted successfully");
+            setShowToast('success'); 
+            setToastMessage("Form submitted successfully")
+            setShow(false);
 
             setSubmitBtnDisabled(false);
             setFormData({
@@ -89,7 +97,8 @@ const ArtistModel = () => {
           })
           .catch((error) => {
             setSubmitBtnDisabled(false);
-            toast.error("Error submitting form. Please try again.")
+            setShowToast('error'); 
+                setToastMessage("Error submitting form. Please try again.")
           });
 
 
@@ -105,11 +114,7 @@ const ArtistModel = () => {
   };
   return (
     <>
-      <ToastContainer 
-      theme="dark"  
-      pauseOnHover={false}
-      pauseOnFocusLoss={false}
-      className="text-xl md:text-base"/>
+     
       <div className=' text-black'>
         <div className='title text-left'>
           <h3 className='font-[500] text-[1.75rem] md:text-[1.25rem] text-[#170F49]'> Personal Details</h3>
