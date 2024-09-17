@@ -19,14 +19,14 @@ const Marque = () => {
     // Create the animation for both marquees
     gsap.to(marqueeElement1, {
       x: `-100%`,
-      duration: 7,
+      duration: 14,
       ease: 'linear',
       repeat: -1,
     });
 
     gsap.to(marqueeElement2, {
       x: `-100%`,
-      duration: 7,
+      duration: 14,
       ease: 'linear',
       repeat: -1,
       delay: 0, // Start the second marquee after the first one completes
@@ -40,17 +40,17 @@ const Marque = () => {
   }, []);
 
   return (
-    <div className='my-[70px] md:my-[120px] overflow-hidden flex items-center gap-0'>
+    <div className='my-[70px] md:my-[120px] overflow-hidden flex items-center gap-0 py-5 border-y-2'>
       <h1 ref={marqueeRef1} className='flex gap-10 whitespace-nowrap pr-10'>
-        {["Professional artists", "Content Creators", "Musicians", "Professional Dancers", "Actors", "Influencers"].map((item, index) => (
-          <span key={index} className='text-[#C63054] text-[1.7rem] md:text-[1.5rem] bg-[#FEFEFF] px-9 py-2 rounded-full'>
+        {["Hire or Get Hired", "Hire or Get Hired", "Hire or Get Hired", "Hire or Get Hired", "Hire or Get Hired", "Hire or Get Hired"].map((item, index) => (
+          <span key={index} className='text-white font-extrabold tracking-wider text-[3.7rem] md:text-[4.5rem]  px-9 py-2 rounded-full'>
             {item}
           </span>
         ))}
       </h1>
       <h1 ref={marqueeRef2} className='flex gap-10 whitespace-nowrap pr-10'>
-        {["Professional artists", "Content Creators", "Musicians", "Professional Dancers", "Actors", "Influencers"].map((item, index) => (
-          <span key={index} className='text-[#C63054] text-[1.7rem] md:text-[1.5rem] bg-[#FEFEFF] px-9 py-2 rounded-full'>
+        {["Hire or Get Hired", "Hire or Get Hired", "Hire or Get Hired", "Hire or Get Hired", "Hire or Get Hired", "Hire or Get Hired"].map((item, index) => (
+          <span key={index} className='text-white font-extrabold tracking-wider text-[3.7rem] md:text-[4.5rem]  px-9 py-2 rounded-full'>
             {item}
           </span>
         ))}
