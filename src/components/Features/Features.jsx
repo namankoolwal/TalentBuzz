@@ -8,8 +8,6 @@ import Faq from '../LandingPage/Faq'
 import OneStopSolution from './OneStopSolution'
 import MoreThanPassion from './MoreThanPassion'
 import OurFeatures from './OurFeatures'
-import JustForRecruters from './JustForRecruters'
-import JustForArtist from './JustForArtist'
 
 const Features = () => {
   const handelClick =()=>{
@@ -22,8 +20,6 @@ const Features = () => {
       <BringingTalent/>
       <TiltCard/>
       <OurFeatures/>
-      <JustForRecruters/>
-      <JustForArtist/>
       <HowItWork/>
       <OneStopSolution handelClick={handelClick}/>
       <Faq handelClick={handelClick}/>

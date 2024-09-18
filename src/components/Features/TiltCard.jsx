@@ -34,8 +34,9 @@ const TiltCard = () => {
         {/* ======================================================== */}
         <Tilt options={TiltOptions} className="two bg-[#191A1F] rounded-2xl p-8 md:p-5 col-span-12 md:col-span-6">
           <div className="flex flex-col w-full h-full justify-center gap-10 md:gap-10">
-            <h5 className="text-center text-[2.25rem] md:text-[1.9rem] md:w-[55%] mx-auto font-semibold bg-gradient-to-r from-[#DB4469] to-[#0266FF] bg-clip-text text-transparent">
-              Get Booking and Management within 2-3 days
+          <span className="text-[#909090] text-2xl md:text-base font-semibold">For Artist</span>
+            <h5 className="text-center text-[2.25rem] md:text-[1.9rem] w-3/4 mx-auto font-semibold bg-gradient-to-r from-[#DB4469] to-[#0266FF] bg-clip-text text-transparent">
+            Effortless Booking and Management
             </h5>
             <div className="p-5 md:pt-0">
               <img loading='lazy' src={Two} alt="HomeScreen" className="mx-auto md:w-auto" draggable={false} />
@@ -57,9 +58,9 @@ const TiltCard = () => {
         {/* ======================================================== */}
         <Tilt options={TiltOptions} className="four bg-[#191A1F] rounded-2xl p-8 md:p-5 col-span-12 md:col-span-5">
           <div className="flex flex-col gap-10 w-full h-full md:gap-3">
-            <span className="text-[#909090] text-2xl md:text-base font-semibold">For Artists</span>
-            <h5 className="text-center  text-[2.125rem] md:text-[1.9rem] mx-auto font-semibold bg-gradient-to-r from-[#DB4469] to-[#0266FF] bg-clip-text text-transparent">
-              Search Artist Around You
+            <span className="text-[#909090] text-2xl md:text-base font-semibold">For Users</span>
+            <h5 className="text-center  text-[2.125rem] md:text-[1.9rem] mx-auto font-semibold ">
+            Get talent from anywhere in (India/World)
             </h5>
             <div className="p-5">
               <img loading='lazy' src={Four} alt="HomeScreen" className="mx-auto" />
@@ -69,6 +70,7 @@ const TiltCard = () => {
         {/* ======================================================== */}
         <Tilt options={TiltOptions} className="five bg-[#191A1F] rounded-2xl p-8 md:p-5 col-span-12 md:col-span-7">
           <div  className="flex flex-col gap-10 w-full h-full md:gap-0">
+          <span className="text-[#909090] text-2xl md:text-base font-semibold">For Users</span>
           <h5 className="text-center text-[2.125rem] md:text-[1.9rem] mx-auto font-semibold">
                 Hire under your Budget
               </h5>
