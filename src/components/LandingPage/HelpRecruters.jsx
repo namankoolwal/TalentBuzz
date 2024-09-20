@@ -21,7 +21,7 @@ const HelpRecruters = () => {
 
 
                     </div>
-                    <div className='text-[1.5rem] w-[100%] pl-5 md:pl-40 text-left text-pretty'>Talentbuzzz makes finding the right talent easy, fun, and effective!</div>
+                    <div className='text-[1.5rem] w-[100%] pl-10  md:pl-[11.5rem] text-left text-pretty'>Talentbuzzz makes finding the right talent easy, fun, and effective!</div>
                 </div>
             </div>
         </div>

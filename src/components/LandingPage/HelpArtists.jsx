@@ -20,7 +20,7 @@ const HelpArtists = () => {
           </ul>
 
           </div>
-          <div className='text-[1.5rem] w-[100%] text-center text-pretty'>Let Talentbuzzz be your platform to grow, connect, and let your talent shine!</div>
+          <div className='text-[1.5rem] w-[100%]  pl-10  md:pl-[11.5rem]  text-left text-pretty'>Let Talentbuzzz be your platform to grow, connect, and let your talent shine!</div>
         </div>
       </div>
     </div>
