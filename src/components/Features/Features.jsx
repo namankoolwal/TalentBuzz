@@ -5,7 +5,7 @@ import BringingTalent from './BringingTalent'
 import TiltCard from './TiltCard'
 import HowItWork from './HowItWork'
 import Faq from '../LandingPage/Faq'
-import OneStopSolution from './OneStopSolution'
+// import OneStopSolution from './OneStopSolution'
 import MoreThanPassion from './MoreThanPassion'
 import OurFeatures from './OurFeatures'
 
@@ -21,7 +21,7 @@ const Features = () => {
       <TiltCard/>
       <OurFeatures/>
       <HowItWork/>
-      <OneStopSolution handelClick={handelClick}/>
+      {/* <OneStopSolution handelClick={handelClick}/> */}
       <Faq handelClick={handelClick}/>
     </div>
   )

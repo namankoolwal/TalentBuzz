@@ -21,12 +21,12 @@ const TiltCard = () => {
       <div className="grid grid-cols-12 gap-6 md:gap-5">
         {/* ======================================================== */}
         <Tilt options={TiltOptions} className="one bg-[#191A1F] rounded-2xl p-5 row-span-2 col-span-12 md:col-span-6">
-          <div className="flex flex-col w-full h-full justify-center gap-10">
-            <span className="text-[#909090] text-2xl md:text-base font-semibold">For Users</span>
+          <div className="flex flex-col w-full h-full justify-start gap-10">
+            <span className="text-[#909090]  text-2xl md:text-base font-semibold">For Users</span>
             <h5 className="text-center text-[2.25rem] md:text-[1.9rem] font-semibold">
               Discover, book, and enjoy top-tier artists for any occasion.
             </h5>
-            <div className="p-10 md:p-5">
+            <div className="p-10 md:p-2 md:mt-5">
               <img loading='lazy' src={HomeScreen} alt="HomeScreen" className="mx-auto w-3/4 md:w-auto" />
             </div>
           </div>

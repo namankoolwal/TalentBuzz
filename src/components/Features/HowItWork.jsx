@@ -10,7 +10,7 @@ import fourth from '../../assets/images/FeaturesPage/HowItWork/fourth.png'
 
 const HowItWork = () => {
   return (
-    <section className="px-[5.5vw] mt-[60px] md:mt-[120px] h-full">
+    <section className="px-[5.5vw] my-[60px] md:my-[120px] h-full">
       <div
         className='h-full w-full bg-contain bg-center bg-no-repeat '
       >
@@ -20,7 +20,7 @@ const HowItWork = () => {
           <div className='text-[1rem] w-full h-full rounded-xl overflow-y-hidden py-20 md:py-0 bg-[#191A1F]'>
             {/* <img loading='lazy' src={HowItWorkImg} alt="" /> */}
             <div className='hidden  md:flex relative flex-col gap-24 md:gap-14 w-full h-full py-32'>
-              <div className='top  -top-40  md:top-0 absolute md:relative flex gap-20 md:gap-5 flex-col md:flex-row items-center justify-center w-full h-full'>
+              <div className=' md:relative flex gap-20 md:gap-5 flex-row items-center justify-between px-14 w-full h-full'>
                 <div>
 
                   <img src={first} alt="" className=' w-full' />
@@ -46,7 +46,7 @@ const HowItWork = () => {
                 </div>
 
               </div>
-              <div className='bottom flex gap-56 md:gap-36 flex-col md:flex-row items-center justify-around w-full h-full text-2xl md:text-base'>
+              <div className='bottom flex gap-56 md:gap-32 flex-col md:flex-row items-center justify-around w-full h-full text-2xl md:text-base'>
                 <div className='flex flex-col gap-4 items-center justify-center'>
                   <span className=' bg-black rounded-full flex items-center justify-center w-6 h-6 text-2xl md:text-sm p-7 font-semibold md:p-4'><span className='-mb-1'>1</span></span>
                   <span>Download The app</span>
