@@ -17,8 +17,8 @@ const LandingPage = () => {
         <Hero/>
       <Marque/>
       <HelpArtists/>
-      <HelpRecruters/>
       <WhyChose/>
+      <HelpRecruters/>
       <YourtalentOne handelClick={handelClick}/>
       <TalentShine handelClick={handelClick}/>
       <Buzz />
