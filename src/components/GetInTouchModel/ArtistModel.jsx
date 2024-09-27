@@ -6,6 +6,7 @@ import { SiGoogleforms } from "react-icons/si";
 import { ToastContext } from '../Context/context';
 
 const ArtistModel = ({setShow}) => {
+
   const {setShowToast,setToastMessage} = useContext(ToastContext)
 
   const [error, setError] = useState("All fields are required")
@@ -58,11 +59,11 @@ const ArtistModel = ({setShow}) => {
 
     if (validateForm()) {
 
-      // https://docs.google.com/forms/d/e/1FAIpQLSfFucJTmE-RKRo5elD_A2kZtj5QL5NMZlLEkWmDK-nz7lFwjg/viewform?usp=pp_url&entry.422787563=rajat+&entry.1279153158=9602261095&entry.1027127362=rajat@gmail.com
+      
 
       if (formData.firstName && formData.email && formData.phoneNo) {
         setSubmitBtnDisabled(true);
-        const googleFormURL = 'https://docs.google.com/forms/d/e/1FAIpQLSfFucJTmE-RKRo5elD_A2kZtj5QL5NMZlLEkWmDK-nz7lFwjg/formResponse';
+        const googleFormURL = import.meta.env.VITE_GOOGLE_FORM_URL_ARTIST;
         const formFields = {
           'entry.422787563': formData.firstName,
           'entry.1027127362': formData.email,

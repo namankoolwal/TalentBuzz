@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import GatewayToTalent from './GatewayToTalent'
+// import GatewayToTalent from './GatewayToTalent'
 import BringingTalent from './BringingTalent'
 import TiltCard from './TiltCard'
 import HowItWork from './HowItWork'

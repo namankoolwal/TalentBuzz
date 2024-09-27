@@ -7,6 +7,7 @@ import { ToastContext } from '../Context/context';
 
 
 const UserModel = ({setShow}) => {
+
     const {setShowToast,setToastMessage} = useContext(ToastContext)
     const [step, setStep] = useState(1); // Track the current step
     const [error, setError] = useState("All fields are required");
@@ -75,11 +76,7 @@ const UserModel = ({setShow}) => {
             tellmore: formData.tellmore || "None",
         };
 
-        // console.log("Submitting form data:", finalFormData);
-
-        // https://docs.google.com/forms/d/e/1FAIpQLSemWuOcxoP5QpV0w32wHJifoRNlv7YvWxJfgjoGhIizbddY5w/viewform?usp=pp_url&entry.960653726=naman&entry.115660721=naman@gmail.com&entry.81776937=1234567890&entry.1811095387=alwar&entry.2045396758=Musician&entry.347350977=party&entry.1409734665=1500&entry.1517268973=party+hai
-
-        const googleFormURL = 'https://docs.google.com/forms/d/e/1FAIpQLSemWuOcxoP5QpV0w32wHJifoRNlv7YvWxJfgjoGhIizbddY5w/formResponse';
+        const googleFormURL = import.meta.env.VITE_GOOGLE_FORM_URL_USER;
         const formFields = {
             'entry.960653726': finalFormData.fullName,
             'entry.115660721': finalFormData.email,
