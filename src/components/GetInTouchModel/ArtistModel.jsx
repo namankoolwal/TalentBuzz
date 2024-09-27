@@ -159,6 +159,3 @@ const ArtistModel = ({setShow}) => {
 
 export default ArtistModel
 
-
-// https://docs.google.com/forms/d/e/1FAIpQLSd7m0XHmwVCqTKtdcTW7eSQkBND7Tr_jYrb2v12KzXqoZchXg/viewform?usp=pp_url&entry.1645822644=dfs&entry.1409456964=sdfsd&entry.1162980994=dsfds
-
