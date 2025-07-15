@@ -2,13 +2,12 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import UserModel from "./UserModel";
-import getInTouch from '../../assets/images/Model/getInTouch.png';
+import getInTouch from "../../assets/images/Model/getInTouch.png";
 import ArtistModel from "./ArtistModel";
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 
 const ModelParent = ({ text, showToggle, setShow }) => {
   const [show, setShowState] = useState(false);
-  
 
   useEffect(() => {
     setShowState(showToggle);
@@ -20,7 +19,7 @@ const ModelParent = ({ text, showToggle, setShow }) => {
     <>
       <div className="z-[990]">
         {/* <!-- Modal toggle --> */}
-       
+
         <span className="" onClick={() => setShowState(!show)}>
           {text}
         </span>
@@ -38,7 +37,9 @@ const ModelParent = ({ text, showToggle, setShow }) => {
               <div className="flex w-full h-full mx-auto overflow-hidden relative">
                 <div className="leftSide mx-auto w-full h-full px-10 md:px-4 py-6 mt-3 ml-3 space-y-8 md:space-y-6">
                   <div className="flex flex-col items-start justify-start text-left">
-                    <h4 className="font-semibold text text-[2.5rem] md:text-[1.5rem]">Get In Touch</h4>
+                    <h4 className="font-semibold text text-[2.5rem] md:text-[1.5rem]">
+                      Get In Touch
+                    </h4>
                     <p className="text-[1.25rem] md:text-[0.90rem]">
                       Fill out the form below, and we’ll get back to you as soon
                       as possible.
@@ -46,7 +47,7 @@ const ModelParent = ({ text, showToggle, setShow }) => {
                   </div>
                   <div className="mb-4 -mt-10 border-b border-gray-400">
                     <ul className="flex flex-wrap -mb-px text-sm font-medium text-center">
-                    <li className="me-2 -mb-2 mt-2" role="presentation">
+                      <li className="me-2 -mb-2 mt-2" role="presentation">
                         <button
                           className={`inline-block p-4 text-2xl md:text-base rounded-t-lg ${
                             formType === "user" && "text-[#CF4672]"
@@ -57,7 +58,7 @@ const ModelParent = ({ text, showToggle, setShow }) => {
                           As User
                         </button>
                       </li>
-                     
+
                       <li className="me-2 border-r border-gray-400 mt-4"></li>
 
                       <li className="me-2 -mb-2 mt-2" role="presentation">
@@ -71,12 +72,15 @@ const ModelParent = ({ text, showToggle, setShow }) => {
                           As Artist
                         </button>
                       </li>
-                      
                     </ul>
                   </div>
                   <div id="default-styled-tab-content">
                     <div className="">
-                      {formType === "artist" ? <ArtistModel setShow={setShow}/> : <UserModel setShow={setShow} />}
+                      {formType === "artist" ? (
+                        <ArtistModel setShow={setShow} />
+                      ) : (
+                        <UserModel setShow={setShow} />
+                      )}
                     </div>
                   </div>
                 </div>
