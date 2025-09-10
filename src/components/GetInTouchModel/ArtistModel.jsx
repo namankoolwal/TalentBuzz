@@ -3,10 +3,9 @@
 import React, { useEffect, useState, useContext } from "react";
 import InputField from "./InputField";
 import { SiGoogleforms } from "react-icons/si";
-import { ToastContext } from "../Context/context";
+import { toast } from "react-toastify";
 
-const ArtistModel = ({ setShow }) => {
-  const { setShowToast, setToastMessage } = useContext(ToastContext);
+const ArtistModel = ({ setShow }) => {;
 
   const [error, setError] = useState("All fields are required");
   const [submitBtnDisabled, setSubmitBtnDisabled] = useState(true);
@@ -73,8 +72,7 @@ const ArtistModel = ({ setShow }) => {
           mode: "no-cors",
         })
           .then(() => {
-            setShowToast("success");
-            setToastMessage("Form submitted successfully");
+            toast.success("Form submitted successfully");
             setShow(false);
 
             setSubmitBtnDisabled(false);
@@ -86,8 +84,8 @@ const ArtistModel = ({ setShow }) => {
           })
           .catch((error) => {
             setSubmitBtnDisabled(false);
-            setShowToast("error");
-            setToastMessage("Error submitting form. Please try again.");
+            console.error("Error submitting form:", error);
+            toast.error("Error submitting form. Please try again.");
           });
       } else {
         setError("All fields are required");

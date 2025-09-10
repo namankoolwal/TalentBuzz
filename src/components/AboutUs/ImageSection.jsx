@@ -3,8 +3,7 @@
 // *************************Way one**********************************
 // /* eslint-disable no-unused-vars */
 // import React from 'react'
-// import card2 from '../../assets/images/AboutUs/CardSection/card2.png'
-
+// import clipcard from '../../assets/images/AboutUs/ImageSection/clipcard.png'
 
 // const ImageSection = () => {
 //   return (
@@ -13,7 +12,7 @@
 
 //     {Array.from({ length: 6 }).map((_, i) => (
 //       <div key={i} className=' w-full rounded-full h-full text-yellow-400 overflow-hidden'>
-//         <img loading='lazy' src={card2} alt="" className='w-full h-full object-cover object-center' />
+//         <img loading='lazy' src={clipcard} alt="" className='w-full h-full object-cover object-center' />
 //       </div>
 //     ))}
         
@@ -38,7 +37,7 @@
 // ****************************Way 2*************************************
 // /* eslint-disable no-unused-vars */
 // import React from 'react'
-// import card2 from '../../assets/images/AboutUs/CardSection/card2.png'
+// import clipcard from '../../assets/images/AboutUs/ImageSection/clipcard.png'
 
 
 // const ImageSection = () => {
@@ -48,7 +47,7 @@
 
 //     <div className="mask1 w-full  flex items-center justify-center">
 //         <img loading='lazy'
-//           src={card2}
+//           src={clipcard}
 //           alt="Cinque Terre"
 //           className="w-full h-full object-cover object-center"
 //         />

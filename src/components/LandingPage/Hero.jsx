@@ -6,12 +6,9 @@ import bg from '../../assets/images/Landingpage/hero/bg.png'
 import ModelParent from '../GetInTouchModel/ModelParent';
 import Typed from 'typed.js';
 
-import { ToastContext } from '../Context/context';
 
 const Hero = () => {
   const [show, setShow] = useState(false);
-
-  const {setShowToast,setToastMessage} = useContext(ToastContext)
 
 
   // const el = useRef(null)

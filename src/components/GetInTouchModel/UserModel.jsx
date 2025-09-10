@@ -3,12 +3,11 @@
 
 import React, { useEffect, useState,useContext } from 'react';
 import InputField from './InputField';
-import { ToastContext } from '../Context/context';
+import { toast } from 'react-toastify';
 
 
 const UserModel = ({setShow}) => {
 
-    const {setShowToast,setToastMessage} = useContext(ToastContext)
     const [step, setStep] = useState(1); // Track the current step
     const [error, setError] = useState("All fields are required");
     const [nextBtnDisabled, setNextBtnDisabled] = useState(true);
@@ -96,8 +95,7 @@ const UserModel = ({setShow}) => {
             mode: 'no-cors',
         })
             .then(() => {
-                setShowToast('success'); 
-                setToastMessage("Form submitted successfully")
+                toast.success("Form submitted successfully");
                 setShow(false);
 
                 setSubmitBtnDisabled(false);
@@ -116,8 +114,7 @@ const UserModel = ({setShow}) => {
             .catch((error) => {
                 setSubmitBtnDisabled(false);
                 console.error('Error submitting form:', error);
-                setShowToast('error'); 
-                setToastMessage("Error submitting form. Please try again.")
+                toast.error("Error submitting form. Please try again.");
             });
     };
 
